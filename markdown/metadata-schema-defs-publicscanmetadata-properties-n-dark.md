@@ -1,7 +1,7 @@
 # N Dark Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/n_dark
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_dark
 ```
 
 Number of dark images (without illumination) collected during the scan.

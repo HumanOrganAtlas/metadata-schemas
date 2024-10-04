@@ -1,7 +1,7 @@
 # Proposal Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/proposal
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/proposal
 ```
 
 Proposal information
@@ -16,11 +16,11 @@ Proposal information
 
 # proposal Properties
 
-| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                          |
-| :----------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [proposal\_number](#proposal_number) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number") |
-| [title](#title)                      | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")                     |
-| [proposers](#proposers)              | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")             |
+| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                |
+| :----------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [proposal\_number](#proposal_number) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposal_number") |
+| [title](#title)                      | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/title")                     |
+| [proposers](#proposers)              | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposers")             |
 
 ## proposal\_number
 
@@ -34,7 +34,7 @@ Proposal number.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposal_number")
 
 ### proposal\_number Type
 
@@ -52,7 +52,7 @@ Proposal title.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/title")
 
 ### title Type
 
@@ -70,7 +70,7 @@ Proposal proposers.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposers")
 
 ### proposers Type
 

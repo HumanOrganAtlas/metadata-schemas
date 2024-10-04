@@ -1,7 +1,7 @@
 # Untitled number in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/latency_time/anyOf/0
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/latency_time/anyOf/0
 ```
 
 

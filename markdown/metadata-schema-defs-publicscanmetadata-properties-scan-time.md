@@ -1,7 +1,7 @@
 # Scan Time Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/scan_time
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_time
 ```
 
 Total duration of a single scan in seconds.

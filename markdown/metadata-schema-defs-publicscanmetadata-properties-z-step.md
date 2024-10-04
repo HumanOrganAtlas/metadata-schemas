@@ -1,7 +1,7 @@
 # Z Step Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/z_step
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/z_step
 ```
 
 Displacement in millimeters between scans.

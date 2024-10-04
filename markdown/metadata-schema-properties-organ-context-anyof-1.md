@@ -1,7 +1,7 @@
 # Untitled null in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/organ_context/anyOf/1
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/organ_context/anyOf/1
 ```
 
 

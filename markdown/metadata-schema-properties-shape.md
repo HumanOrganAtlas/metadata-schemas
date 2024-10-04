@@ -1,7 +1,7 @@
 # Shape Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/shape
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/shape
 ```
 
 Shape of dataset

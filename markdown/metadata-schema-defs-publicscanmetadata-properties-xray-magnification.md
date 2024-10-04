@@ -1,7 +1,7 @@
 # Xray Magnification Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/xray_magnification
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/xray_magnification
 ```
 
 Magnification of X-rays due to divergence between the source and detector.

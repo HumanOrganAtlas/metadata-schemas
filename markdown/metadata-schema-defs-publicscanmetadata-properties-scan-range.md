@@ -1,7 +1,7 @@
 # Scan Range Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/scan_range
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_range
 ```
 
 Angular range of a single scan in degrees.

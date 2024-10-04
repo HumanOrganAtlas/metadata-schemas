@@ -1,7 +1,7 @@
 # Sensor Roi X Size Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/sensor_roi_x_size
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_x_size
 ```
 
 Number of pixels in the x-dimension of the sensor's region of interest (ROI).

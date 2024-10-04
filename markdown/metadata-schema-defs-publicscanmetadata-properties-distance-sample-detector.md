@@ -1,7 +1,7 @@
 # Distance Sample Detector Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/distance_sample_detector
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/distance_sample_detector
 ```
 
 Distance between the sample and the detector, measured in millimeters.

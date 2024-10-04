@@ -1,7 +1,7 @@
 # Half Acquisition Value Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/half_acquisition_value
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/half_acquisition_value
 ```
 
 Value representing if the scan was taken in half-acquisition or not.

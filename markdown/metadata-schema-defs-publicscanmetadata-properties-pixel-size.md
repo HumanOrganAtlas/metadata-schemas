@@ -1,7 +1,7 @@
 # Pixel Size Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/pixel_size
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/pixel_size
 ```
 
 Size of a pixel at the source, measured in micrometers.

@@ -1,7 +1,7 @@
 # Proposal Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/proposal
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/proposal
 ```
 
 ID of the ESRF proposal under which the scan was performed.

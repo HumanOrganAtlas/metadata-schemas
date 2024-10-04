@@ -1,7 +1,7 @@
 # Acquisition Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/acquisition
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/acquisition
 ```
 
 Type of tomographic acquisition.

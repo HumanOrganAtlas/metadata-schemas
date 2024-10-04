@@ -1,7 +1,7 @@
 # Sensor Mode Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/sensor_mode
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_mode
 ```
 
 Operating mode of the sensor during the scan.

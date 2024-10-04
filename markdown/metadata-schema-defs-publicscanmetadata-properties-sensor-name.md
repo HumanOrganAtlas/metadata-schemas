@@ -1,7 +1,7 @@
 # Sensor Name Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/sensor_name
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_name
 ```
 
 Name of the sensor used during the scan.

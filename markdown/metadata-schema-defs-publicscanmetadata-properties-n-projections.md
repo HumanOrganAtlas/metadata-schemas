@@ -1,7 +1,7 @@
 # N Projections Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/n_projections
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_projections
 ```
 
 Number of projection images acquired during the scan.

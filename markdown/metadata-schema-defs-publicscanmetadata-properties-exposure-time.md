@@ -1,7 +1,7 @@
 # Exposure Time Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/exposure_time
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/exposure_time
 ```
 
 Exposure time of each frame, measured in seconds.

@@ -1,7 +1,7 @@
 # Untitled null in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/half_acquisition_value/anyOf/1
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/half_acquisition_value/anyOf/1
 ```
 
 

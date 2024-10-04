@@ -1,7 +1,7 @@
 # Age Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/age
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/age
 ```
 
 Age at death.

@@ -1,7 +1,7 @@
 # Cause Of Death Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/cause_of_death
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/cause_of_death
 ```
 
 Cause of death.

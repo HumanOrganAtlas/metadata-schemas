@@ -1,7 +1,7 @@
 # Scintillator Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/scintillator
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scintillator
 ```
 
 Scintillator used for converting X-rays to visible light.

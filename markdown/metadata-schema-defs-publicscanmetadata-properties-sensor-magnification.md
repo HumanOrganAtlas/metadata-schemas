@@ -1,7 +1,7 @@
 # Sensor Magnification Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/sensor_magnification
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_magnification
 ```
 
 Magnification in the sensor setup.

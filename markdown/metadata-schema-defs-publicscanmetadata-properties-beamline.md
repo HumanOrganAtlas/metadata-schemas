@@ -1,7 +1,7 @@
 # Beamline Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/beamline
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/beamline
 ```
 
 ESRF beamline where scan was performed.

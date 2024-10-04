@@ -1,7 +1,7 @@
 # Current Start Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/current_start
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/current_start
 ```
 
 Current of the synchrotron at the start of the scan, measured in mA.

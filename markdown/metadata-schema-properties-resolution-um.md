@@ -1,7 +1,7 @@
 # Resolution Um Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/resolution_um
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/resolution_um
 ```
 
 Isotropic voxel size in micrometers.

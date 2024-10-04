@@ -1,7 +1,7 @@
 # Organ Context Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/organ_context
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/organ_context
 ```
 
 Context for location of the dataset within the whole organ.

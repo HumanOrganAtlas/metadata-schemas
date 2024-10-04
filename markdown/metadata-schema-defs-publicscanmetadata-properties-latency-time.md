@@ -1,7 +1,7 @@
 # Latency Time Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/latency_time
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/latency_time
 ```
 
 Time delay between projections, measured in seconds.

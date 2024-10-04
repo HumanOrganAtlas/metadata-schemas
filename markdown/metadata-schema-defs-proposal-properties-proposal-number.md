@@ -1,7 +1,7 @@
 # Proposal Number Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposal_number
 ```
 
 Proposal number.

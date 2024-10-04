@@ -1,7 +1,7 @@
 # Scan Type Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/scan_type
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/scan_type
 ```
 
 

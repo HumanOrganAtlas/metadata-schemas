@@ -1,7 +1,7 @@
 # Sensor Roi Y Size Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/sensor_roi_y_size
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_y_size
 ```
 
 Number of pixels in the y-dimension of the sensor's region of interest (ROI).

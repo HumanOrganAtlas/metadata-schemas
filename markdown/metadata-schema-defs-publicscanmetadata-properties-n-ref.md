@@ -1,7 +1,7 @@
 # N Ref Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/n_ref
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_ref
 ```
 
 Number of reference images collected during the scan.

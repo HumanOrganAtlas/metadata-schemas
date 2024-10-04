@@ -1,7 +1,7 @@
 # Quarter Acquisition Value Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/quarter_acquisition_value
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/quarter_acquisition_value
 ```
 
 Value representing if the scan was taken in quarter-acquisition or not.

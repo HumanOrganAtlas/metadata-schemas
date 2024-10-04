@@ -1,7 +1,7 @@
 # Weight Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/weight
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/weight
 ```
 
 Weight in kg at death.

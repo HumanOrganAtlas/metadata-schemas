@@ -1,7 +1,7 @@
 # Roi Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/roi
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/roi
 ```
 
 Region of interest name for dataset.

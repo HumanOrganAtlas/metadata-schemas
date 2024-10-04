@@ -1,7 +1,7 @@
 # Untitled integer in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/accumulation_n_frames/anyOf/0
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/accumulation_n_frames/anyOf/0
 ```
 
 

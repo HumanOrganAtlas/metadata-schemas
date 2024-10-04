@@ -1,7 +1,7 @@
 # Donor Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/donor
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/donor
 ```
 
 Donor data model.
@@ -16,19 +16,19 @@ Donor data model.
 
 # donor Properties
 
-| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                    |
-| :----------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [id](#id)                            | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-id.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/id")                           |
-| [age](#age)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-age.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/age")                         |
-| [sex](#sex)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-sex.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/sex")                         |
-| [weight](#weight)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-weight.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/weight")                   |
-| [height](#height)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-height.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/height")                   |
-| [cause\_of\_death](#cause_of_death)  | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/cause_of_death")   |
-| [date\_of\_death](#date_of_death)    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-date-of-death.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/date_of_death")     |
-| [medical\_history](#medical_history) | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-medical-history.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/medical_history") |
-| [diabetes](#diabetes)                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-diabetes.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/diabetes")               |
-| [hypertension](#hypertension)        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-hypertension.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/hypertension")       |
-| [smoker](#smoker)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-smoker.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/smoker")                   |
+| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                                                          |
+| :----------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                            | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-id.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/id")                           |
+| [age](#age)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-age.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/age")                         |
+| [sex](#sex)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-sex.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/sex")                         |
+| [weight](#weight)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-weight.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/weight")                   |
+| [height](#height)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-height.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/height")                   |
+| [cause\_of\_death](#cause_of_death)  | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/cause_of_death")   |
+| [date\_of\_death](#date_of_death)    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-date-of-death.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/date_of_death")     |
+| [medical\_history](#medical_history) | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-medical-history.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/medical_history") |
+| [diabetes](#diabetes)                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-diabetes.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/diabetes")               |
+| [hypertension](#hypertension)        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-hypertension.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/hypertension")       |
+| [smoker](#smoker)                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-donor-properties-smoker.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/smoker")                   |
 
 ## id
 
@@ -42,7 +42,7 @@ Donor data model.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-id.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/id")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-id.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/id")
 
 ### id Type
 
@@ -60,7 +60,7 @@ Age at death.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-age.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/age")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-age.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/age")
 
 ### age Type
 
@@ -86,7 +86,7 @@ any of
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-sex.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/sex")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-sex.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/sex")
 
 ### sex Type
 
@@ -110,7 +110,7 @@ Weight in kg at death.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-weight.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/weight")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-weight.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/weight")
 
 ### weight Type
 
@@ -134,7 +134,7 @@ Height in cm at death.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-height.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/height")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-height.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/height")
 
 ### height Type
 
@@ -158,7 +158,7 @@ Cause of death.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/cause_of_death")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/cause_of_death")
 
 ### cause\_of\_death Type
 
@@ -182,7 +182,7 @@ Date of death.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-date-of-death.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/date_of_death")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-date-of-death.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/date_of_death")
 
 ### date\_of\_death Type
 
@@ -206,7 +206,7 @@ Medical history.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-medical-history.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/medical_history")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-medical-history.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/medical_history")
 
 ### medical\_history Type
 
@@ -230,7 +230,7 @@ Diabetes history.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-diabetes.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/diabetes")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-diabetes.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/diabetes")
 
 ### diabetes Type
 
@@ -254,7 +254,7 @@ Hypertension history.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-hypertension.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/hypertension")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-hypertension.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/hypertension")
 
 ### hypertension Type
 
@@ -278,7 +278,7 @@ Smoking history.
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-smoker.md "http://yourdomain.com/schemas/myschema.json#/$defs/Donor/properties/smoker")
+* defined in: [HOAMetadata](metadata-schema-defs-donor-properties-smoker.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Donor/properties/smoker")
 
 ### smoker Type
 

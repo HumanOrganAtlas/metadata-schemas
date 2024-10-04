@@ -1,7 +1,7 @@
 # Untitled string in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/filters/anyOf/0/items
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/filters/anyOf/0/items
 ```
 
 

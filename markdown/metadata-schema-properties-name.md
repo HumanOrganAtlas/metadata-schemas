@@ -1,7 +1,7 @@
 # Name Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/name
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/name
 ```
 
 Unique name for dataset.

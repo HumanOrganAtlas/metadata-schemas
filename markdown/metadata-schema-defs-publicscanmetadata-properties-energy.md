@@ -1,7 +1,7 @@
 # Energy Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/energy
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/energy
 ```
 
 Energy used during the scan, measured in keV.

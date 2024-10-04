@@ -1,7 +1,7 @@
 # N Scans Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata/properties/n_scans
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_scans
 ```
 
 Total number of scans. For a helical scan this is always 1. For a zseries this is the total number of scans concatenated to make the full data volume.

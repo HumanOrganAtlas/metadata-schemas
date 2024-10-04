@@ -1,7 +1,7 @@
 # Proposers Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposers
 ```
 
 Proposal proposers.

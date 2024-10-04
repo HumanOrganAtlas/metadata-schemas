@@ -1,7 +1,7 @@
 # Untitled integer in HOAMetadata Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/shape/prefixItems/0
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/shape/prefixItems/0
 ```
 
 

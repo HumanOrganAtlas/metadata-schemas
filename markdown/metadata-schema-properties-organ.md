@@ -1,7 +1,7 @@
 # Organ Schema
 
 ```txt
-http://yourdomain.com/schemas/myschema.json#/properties/organ
+https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/organ
 ```
 
 Organ name
