@@ -16,6 +16,6 @@ merged type ([Energy](metadata-schema-defs-publicscanmetadata-properties-energy.
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-1.md "check type definition")

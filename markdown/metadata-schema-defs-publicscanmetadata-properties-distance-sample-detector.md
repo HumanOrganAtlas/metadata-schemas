@@ -10,12 +10,12 @@ Distance between the sample and the detector, measured in millimeters.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## distance_sample_detector Type
+## distance\_sample\_detector Type
 
 merged type ([Distance Sample Detector](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector.md))
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-1.md "check type definition")

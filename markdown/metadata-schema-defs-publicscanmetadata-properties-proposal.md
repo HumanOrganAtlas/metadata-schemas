@@ -16,6 +16,6 @@ merged type ([Proposal](metadata-schema-defs-publicscanmetadata-properties-propo
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-1.md "check type definition")

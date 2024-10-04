@@ -16,6 +16,6 @@ merged type ([Scintillator](metadata-schema-defs-publicscanmetadata-properties-s
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-1.md "check type definition")

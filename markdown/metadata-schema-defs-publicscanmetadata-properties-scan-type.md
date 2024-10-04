@@ -10,12 +10,12 @@ Type of scan.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## scan_type Type
+## scan\_type Type
 
 merged type ([Scan Type](metadata-schema-defs-publicscanmetadata-properties-scan-type.md))
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-1.md "check type definition")

@@ -16,27 +16,27 @@ Proposal information
 
 # proposal Properties
 
-| Property                            | Type     | Required | Nullable       | Defined by                                                                                                                                                          |
-| :---------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [proposal_number](#proposal_number) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number") |
-| [title](#title)                     | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")                     |
-| [proposers](#proposers)             | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")             |
+| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                          |
+| :----------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [proposal\_number](#proposal_number) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number") |
+| [title](#title)                      | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")                     |
+| [proposers](#proposers)              | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")             |
 
-## proposal_number
+## proposal\_number
 
 Proposal number.
 
 `proposal_number`
 
-- is required
+* is required
 
-- Type: `string` ([Proposal Number](metadata-schema-defs-proposal-properties-proposal-number.md))
+* Type: `string` ([Proposal Number](metadata-schema-defs-proposal-properties-proposal-number.md))
 
-- cannot be null
+* cannot be null
 
-- defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposal_number")
 
-### proposal_number Type
+### proposal\_number Type
 
 `string` ([Proposal Number](metadata-schema-defs-proposal-properties-proposal-number.md))
 
@@ -46,13 +46,13 @@ Proposal title.
 
 `title`
 
-- is required
+* is required
 
-- Type: `string` ([Title](metadata-schema-defs-proposal-properties-title.md))
+* Type: `string` ([Title](metadata-schema-defs-proposal-properties-title.md))
 
-- cannot be null
+* cannot be null
 
-- defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/title")
 
 ### title Type
 
@@ -64,13 +64,13 @@ Proposal proposers.
 
 `proposers`
 
-- is required
+* is required
 
-- Type: `string[]`
+* Type: `string[]`
 
-- cannot be null
+* cannot be null
 
-- defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")
+* defined in: [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers")
 
 ### proposers Type
 

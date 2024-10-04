@@ -16,6 +16,6 @@ merged type ([Filters](metadata-schema-defs-publicscanmetadata-properties-filter
 
 any of
 
-- [Untitled array in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-0.md "check type definition")
+* [Untitled array in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-1.md "check type definition")

@@ -10,12 +10,12 @@ Date of death.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## date_of_death Type
+## date\_of\_death Type
 
 merged type ([Date Of Death](metadata-schema-defs-donor-properties-date-of-death.md))
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-date-of-death-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-date-of-death-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-date-of-death-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-date-of-death-anyof-1.md "check type definition")

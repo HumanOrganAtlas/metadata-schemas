@@ -10,12 +10,12 @@ Cause of death.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## cause_of_death Type
+## cause\_of\_death Type
 
 merged type ([Cause Of Death](metadata-schema-defs-donor-properties-cause-of-death.md))
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-cause-of-death-anyof-1.md "check type definition")

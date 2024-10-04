@@ -10,12 +10,12 @@ Magnification of X-rays due to divergence between the source and detector.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## xray_magnification Type
+## xray\_magnification Type
 
 merged type ([Xray Magnification](metadata-schema-defs-publicscanmetadata-properties-xray-magnification.md))
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-1.md "check type definition")

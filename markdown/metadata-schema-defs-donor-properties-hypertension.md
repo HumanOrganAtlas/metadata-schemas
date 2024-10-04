@@ -16,6 +16,6 @@ merged type ([Hypertension](metadata-schema-defs-donor-properties-hypertension.m
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-hypertension-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-hypertension-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-hypertension-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-hypertension-anyof-1.md "check type definition")

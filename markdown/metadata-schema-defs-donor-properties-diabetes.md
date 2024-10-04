@@ -16,6 +16,6 @@ merged type ([Diabetes](metadata-schema-defs-donor-properties-diabetes.md))
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-diabetes-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-diabetes-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-diabetes-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-diabetes-anyof-1.md "check type definition")

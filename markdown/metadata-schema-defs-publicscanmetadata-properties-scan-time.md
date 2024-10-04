@@ -10,12 +10,12 @@ Total duration of a single scan in seconds.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## scan_time Type
+## scan\_time Type
 
 merged type ([Scan Time](metadata-schema-defs-publicscanmetadata-properties-scan-time.md))
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-1.md "check type definition")

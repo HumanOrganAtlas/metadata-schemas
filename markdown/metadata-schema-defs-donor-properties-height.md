@@ -16,6 +16,6 @@ merged type ([Height](metadata-schema-defs-donor-properties-height.md))
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-donor-properties-height-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-donor-properties-height-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-height-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-height-anyof-1.md "check type definition")

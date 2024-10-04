@@ -16,6 +16,6 @@ merged type ([Weight](metadata-schema-defs-donor-properties-weight.md))
 
 any of
 
-- [Untitled number in HOAMetadata](metadata-schema-defs-donor-properties-weight-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-donor-properties-weight-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-weight-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-weight-anyof-1.md "check type definition")

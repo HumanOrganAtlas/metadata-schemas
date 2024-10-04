@@ -10,12 +10,12 @@ Operating mode of the sensor during the scan.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## sensor_mode Type
+## sensor\_mode Type
 
 merged type ([Sensor Mode](metadata-schema-defs-publicscanmetadata-properties-sensor-mode.md))
 
 any of
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-0.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-1.md "check type definition")

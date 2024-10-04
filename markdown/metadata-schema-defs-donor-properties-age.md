@@ -16,8 +16,8 @@ merged type ([Age](metadata-schema-defs-donor-properties-age.md))
 
 any of
 
-- [Untitled integer in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-0.md "check type definition")
 
-- [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-1.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-1.md "check type definition")
 
-- [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-2.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-donor-properties-age-anyof-2.md "check type definition")

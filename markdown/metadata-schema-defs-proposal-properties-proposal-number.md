@@ -10,6 +10,6 @@ Proposal number.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [metadata-schema.json\*](../out/metadata-schema.json "open original schema") |
 
-## proposal_number Type
+## proposal\_number Type
 
 `string` ([Proposal Number](metadata-schema-defs-proposal-properties-proposal-number.md))
