@@ -1,23 +1,12 @@
-# Human Organ Atlas metadata schemas
+# README
 
-Metadata schemas for the Human Organ Atlas data.
-
-> [!WARNING]
-> The schema is still in draft status and subject to change without warning.
-
-## Metadata location
-
-The actual metadata are stored in two locations:
-
-## Schema docs
-
-### Main schema
+## Top-level Schemas
 
 - [HOAMetadata](./metadata-schema.md) – `http://yourdomain.com/schemas/myschema.json`
 
-### Other Schemas
+## Other Schemas
 
-#### Objects
+### Objects
 
 - [Donor](./metadata-schema-defs-donor.md "Donor data model") – `http://yourdomain.com/schemas/myschema.json#/$defs/Donor`
 
@@ -25,7 +14,7 @@ The actual metadata are stored in two locations:
 
 - [PublicScanMetadata](./metadata-schema-defs-publicscanmetadata.md) – `http://yourdomain.com/schemas/myschema.json#/$defs/PublicScanMetadata`
 
-#### Arrays
+### Arrays
 
 - [Proposers](./metadata-schema-defs-proposal-properties-proposers.md "Proposal proposers") – `http://yourdomain.com/schemas/myschema.json#/$defs/Proposal/properties/proposers`
 
