@@ -1,0 +1,757 @@
+{
+  "$defs": {
+    "Donor": {
+      "additionalProperties": false,
+      "description": "Donor data model.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "age": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "enum": ["<18", ">18"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Age at death.",
+          "title": "Age"
+        },
+        "sex": {
+          "anyOf": [
+            {
+              "enum": ["M", "F"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sex"
+        },
+        "weight": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Weight in kg at death.",
+          "title": "Weight"
+        },
+        "height": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Height in cm at death.",
+          "title": "Height"
+        },
+        "cause_of_death": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Cause of death.",
+          "title": "Cause Of Death"
+        },
+        "date_of_death": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date of death.",
+          "title": "Date Of Death"
+        },
+        "medical_history": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Medical history.",
+          "title": "Medical History"
+        },
+        "diabetes": {
+          "anyOf": [
+            {
+              "enum": ["Type 2", "No"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Diabetes history.",
+          "title": "Diabetes"
+        },
+        "hypertension": {
+          "anyOf": [
+            {
+              "enum": ["Yes", "No"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Hypertension history.",
+          "title": "Hypertension"
+        },
+        "smoker": {
+          "anyOf": [
+            {
+              "const": "Never",
+              "enum": ["Never"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Smoking history.",
+          "title": "Smoker"
+        }
+      },
+      "required": ["id"],
+      "title": "Donor",
+      "type": "object"
+    },
+    "Proposal": {
+      "properties": {
+        "proposal_number": {
+          "description": "Proposal number.",
+          "title": "Proposal Number",
+          "type": "string"
+        },
+        "title": {
+          "description": "Proposal title.",
+          "title": "Title",
+          "type": "string"
+        },
+        "proposers": {
+          "description": "Proposal proposers.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Proposers",
+          "type": "array"
+        }
+      },
+      "required": ["proposal_number", "title", "proposers"],
+      "title": "Proposal",
+      "type": "object"
+    },
+    "PublicScanMetadata": {
+      "properties": {
+        "dataset_name": {
+          "title": "Dataset Name",
+          "type": "string"
+        },
+        "date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date when the scan was performed.",
+          "title": "Date"
+        },
+        "beamline": {
+          "description": "ESRF beamline where scan was performed.",
+          "enum": ["BM05", "BM18"],
+          "title": "Beamline",
+          "type": "string"
+        },
+        "energy": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Energy used during the scan, measured in keV.",
+          "title": "Energy"
+        },
+        "current_start": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Current of the synchrotron at the start of the scan, measured in mA.",
+          "title": "Current Start"
+        },
+        "filling_mode": {
+          "anyOf": [
+            {
+              "enum": [
+                "16 bunch",
+                "7/8 multibunch",
+                "uniform multibunch",
+                "28*12+1 bunch",
+                "4 bunch"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Mode of filling used in the synchrotron storage ring.",
+          "title": "Filling Mode"
+        },
+        "n_projections": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of projection images acquired during the scan.",
+          "title": "N Projections"
+        },
+        "n_ref": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of reference images collected during the scan.",
+          "title": "N Ref"
+        },
+        "n_dark": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of dark images (without illumination) collected during the scan.",
+          "title": "N Dark"
+        },
+        "latency_time": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Time delay between projections, measured in seconds.",
+          "title": "Latency Time"
+        },
+        "exposure_time": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Exposure time of each frame, measured in seconds.",
+          "title": "Exposure Time"
+        },
+        "accumulation_n_frames": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of frames accumulated per exposure.",
+          "title": "Accumulation N Frames"
+        },
+        "scan_type": {
+          "anyOf": [
+            {
+              "enum": ["helical", "zseries"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Type of scan.",
+          "title": "Scan Type"
+        },
+        "scan_range": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Angular range of a single scan in degrees.",
+          "title": "Scan Range"
+        },
+        "n_scans": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Total number of scans. For a helical scan this is always 1. For a zseries this is the total number of scans concatenated to make the full data volume.",
+          "title": "N Scans"
+        },
+        "acquisition": {
+          "anyOf": [
+            {
+              "enum": ["half", "quarter"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Type of tomographic acquisition.",
+          "title": "Acquisition"
+        },
+        "half_acquisition_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Value representing if the scan was taken in half-acquisition or not.",
+          "title": "Half Acquisition Value"
+        },
+        "quarter_acquisition_value": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Value representing if the scan was taken in quarter-acquisition or not.",
+          "title": "Quarter Acquisition Value"
+        },
+        "z_step": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Displacement in millimeters between scans.",
+          "title": "Z Step"
+        },
+        "scan_time": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Total duration of a single scan in seconds.",
+          "title": "Scan Time"
+        },
+        "filters": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "List of filters used during the scan.",
+          "title": "Filters"
+        },
+        "scintillator": {
+          "anyOf": [
+            {
+              "enum": [
+                "LuAG:Ce 1000um",
+                "LuAG:Ce 100um",
+                "LuAG:Ce 100um, lead glass meniscus",
+                "LuAG:Ce 2000um",
+                "LuAG:Ce 2000um, reflective",
+                "LuAG:Ce 200um",
+                "LuAG:Ce 250um",
+                "LuAG:Ce 25um",
+                "LuAG:Ce 50um",
+                "LuAG:Ce 500um",
+                "LySO:Ce 8.5um",
+                "LySO:Ce 23um",
+                "Gadox 60um"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Scintillator used for converting X-rays to visible light.",
+          "title": "Scintillator"
+        },
+        "optic": {
+          "anyOf": [
+            {
+              "enum": [
+                "Zoom",
+                "DZoom",
+                "10x 0.4NA reflective optic",
+                "Hasselblad tandem optic 100mm/300mm",
+                "Hasselblad revolved 100 100",
+                "LAFIP2 optic with canon 50mm",
+                "Fixed x1",
+                "Fixed x0.125",
+                "Twinmic 5",
+                "Triplemic 10",
+                "Twinmic 20"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optical components used during the scan",
+          "title": "Optic"
+        },
+        "distance_sample_detector": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Distance between the sample and the detector, measured in millimeters.",
+          "title": "Distance Sample Detector"
+        },
+        "sensor_name": {
+          "anyOf": [
+            {
+              "enum": ["PCO edge 4.2 CLHS", "Iris15"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Name of the sensor used during the scan.",
+          "title": "Sensor Name"
+        },
+        "sensor_mode": {
+          "anyOf": [
+            {
+              "enum": ["rolling shutter", "FFM"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Operating mode of the sensor during the scan.",
+          "title": "Sensor Mode"
+        },
+        "sensor_magnification": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Magnification in the sensor setup.",
+          "title": "Sensor Magnification"
+        },
+        "sensor_roi_x_size": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of pixels in the x-dimension of the sensor's region of interest (ROI).",
+          "title": "Sensor Roi X Size"
+        },
+        "sensor_roi_y_size": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Number of pixels in the y-dimension of the sensor's region of interest (ROI).",
+          "title": "Sensor Roi Y Size"
+        },
+        "pixel_size": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Size of a pixel at the source, measured in micrometers.",
+          "title": "Pixel Size"
+        },
+        "xray_magnification": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Magnification of X-rays due to divergence between the source and detector.",
+          "title": "Xray Magnification"
+        },
+        "proposal": {
+          "anyOf": [
+            {
+              "enum": ["md1252", "md1290", "md1389"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ID of the ESRF proposal under which the scan was performed.",
+          "title": "Proposal"
+        }
+      },
+      "required": ["dataset_name", "beamline"],
+      "title": "PublicScanMetadata",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "name": {
+      "description": "Unique name for dataset.",
+      "title": "Name",
+      "type": "string"
+    },
+    "organ": {
+      "description": "Organ name",
+      "enum": [
+        "brain",
+        "breast",
+        "colon",
+        "eye",
+        "kidney",
+        "liver",
+        "lung",
+        "heart",
+        "oesophagus",
+        "spinalCord",
+        "spleen",
+        "heart+lungs",
+        "pancreas",
+        "placenta",
+        "prostate",
+        "testis",
+        "uterus",
+        "thoracicBlock",
+        "soleus"
+      ],
+      "title": "Organ",
+      "type": "string"
+    },
+    "organ_context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Context for location of the dataset within the whole organ.",
+      "title": "Organ Context"
+    },
+    "scan_type": {
+      "enum": ["overview", "zoom"],
+      "title": "Scan Type",
+      "type": "string"
+    },
+    "roi": {
+      "description": "Region of interest name for dataset.",
+      "title": "Roi",
+      "type": "string"
+    },
+    "resolution_um": {
+      "description": "Isotropic voxel size in micrometers.",
+      "title": "Resolution Um",
+      "type": "number"
+    },
+    "shape": {
+      "description": "Shape of dataset",
+      "maxItems": 3,
+      "minItems": 3,
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ],
+      "title": "Shape",
+      "type": "array"
+    },
+    "donor": {
+      "$ref": "#/$defs/Donor",
+      "description": "Donor."
+    },
+    "scan": {
+      "$ref": "#/$defs/PublicScanMetadata",
+      "description": "Scan metadata"
+    },
+    "proposal": {
+      "$ref": "#/$defs/Proposal",
+      "description": "Proposal information"
+    }
+  },
+  "required": [
+    "name",
+    "organ",
+    "organ_context",
+    "scan_type",
+    "roi",
+    "resolution_um",
+    "shape",
+    "donor",
+    "scan",
+    "proposal"
+  ],
+  "title": "HOAMetadata",
+  "type": "object"
+}
+
