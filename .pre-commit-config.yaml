@@ -9,6 +9,8 @@ repos:
         types: [json]
         args: ["-d", schemas, "-o", markdown, -e, json]
         files: .*
+        additional_dependencies:
+          - "@adobe/jsonschema2md@v8"
 
   - repo: https://github.com/pre-commit/mirrors-prettier
     rev: v4.0.0-alpha.8
