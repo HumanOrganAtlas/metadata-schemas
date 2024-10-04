@@ -1,4 +1,5 @@
 {
+  "$id": "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json",
   "$defs": {
     "Donor": {
       "additionalProperties": false,
