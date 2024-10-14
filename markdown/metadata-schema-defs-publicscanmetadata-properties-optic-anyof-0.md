@@ -29,5 +29,5 @@ https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.jso
 | `"Fixed x1"`                            |             |
 | `"Fixed x0.125"`                        |             |
 | `"Twinmic 5"`                           |             |
-| `"Triplemic 10"`                        |             |
+| `"Twinmic 10"`                          |             |
 | `"Twinmic 20"`                          |             |

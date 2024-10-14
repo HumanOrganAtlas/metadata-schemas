@@ -18,24 +18,10 @@ Organ name
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value             | Explanation |
-| :---------------- | :---------- |
-| `"brain"`         |             |
-| `"breast"`        |             |
-| `"colon"`         |             |
-| `"eye"`           |             |
-| `"kidney"`        |             |
-| `"liver"`         |             |
-| `"lung"`          |             |
-| `"heart"`         |             |
-| `"oesophagus"`    |             |
-| `"spinalCord"`    |             |
-| `"spleen"`        |             |
-| `"heart+lungs"`   |             |
-| `"pancreas"`      |             |
-| `"placenta"`      |             |
-| `"prostate"`      |             |
-| `"testis"`        |             |
-| `"uterus"`        |             |
-| `"thoracicBlock"` |             |
-| `"soleus"`        |             |
+| Value      | Explanation |
+| :--------- | :---------- |
+| `"heart"`  |             |
+| `"kidney"` |             |
+| `"lung"`   |             |
+| `"brain"`  |             |
+| `"spleen"` |             |
