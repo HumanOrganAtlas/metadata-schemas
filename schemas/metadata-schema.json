@@ -470,6 +470,7 @@
               "enum": [
                 "LuAG:Ce 1000um",
                 "LuAG:Ce 100um",
+                "LuAG:Ce 100um, reflective",
                 "LuAG:Ce 100um, lead glass meniscus",
                 "LuAG:Ce 2000um",
                 "LuAG:Ce 2000um, reflective",
@@ -505,7 +506,7 @@
                 "Fixed x1",
                 "Fixed x0.125",
                 "Twinmic 5",
-                "Triplemic 10",
+                "Twinmic 10",
                 "Twinmic 20"
               ],
               "type": "string"
@@ -658,27 +659,7 @@
     },
     "organ": {
       "description": "Organ name",
-      "enum": [
-        "brain",
-        "breast",
-        "colon",
-        "eye",
-        "kidney",
-        "liver",
-        "lung",
-        "heart",
-        "oesophagus",
-        "spinalCord",
-        "spleen",
-        "heart+lungs",
-        "pancreas",
-        "placenta",
-        "prostate",
-        "testis",
-        "uterus",
-        "thoracicBlock",
-        "soleus"
-      ],
+      "enum": ["heart", "kidney", "lung", "brain", "spleen"],
       "title": "Organ",
       "type": "string"
     },

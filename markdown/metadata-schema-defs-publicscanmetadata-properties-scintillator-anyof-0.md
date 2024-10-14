@@ -22,6 +22,7 @@ https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.jso
 | :------------------------------------- | :---------- |
 | `"LuAG:Ce 1000um"`                     |             |
 | `"LuAG:Ce 100um"`                      |             |
+| `"LuAG:Ce 100um, reflective"`          |             |
 | `"LuAG:Ce 100um, lead glass meniscus"` |             |
 | `"LuAG:Ce 2000um"`                     |             |
 | `"LuAG:Ce 2000um, reflective"`         |             |
