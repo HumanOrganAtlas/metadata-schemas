@@ -26,8 +26,10 @@ https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.jso
 | [resolution\_um](#resolution_um) | `number` | Required | cannot be null | [HOAMetadata](metadata-schema-properties-resolution-um.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/resolution_um") |
 | [shape](#shape)                  | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-properties-shape.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/shape")                 |
 | [donor](#donor)                  | `object` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-donor.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/donor")                       |
-| [scan](#scan)                    | `object` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/scan")           |
+| [scan](#scan)                    | `object` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/scan")                 |
 | [proposal](#proposal)            | `object` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/proposal")                 |
+| [registration](#registration)    | Merged   | Required | cannot be null | [HOAMetadata](metadata-schema-properties-registration.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/registration")   |
+| [citation](#citation)            | `object` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-citation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/citation")                 |
 
 ## name
 
@@ -214,15 +216,15 @@ Scan metadata
 
 * is required
 
-* Type: `object` ([PublicScanMetadata](metadata-schema-defs-publicscanmetadata.md))
+* Type: `object` ([ScanMetadata](metadata-schema-defs-scanmetadata.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/scan")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/scan")
 
 ### scan Type
 
-`object` ([PublicScanMetadata](metadata-schema-defs-publicscanmetadata.md))
+`object` ([ScanMetadata](metadata-schema-defs-scanmetadata.md))
 
 ## proposal
 
@@ -242,7 +244,123 @@ Proposal information
 
 `object` ([Proposal](metadata-schema-defs-proposal.md))
 
+## registration
+
+Registration parameters
+
+`registration`
+
+* is required
+
+* Type: merged type ([Details](metadata-schema-properties-registration.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-properties-registration.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/registration")
+
+### registration Type
+
+merged type ([Details](metadata-schema-properties-registration.md))
+
+any of
+
+* [Registration](metadata-schema-defs-registration.md "check type definition")
+
+* [Untitled null in HOAMetadata](metadata-schema-properties-registration-anyof-1.md "check type definition")
+
+## citation
+
+Dataset citation.
+
+`citation`
+
+* is required
+
+* Type: `object` ([Citation](metadata-schema-defs-citation.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-citation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/properties/citation")
+
+### citation Type
+
+`object` ([Citation](metadata-schema-defs-citation.md))
+
 # HOAMetadata Definitions
+
+## Definitions group Citation
+
+Reference this group by using
+
+```json
+{"$ref":"https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation"}
+```
+
+| Property            | Type     | Required | Nullable       | Defined by                                                                                                                                                                                |
+| :------------------ | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [title](#title)     | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-citation-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/title")     |
+| [authors](#authors) | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-citation-properties-authors.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/authors") |
+| [doi](#doi)         | Merged   | Required | cannot be null | [HOAMetadata](metadata-schema-defs-citation-properties-doi.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/doi")         |
+
+### title
+
+Citation title.
+
+`title`
+
+* is required
+
+* Type: `string` ([Title](metadata-schema-defs-citation-properties-title.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-citation-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/title")
+
+#### title Type
+
+`string` ([Title](metadata-schema-defs-citation-properties-title.md))
+
+### authors
+
+Dataset authors.
+
+`authors`
+
+* is required
+
+* Type: `string[]`
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-citation-properties-authors.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/authors")
+
+#### authors Type
+
+`string[]`
+
+### doi
+
+Dataset DOI.
+
+`doi`
+
+* is required
+
+* Type: merged type ([Doi](metadata-schema-defs-citation-properties-doi.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-citation-properties-doi.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Citation/properties/doi")
+
+#### doi Type
+
+merged type ([Doi](metadata-schema-defs-citation-properties-doi.md))
+
+any of
+
+* [Untitled string in HOAMetadata](metadata-schema-defs-citation-properties-doi-anyof-0.md "check type definition")
+
+* [Untitled null in HOAMetadata](metadata-schema-defs-citation-properties-doi-anyof-1.md "check type definition")
 
 ## Definitions group Donor
 
@@ -537,7 +655,7 @@ Reference this group by using
 | Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                |
 | :----------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [proposal\_number](#proposal_number) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposal-number.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposal_number") |
-| [title](#title)                      | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/title")                     |
+| [title](#title-1)                    | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-title.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/title")                     |
 | [proposers](#proposers)              | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-proposal-properties-proposers.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Proposal/properties/proposers")             |
 
 ### proposal\_number
@@ -594,48 +712,157 @@ Proposal proposers.
 
 `string[]`
 
-## Definitions group PublicScanMetadata
+## Definitions group Registration
 
 Reference this group by using
 
 ```json
-{"$ref":"https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata"}
+{"$ref":"https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration"}
 ```
 
-| Property                                                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                        |
-| :-------------------------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [dataset\_name](#dataset_name)                            | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-dataset-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/dataset_name")                           |
-| [date](#date)                                             | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-date.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/date")                                           |
-| [beamline](#beamline)                                     | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-beamline.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/beamline")                                   |
-| [energy](#energy)                                         | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/energy")                                       |
-| [current\_start](#current_start)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-current-start.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/current_start")                         |
-| [filling\_mode](#filling_mode)                            | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filling-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/filling_mode")                           |
-| [n\_projections](#n_projections)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-projections.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_projections")                         |
-| [n\_ref](#n_ref)                                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-ref.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_ref")                                         |
-| [n\_dark](#n_dark)                                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-dark.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_dark")                                       |
-| [latency\_time](#latency_time)                            | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-latency-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/latency_time")                           |
-| [exposure\_time](#exposure_time)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-exposure-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/exposure_time")                         |
-| [accumulation\_n\_frames](#accumulation_n_frames)         | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/accumulation_n_frames")         |
-| [scan\_type](#scan_type-1)                                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_type")                                 |
-| [scan\_range](#scan_range)                                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-range.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_range")                               |
-| [n\_scans](#n_scans)                                      | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-scans.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_scans")                                     |
-| [acquisition](#acquisition)                               | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-acquisition.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/acquisition")                             |
-| [half\_acquisition\_value](#half_acquisition_value)       | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/half_acquisition_value")       |
-| [quarter\_acquisition\_value](#quarter_acquisition_value) | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/quarter_acquisition_value") |
-| [z\_step](#z_step)                                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-z-step.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/z_step")                                       |
-| [scan\_time](#scan_time)                                  | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_time")                                 |
-| [filters](#filters)                                       | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/filters")                                     |
-| [scintillator](#scintillator)                             | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scintillator")                           |
-| [optic](#optic)                                           | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-optic.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/optic")                                         |
-| [distance\_sample\_detector](#distance_sample_detector)   | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/distance_sample_detector")   |
-| [sensor\_name](#sensor_name)                              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_name")                             |
-| [sensor\_mode](#sensor_mode)                              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_mode")                             |
-| [sensor\_magnification](#sensor_magnification)            | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_magnification")           |
-| [sensor\_roi\_x\_size](#sensor_roi_x_size)                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_x_size")                 |
-| [sensor\_roi\_y\_size](#sensor_roi_y_size)                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_y_size")                 |
-| [pixel\_size](#pixel_size)                                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-pixel-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/pixel_size")                               |
-| [xray\_magnification](#xray_magnification)                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/xray_magnification")               |
-| [proposal](#proposal-1)                                   | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/proposal")                                   |
+| Property                           | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                      |
+| :--------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [source\_dataset](#source_dataset) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-registration-properties-source-dataset.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/source_dataset") |
+| [target\_dataset](#target_dataset) | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-registration-properties-target-dataset.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/target_dataset") |
+| [translation](#translation)        | `array`  | Required | cannot be null | [HOAMetadata](metadata-schema-defs-registration-properties-translation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/translation")       |
+| [rotation](#rotation)              | `number` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-registration-properties-rotation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/rotation")             |
+| [scale](#scale)                    | `number` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-registration-properties-scale.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/scale")                   |
+
+### source\_dataset
+
+Dataset that is registered
+
+`source_dataset`
+
+* is required
+
+* Type: `string` ([Source Dataset](metadata-schema-defs-registration-properties-source-dataset.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-registration-properties-source-dataset.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/source_dataset")
+
+#### source\_dataset Type
+
+`string` ([Source Dataset](metadata-schema-defs-registration-properties-source-dataset.md))
+
+### target\_dataset
+
+Dataset that source\_dataset is registered to.
+
+`target_dataset`
+
+* is required
+
+* Type: `string` ([Target Dataset](metadata-schema-defs-registration-properties-target-dataset.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-registration-properties-target-dataset.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/target_dataset")
+
+#### target\_dataset Type
+
+`string` ([Target Dataset](metadata-schema-defs-registration-properties-target-dataset.md))
+
+### translation
+
+Translation
+
+`translation`
+
+* is required
+
+* Type: `array` ([Translation](metadata-schema-defs-registration-properties-translation.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-registration-properties-translation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/translation")
+
+#### translation Type
+
+`array` ([Translation](metadata-schema-defs-registration-properties-translation.md))
+
+#### translation Constraints
+
+**maximum number of items**: the maximum number of items for this array is: `3`
+
+**minimum number of items**: the minimum number of items for this array is: `3`
+
+### rotation
+
+Rotation in degrees about z-axis
+
+`rotation`
+
+* is required
+
+* Type: `number` ([Rotation](metadata-schema-defs-registration-properties-rotation.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-registration-properties-rotation.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/rotation")
+
+#### rotation Type
+
+`number` ([Rotation](metadata-schema-defs-registration-properties-rotation.md))
+
+### scale
+
+Isotropic scaling factor
+
+`scale`
+
+* is required
+
+* Type: `number` ([Scale](metadata-schema-defs-registration-properties-scale.md))
+
+* cannot be null
+
+* defined in: [HOAMetadata](metadata-schema-defs-registration-properties-scale.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/Registration/properties/scale")
+
+#### scale Type
+
+`number` ([Scale](metadata-schema-defs-registration-properties-scale.md))
+
+## Definitions group ScanMetadata
+
+Reference this group by using
+
+```json
+{"$ref":"https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata"}
+```
+
+| Property                                                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                          |
+| :------------------------------------------------------ | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [dataset\_name](#dataset_name)                          | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-dataset-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/dataset_name")                         |
+| [date](#date)                                           | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-date.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/date")                                         |
+| [beamline](#beamline)                                   | `string` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-beamline.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/beamline")                                 |
+| [energy](#energy)                                       | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-energy.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/energy")                                     |
+| [current\_start](#current_start)                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-current-start.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/current_start")                       |
+| [filling\_mode](#filling_mode)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-filling-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/filling_mode")                         |
+| [n\_projections](#n_projections)                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-projections.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_projections")                       |
+| [n\_ref](#n_ref)                                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-ref.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_ref")                                       |
+| [n\_dark](#n_dark)                                      | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-dark.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_dark")                                     |
+| [latency\_time](#latency_time)                          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-latency-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/latency_time")                         |
+| [exposure\_time](#exposure_time)                        | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-exposure-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/exposure_time")                       |
+| [accumulation\_n\_frames](#accumulation_n_frames)       | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/accumulation_n_frames")       |
+| [scan\_type](#scan_type-1)                              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-type.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_type")                               |
+| [scan\_range](#scan_range)                              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-range.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_range")                             |
+| [n\_scans](#n_scans)                                    | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-scans.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_scans")                                   |
+| [acquisition](#acquisition)                             | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-acquisition.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/acquisition")                           |
+| [z\_step](#z_step)                                      | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-z-step.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/z_step")                                     |
+| [scan\_time](#scan_time)                                | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_time")                               |
+| [filters](#filters)                                     | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-filters.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/filters")                                   |
+| [scintillator](#scintillator)                           | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scintillator.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scintillator")                         |
+| [optic](#optic)                                         | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-optic.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/optic")                                       |
+| [distance\_sample\_detector](#distance_sample_detector) | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-distance-sample-detector.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/distance_sample_detector") |
+| [sensor\_name](#sensor_name)                            | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_name")                           |
+| [sensor\_mode](#sensor_mode)                            | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_mode")                           |
+| [sensor\_magnification](#sensor_magnification)          | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_magnification")         |
+| [sensor\_roi\_x\_size](#sensor_roi_x_size)              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_roi_x_size")               |
+| [sensor\_roi\_y\_size](#sensor_roi_y_size)              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_roi_y_size")               |
+| [pixel\_size](#pixel_size)                              | `number` | Required | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-pixel-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/pixel_size")                             |
+| [xray\_magnification](#xray_magnification)              | Merged   | Optional | cannot be null | [HOAMetadata](metadata-schema-defs-scanmetadata-properties-xray-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/xray_magnification")             |
 
 ### dataset\_name
 
@@ -645,15 +872,15 @@ Reference this group by using
 
 * is required
 
-* Type: `string` ([Dataset Name](metadata-schema-defs-publicscanmetadata-properties-dataset-name.md))
+* Type: `string` ([Dataset Name](metadata-schema-defs-scanmetadata-properties-dataset-name.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-dataset-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/dataset_name")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-dataset-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/dataset_name")
 
 #### dataset\_name Type
 
-`string` ([Dataset Name](metadata-schema-defs-publicscanmetadata-properties-dataset-name.md))
+`string` ([Dataset Name](metadata-schema-defs-scanmetadata-properties-dataset-name.md))
 
 ### date
 
@@ -661,23 +888,21 @@ Date when the scan was performed.
 
 `date`
 
-* is optional
+* is required
 
-* Type: merged type ([Date](metadata-schema-defs-publicscanmetadata-properties-date.md))
+* Type: `string` ([Date](metadata-schema-defs-scanmetadata-properties-date.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-date.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/date")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-date.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/date")
 
 #### date Type
 
-merged type ([Date](metadata-schema-defs-publicscanmetadata-properties-date.md))
+`string` ([Date](metadata-schema-defs-scanmetadata-properties-date.md))
 
-any of
+#### date Constraints
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-date-anyof-0.md "check type definition")
-
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-date-anyof-1.md "check type definition")
+**date**: the string must be a date string, according to [RFC 3339, section 5.6](https://tools.ietf.org/html/rfc3339 "check the specification")
 
 ### beamline
 
@@ -687,15 +912,15 @@ ESRF beamline where scan was performed.
 
 * is required
 
-* Type: `string` ([Beamline](metadata-schema-defs-publicscanmetadata-properties-beamline.md))
+* Type: `string` ([Beamline](metadata-schema-defs-scanmetadata-properties-beamline.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-beamline.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/beamline")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-beamline.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/beamline")
 
 #### beamline Type
 
-`string` ([Beamline](metadata-schema-defs-publicscanmetadata-properties-beamline.md))
+`string` ([Beamline](metadata-schema-defs-scanmetadata-properties-beamline.md))
 
 #### beamline Constraints
 
@@ -714,21 +939,21 @@ Energy used during the scan, measured in keV.
 
 * is optional
 
-* Type: merged type ([Energy](metadata-schema-defs-publicscanmetadata-properties-energy.md))
+* Type: merged type ([Energy](metadata-schema-defs-scanmetadata-properties-energy.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/energy")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-energy.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/energy")
 
 #### energy Type
 
-merged type ([Energy](metadata-schema-defs-publicscanmetadata-properties-energy.md))
+merged type ([Energy](metadata-schema-defs-scanmetadata-properties-energy.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-energy-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-energy-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-energy-anyof-1.md "check type definition")
 
 ### current\_start
 
@@ -738,21 +963,21 @@ Current of the synchrotron at the start of the scan, measured in mA.
 
 * is optional
 
-* Type: merged type ([Current Start](metadata-schema-defs-publicscanmetadata-properties-current-start.md))
+* Type: merged type ([Current Start](metadata-schema-defs-scanmetadata-properties-current-start.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-current-start.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/current_start")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-current-start.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/current_start")
 
 #### current\_start Type
 
-merged type ([Current Start](metadata-schema-defs-publicscanmetadata-properties-current-start.md))
+merged type ([Current Start](metadata-schema-defs-scanmetadata-properties-current-start.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-current-start-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-current-start-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-current-start-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-current-start-anyof-1.md "check type definition")
 
 ### filling\_mode
 
@@ -762,21 +987,21 @@ Mode of filling used in the synchrotron storage ring.
 
 * is optional
 
-* Type: merged type ([Filling Mode](metadata-schema-defs-publicscanmetadata-properties-filling-mode.md))
+* Type: merged type ([Filling Mode](metadata-schema-defs-scanmetadata-properties-filling-mode.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filling-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/filling_mode")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-filling-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/filling_mode")
 
 #### filling\_mode Type
 
-merged type ([Filling Mode](metadata-schema-defs-publicscanmetadata-properties-filling-mode.md))
+merged type ([Filling Mode](metadata-schema-defs-scanmetadata-properties-filling-mode.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filling-mode-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-filling-mode-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filling-mode-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-filling-mode-anyof-1.md "check type definition")
 
 ### n\_projections
 
@@ -786,21 +1011,21 @@ Number of projection images acquired during the scan.
 
 * is optional
 
-* Type: merged type ([N Projections](metadata-schema-defs-publicscanmetadata-properties-n-projections.md))
+* Type: merged type ([N Projections](metadata-schema-defs-scanmetadata-properties-n-projections.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-projections.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_projections")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-projections.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_projections")
 
 #### n\_projections Type
 
-merged type ([N Projections](metadata-schema-defs-publicscanmetadata-properties-n-projections.md))
+merged type ([N Projections](metadata-schema-defs-scanmetadata-properties-n-projections.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-projections-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-projections-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-projections-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-projections-anyof-1.md "check type definition")
 
 ### n\_ref
 
@@ -810,21 +1035,21 @@ Number of reference images collected during the scan.
 
 * is optional
 
-* Type: merged type ([N Ref](metadata-schema-defs-publicscanmetadata-properties-n-ref.md))
+* Type: merged type ([N Ref](metadata-schema-defs-scanmetadata-properties-n-ref.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-ref.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_ref")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-ref.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_ref")
 
 #### n\_ref Type
 
-merged type ([N Ref](metadata-schema-defs-publicscanmetadata-properties-n-ref.md))
+merged type ([N Ref](metadata-schema-defs-scanmetadata-properties-n-ref.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-ref-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-ref-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-ref-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-ref-anyof-1.md "check type definition")
 
 ### n\_dark
 
@@ -834,21 +1059,21 @@ Number of dark images (without illumination) collected during the scan.
 
 * is optional
 
-* Type: merged type ([N Dark](metadata-schema-defs-publicscanmetadata-properties-n-dark.md))
+* Type: merged type ([N Dark](metadata-schema-defs-scanmetadata-properties-n-dark.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-dark.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_dark")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-dark.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_dark")
 
 #### n\_dark Type
 
-merged type ([N Dark](metadata-schema-defs-publicscanmetadata-properties-n-dark.md))
+merged type ([N Dark](metadata-schema-defs-scanmetadata-properties-n-dark.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-dark-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-dark-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-dark-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-dark-anyof-1.md "check type definition")
 
 ### latency\_time
 
@@ -858,21 +1083,21 @@ Time delay between projections, measured in seconds.
 
 * is optional
 
-* Type: merged type ([Latency Time](metadata-schema-defs-publicscanmetadata-properties-latency-time.md))
+* Type: merged type ([Latency Time](metadata-schema-defs-scanmetadata-properties-latency-time.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-latency-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/latency_time")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-latency-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/latency_time")
 
 #### latency\_time Type
 
-merged type ([Latency Time](metadata-schema-defs-publicscanmetadata-properties-latency-time.md))
+merged type ([Latency Time](metadata-schema-defs-scanmetadata-properties-latency-time.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-latency-time-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-latency-time-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-latency-time-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-latency-time-anyof-1.md "check type definition")
 
 ### exposure\_time
 
@@ -882,21 +1107,21 @@ Exposure time of each frame, measured in seconds.
 
 * is optional
 
-* Type: merged type ([Exposure Time](metadata-schema-defs-publicscanmetadata-properties-exposure-time.md))
+* Type: merged type ([Exposure Time](metadata-schema-defs-scanmetadata-properties-exposure-time.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-exposure-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/exposure_time")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-exposure-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/exposure_time")
 
 #### exposure\_time Type
 
-merged type ([Exposure Time](metadata-schema-defs-publicscanmetadata-properties-exposure-time.md))
+merged type ([Exposure Time](metadata-schema-defs-scanmetadata-properties-exposure-time.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-exposure-time-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-exposure-time-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-exposure-time-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-exposure-time-anyof-1.md "check type definition")
 
 ### accumulation\_n\_frames
 
@@ -906,21 +1131,21 @@ Number of frames accumulated per exposure.
 
 * is optional
 
-* Type: merged type ([Accumulation N Frames](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames.md))
+* Type: merged type ([Accumulation N Frames](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/accumulation_n_frames")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/accumulation_n_frames")
 
 #### accumulation\_n\_frames Type
 
-merged type ([Accumulation N Frames](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames.md))
+merged type ([Accumulation N Frames](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-accumulation-n-frames-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-accumulation-n-frames-anyof-1.md "check type definition")
 
 ### scan\_type
 
@@ -930,21 +1155,21 @@ Type of scan.
 
 * is optional
 
-* Type: merged type ([Scan Type](metadata-schema-defs-publicscanmetadata-properties-scan-type.md))
+* Type: merged type ([Scan Type](metadata-schema-defs-scanmetadata-properties-scan-type.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_type")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-type.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_type")
 
 #### scan\_type Type
 
-merged type ([Scan Type](metadata-schema-defs-publicscanmetadata-properties-scan-type.md))
+merged type ([Scan Type](metadata-schema-defs-scanmetadata-properties-scan-type.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-type-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-type-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-type-anyof-1.md "check type definition")
 
 ### scan\_range
 
@@ -954,21 +1179,21 @@ Angular range of a single scan in degrees.
 
 * is optional
 
-* Type: merged type ([Scan Range](metadata-schema-defs-publicscanmetadata-properties-scan-range.md))
+* Type: merged type ([Scan Range](metadata-schema-defs-scanmetadata-properties-scan-range.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-range.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_range")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-range.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_range")
 
 #### scan\_range Type
 
-merged type ([Scan Range](metadata-schema-defs-publicscanmetadata-properties-scan-range.md))
+merged type ([Scan Range](metadata-schema-defs-scanmetadata-properties-scan-range.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-range-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-range-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-range-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-range-anyof-1.md "check type definition")
 
 ### n\_scans
 
@@ -978,21 +1203,21 @@ Total number of scans. For a helical scan this is always 1. For a zseries this i
 
 * is optional
 
-* Type: merged type ([N Scans](metadata-schema-defs-publicscanmetadata-properties-n-scans.md))
+* Type: merged type ([N Scans](metadata-schema-defs-scanmetadata-properties-n-scans.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-scans.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/n_scans")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-scans.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/n_scans")
 
 #### n\_scans Type
 
-merged type ([N Scans](metadata-schema-defs-publicscanmetadata-properties-n-scans.md))
+merged type ([N Scans](metadata-schema-defs-scanmetadata-properties-n-scans.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-scans-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-scans-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-n-scans-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-n-scans-anyof-1.md "check type definition")
 
 ### acquisition
 
@@ -1002,69 +1227,21 @@ Type of tomographic acquisition.
 
 * is optional
 
-* Type: merged type ([Acquisition](metadata-schema-defs-publicscanmetadata-properties-acquisition.md))
+* Type: merged type ([Acquisition](metadata-schema-defs-scanmetadata-properties-acquisition.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-acquisition.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/acquisition")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-acquisition.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/acquisition")
 
 #### acquisition Type
 
-merged type ([Acquisition](metadata-schema-defs-publicscanmetadata-properties-acquisition.md))
+merged type ([Acquisition](metadata-schema-defs-scanmetadata-properties-acquisition.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-acquisition-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-acquisition-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-acquisition-anyof-1.md "check type definition")
-
-### half\_acquisition\_value
-
-Value representing if the scan was taken in half-acquisition or not.
-
-`half_acquisition_value`
-
-* is optional
-
-* Type: merged type ([Half Acquisition Value](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value.md))
-
-* cannot be null
-
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/half_acquisition_value")
-
-#### half\_acquisition\_value Type
-
-merged type ([Half Acquisition Value](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value.md))
-
-any of
-
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value-anyof-0.md "check type definition")
-
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-half-acquisition-value-anyof-1.md "check type definition")
-
-### quarter\_acquisition\_value
-
-Value representing if the scan was taken in quarter-acquisition or not.
-
-`quarter_acquisition_value`
-
-* is optional
-
-* Type: merged type ([Quarter Acquisition Value](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value.md))
-
-* cannot be null
-
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/quarter_acquisition_value")
-
-#### quarter\_acquisition\_value Type
-
-merged type ([Quarter Acquisition Value](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value.md))
-
-any of
-
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value-anyof-0.md "check type definition")
-
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-quarter-acquisition-value-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-acquisition-anyof-1.md "check type definition")
 
 ### z\_step
 
@@ -1074,21 +1251,21 @@ Displacement in millimeters between scans.
 
 * is optional
 
-* Type: merged type ([Z Step](metadata-schema-defs-publicscanmetadata-properties-z-step.md))
+* Type: merged type ([Z Step](metadata-schema-defs-scanmetadata-properties-z-step.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-z-step.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/z_step")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-z-step.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/z_step")
 
 #### z\_step Type
 
-merged type ([Z Step](metadata-schema-defs-publicscanmetadata-properties-z-step.md))
+merged type ([Z Step](metadata-schema-defs-scanmetadata-properties-z-step.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-z-step-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-z-step-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-z-step-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-z-step-anyof-1.md "check type definition")
 
 ### scan\_time
 
@@ -1098,21 +1275,21 @@ Total duration of a single scan in seconds.
 
 * is optional
 
-* Type: merged type ([Scan Time](metadata-schema-defs-publicscanmetadata-properties-scan-time.md))
+* Type: merged type ([Scan Time](metadata-schema-defs-scanmetadata-properties-scan-time.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scan_time")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-time.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scan_time")
 
 #### scan\_time Type
 
-merged type ([Scan Time](metadata-schema-defs-publicscanmetadata-properties-scan-time.md))
+merged type ([Scan Time](metadata-schema-defs-scanmetadata-properties-scan-time.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-time-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scan-time-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scan-time-anyof-1.md "check type definition")
 
 ### filters
 
@@ -1122,21 +1299,21 @@ List of filters used during the scan.
 
 * is optional
 
-* Type: merged type ([Filters](metadata-schema-defs-publicscanmetadata-properties-filters.md))
+* Type: merged type ([Filters](metadata-schema-defs-scanmetadata-properties-filters.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/filters")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-filters.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/filters")
 
 #### filters Type
 
-merged type ([Filters](metadata-schema-defs-publicscanmetadata-properties-filters.md))
+merged type ([Filters](metadata-schema-defs-scanmetadata-properties-filters.md))
 
 any of
 
-* [Untitled array in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-0.md "check type definition")
+* [Untitled array in HOAMetadata](metadata-schema-defs-scanmetadata-properties-filters-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-filters-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-filters-anyof-1.md "check type definition")
 
 ### scintillator
 
@@ -1146,21 +1323,21 @@ Scintillator used for converting X-rays to visible light.
 
 * is optional
 
-* Type: merged type ([Scintillator](metadata-schema-defs-publicscanmetadata-properties-scintillator.md))
+* Type: merged type ([Scintillator](metadata-schema-defs-scanmetadata-properties-scintillator.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/scintillator")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-scintillator.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/scintillator")
 
 #### scintillator Type
 
-merged type ([Scintillator](metadata-schema-defs-publicscanmetadata-properties-scintillator.md))
+merged type ([Scintillator](metadata-schema-defs-scanmetadata-properties-scintillator.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scintillator-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-scintillator-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-scintillator-anyof-1.md "check type definition")
 
 ### optic
 
@@ -1170,21 +1347,21 @@ Optical components used during the scan
 
 * is optional
 
-* Type: merged type ([Optic](metadata-schema-defs-publicscanmetadata-properties-optic.md))
+* Type: merged type ([Optic](metadata-schema-defs-scanmetadata-properties-optic.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-optic.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/optic")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-optic.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/optic")
 
 #### optic Type
 
-merged type ([Optic](metadata-schema-defs-publicscanmetadata-properties-optic.md))
+merged type ([Optic](metadata-schema-defs-scanmetadata-properties-optic.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-optic-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-optic-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-optic-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-optic-anyof-1.md "check type definition")
 
 ### distance\_sample\_detector
 
@@ -1194,21 +1371,21 @@ Distance between the sample and the detector, measured in millimeters.
 
 * is optional
 
-* Type: merged type ([Distance Sample Detector](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector.md))
+* Type: merged type ([Distance Sample Detector](metadata-schema-defs-scanmetadata-properties-distance-sample-detector.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/distance_sample_detector")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-distance-sample-detector.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/distance_sample_detector")
 
 #### distance\_sample\_detector Type
 
-merged type ([Distance Sample Detector](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector.md))
+merged type ([Distance Sample Detector](metadata-schema-defs-scanmetadata-properties-distance-sample-detector.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-distance-sample-detector-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-distance-sample-detector-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-distance-sample-detector-anyof-1.md "check type definition")
 
 ### sensor\_name
 
@@ -1218,21 +1395,21 @@ Name of the sensor used during the scan.
 
 * is optional
 
-* Type: merged type ([Sensor Name](metadata-schema-defs-publicscanmetadata-properties-sensor-name.md))
+* Type: merged type ([Sensor Name](metadata-schema-defs-scanmetadata-properties-sensor-name.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_name")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-name.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_name")
 
 #### sensor\_name Type
 
-merged type ([Sensor Name](metadata-schema-defs-publicscanmetadata-properties-sensor-name.md))
+merged type ([Sensor Name](metadata-schema-defs-scanmetadata-properties-sensor-name.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-name-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-name-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-name-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-name-anyof-1.md "check type definition")
 
 ### sensor\_mode
 
@@ -1242,21 +1419,21 @@ Operating mode of the sensor during the scan.
 
 * is optional
 
-* Type: merged type ([Sensor Mode](metadata-schema-defs-publicscanmetadata-properties-sensor-mode.md))
+* Type: merged type ([Sensor Mode](metadata-schema-defs-scanmetadata-properties-sensor-mode.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_mode")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-mode.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_mode")
 
 #### sensor\_mode Type
 
-merged type ([Sensor Mode](metadata-schema-defs-publicscanmetadata-properties-sensor-mode.md))
+merged type ([Sensor Mode](metadata-schema-defs-scanmetadata-properties-sensor-mode.md))
 
 any of
 
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-0.md "check type definition")
+* [Untitled string in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-mode-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-mode-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-mode-anyof-1.md "check type definition")
 
 ### sensor\_magnification
 
@@ -1266,21 +1443,21 @@ Magnification in the sensor setup.
 
 * is optional
 
-* Type: merged type ([Sensor Magnification](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification.md))
+* Type: merged type ([Sensor Magnification](metadata-schema-defs-scanmetadata-properties-sensor-magnification.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_magnification")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_magnification")
 
 #### sensor\_magnification Type
 
-merged type ([Sensor Magnification](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification.md))
+merged type ([Sensor Magnification](metadata-schema-defs-scanmetadata-properties-sensor-magnification.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-magnification-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-magnification-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-magnification-anyof-1.md "check type definition")
 
 ### sensor\_roi\_x\_size
 
@@ -1290,21 +1467,21 @@ Number of pixels in the x-dimension of the sensor's region of interest (ROI).
 
 * is optional
 
-* Type: merged type ([Sensor Roi X Size](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size.md))
+* Type: merged type ([Sensor Roi X Size](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_x_size")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_roi_x_size")
 
 #### sensor\_roi\_x\_size Type
 
-merged type ([Sensor Roi X Size](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size.md))
+merged type ([Sensor Roi X Size](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-x-size-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-x-size-anyof-1.md "check type definition")
 
 ### sensor\_roi\_y\_size
 
@@ -1314,21 +1491,21 @@ Number of pixels in the y-dimension of the sensor's region of interest (ROI).
 
 * is optional
 
-* Type: merged type ([Sensor Roi Y Size](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size.md))
+* Type: merged type ([Sensor Roi Y Size](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/sensor_roi_y_size")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/sensor_roi_y_size")
 
 #### sensor\_roi\_y\_size Type
 
-merged type ([Sensor Roi Y Size](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size.md))
+merged type ([Sensor Roi Y Size](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size.md))
 
 any of
 
-* [Untitled integer in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size-anyof-0.md "check type definition")
+* [Untitled integer in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-sensor-roi-y-size-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-sensor-roi-y-size-anyof-1.md "check type definition")
 
 ### pixel\_size
 
@@ -1336,23 +1513,21 @@ Size of a pixel at the source, measured in micrometers.
 
 `pixel_size`
 
-* is optional
+* is required
 
-* Type: merged type ([Pixel Size](metadata-schema-defs-publicscanmetadata-properties-pixel-size.md))
+* Type: `number` ([Pixel Size](metadata-schema-defs-scanmetadata-properties-pixel-size.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-pixel-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/pixel_size")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-pixel-size.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/pixel_size")
 
 #### pixel\_size Type
 
-merged type ([Pixel Size](metadata-schema-defs-publicscanmetadata-properties-pixel-size.md))
+`number` ([Pixel Size](metadata-schema-defs-scanmetadata-properties-pixel-size.md))
 
-any of
+#### pixel\_size Constraints
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-pixel-size-anyof-0.md "check type definition")
-
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-pixel-size-anyof-1.md "check type definition")
+**minimum (exclusive)**: the value of this number must be greater than: `0`
 
 ### xray\_magnification
 
@@ -1362,42 +1537,18 @@ Magnification of X-rays due to divergence between the source and detector.
 
 * is optional
 
-* Type: merged type ([Xray Magnification](metadata-schema-defs-publicscanmetadata-properties-xray-magnification.md))
+* Type: merged type ([Xray Magnification](metadata-schema-defs-scanmetadata-properties-xray-magnification.md))
 
 * cannot be null
 
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/xray_magnification")
+* defined in: [HOAMetadata](metadata-schema-defs-scanmetadata-properties-xray-magnification.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/ScanMetadata/properties/xray_magnification")
 
 #### xray\_magnification Type
 
-merged type ([Xray Magnification](metadata-schema-defs-publicscanmetadata-properties-xray-magnification.md))
+merged type ([Xray Magnification](metadata-schema-defs-scanmetadata-properties-xray-magnification.md))
 
 any of
 
-* [Untitled number in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-0.md "check type definition")
+* [Untitled number in HOAMetadata](metadata-schema-defs-scanmetadata-properties-xray-magnification-anyof-0.md "check type definition")
 
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-xray-magnification-anyof-1.md "check type definition")
-
-### proposal
-
-ID of the ESRF proposal under which the scan was performed.
-
-`proposal`
-
-* is optional
-
-* Type: merged type ([Proposal](metadata-schema-defs-publicscanmetadata-properties-proposal.md))
-
-* cannot be null
-
-* defined in: [HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal.md "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json#/$defs/PublicScanMetadata/properties/proposal")
-
-#### proposal Type
-
-merged type ([Proposal](metadata-schema-defs-publicscanmetadata-properties-proposal.md))
-
-any of
-
-* [Untitled string in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-0.md "check type definition")
-
-* [Untitled null in HOAMetadata](metadata-schema-defs-publicscanmetadata-properties-proposal-anyof-1.md "check type definition")
+* [Untitled null in HOAMetadata](metadata-schema-defs-scanmetadata-properties-xray-magnification-anyof-1.md "check type definition")
