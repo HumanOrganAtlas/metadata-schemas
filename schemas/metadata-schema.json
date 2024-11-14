@@ -1,6 +1,39 @@
 {
   "$id": "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json",
   "$defs": {
+    "Citation": {
+      "description": "Dataset citation.",
+      "properties": {
+        "title": {
+          "description": "Citation title.",
+          "title": "Title",
+          "type": "string"
+        },
+        "authors": {
+          "description": "Dataset authors.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Authors",
+          "type": "array"
+        },
+        "doi": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Dataset DOI.",
+          "title": "Doi"
+        }
+      },
+      "required": ["title", "authors", "doi"],
+      "title": "Citation",
+      "type": "object"
+    },
     "Donor": {
       "additionalProperties": false,
       "description": "Donor data model.",
@@ -181,25 +214,69 @@
       "title": "Proposal",
       "type": "object"
     },
-    "PublicScanMetadata": {
+    "Registration": {
+      "description": "A set of registration parameters mapping array coordinates in\nsource_dataset to target_dataset.\n\nThe transform is specified as\n1. a rotation anticlockwise about the z-axis\n2. A isotropic scaling\n3. A translation",
+      "properties": {
+        "source_dataset": {
+          "description": "Dataset that is registered",
+          "title": "Source Dataset",
+          "type": "string"
+        },
+        "target_dataset": {
+          "description": "Dataset that source_dataset is registered to.",
+          "title": "Target Dataset",
+          "type": "string"
+        },
+        "translation": {
+          "description": "Translation",
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Translation",
+          "type": "array"
+        },
+        "rotation": {
+          "description": "Rotation in degrees about z-axis",
+          "title": "Rotation",
+          "type": "number"
+        },
+        "scale": {
+          "description": "Isotropic scaling factor",
+          "title": "Scale",
+          "type": "number"
+        }
+      },
+      "required": [
+        "source_dataset",
+        "target_dataset",
+        "translation",
+        "rotation",
+        "scale"
+      ],
+      "title": "Registration",
+      "type": "object"
+    },
+    "ScanMetadata": {
       "properties": {
         "dataset_name": {
           "title": "Dataset Name",
           "type": "string"
         },
         "date": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
           "description": "Date when the scan was performed.",
-          "title": "Date"
+          "format": "date",
+          "title": "Date",
+          "type": "string"
         },
         "beamline": {
           "description": "ESRF beamline where scan was performed.",
@@ -395,32 +472,6 @@
           "description": "Type of tomographic acquisition.",
           "title": "Acquisition"
         },
-        "half_acquisition_value": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "description": "Value representing if the scan was taken in half-acquisition or not.",
-          "title": "Half Acquisition Value"
-        },
-        "quarter_acquisition_value": {
-          "anyOf": [
-            {
-              "type": "integer"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "description": "Value representing if the scan was taken in quarter-acquisition or not.",
-          "title": "Quarter Acquisition Value"
-        },
         "z_step": {
           "anyOf": [
             {
@@ -478,6 +529,7 @@
                 "LuAG:Ce 250um",
                 "LuAG:Ce 25um",
                 "LuAG:Ce 50um",
+                "LuAG:Ce 50um, reflective",
                 "LuAG:Ce 500um",
                 "LySO:Ce 8.5um",
                 "LySO:Ce 23um",
@@ -505,6 +557,7 @@
                 "LAFIP2 optic with canon 50mm",
                 "Fixed x1",
                 "Fixed x0.125",
+                "Fixed x0.1",
                 "Twinmic 5",
                 "Twinmic 10",
                 "Twinmic 20"
@@ -604,18 +657,10 @@
           "title": "Sensor Roi Y Size"
         },
         "pixel_size": {
-          "anyOf": [
-            {
-              "exclusiveMinimum": 0.0,
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
           "description": "Size of a pixel at the source, measured in micrometers.",
-          "title": "Pixel Size"
+          "exclusiveMinimum": 0.0,
+          "title": "Pixel Size",
+          "type": "number"
         },
         "xray_magnification": {
           "anyOf": [
@@ -630,24 +675,10 @@
           "default": null,
           "description": "Magnification of X-rays due to divergence between the source and detector.",
           "title": "Xray Magnification"
-        },
-        "proposal": {
-          "anyOf": [
-            {
-              "enum": ["md1252", "md1290", "md1389"],
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "description": "ID of the ESRF proposal under which the scan was performed.",
-          "title": "Proposal"
         }
       },
-      "required": ["dataset_name", "beamline"],
-      "title": "PublicScanMetadata",
+      "required": ["dataset_name", "date", "beamline", "pixel_size"],
+      "title": "ScanMetadata",
       "type": "object"
     }
   },
@@ -713,12 +744,27 @@
       "description": "Donor."
     },
     "scan": {
-      "$ref": "#/$defs/PublicScanMetadata",
+      "$ref": "#/$defs/ScanMetadata",
       "description": "Scan metadata"
     },
     "proposal": {
       "$ref": "#/$defs/Proposal",
       "description": "Proposal information"
+    },
+    "registration": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Registration"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Registration parameters"
+    },
+    "citation": {
+      "$ref": "#/$defs/Citation",
+      "description": "Dataset citation"
     }
   },
   "required": [
@@ -731,7 +777,9 @@
     "shape",
     "donor",
     "scan",
-    "proposal"
+    "proposal",
+    "registration",
+    "citation"
   ],
   "title": "HOAMetadata",
   "type": "object"
