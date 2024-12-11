@@ -1,5 +1,4 @@
 {
-  "$id": "https://github.com/HumanOrganAtlas/metadata-schemas/schemas/metadata-schemas.json",
   "$defs": {
     "Citation": {
       "description": "Dataset citation.",
@@ -144,7 +143,7 @@
         "diabetes": {
           "anyOf": [
             {
-              "enum": ["Type 2", "No"],
+              "enum": ["Type 2", "No", "Yes"],
               "type": "string"
             },
             {
@@ -172,8 +171,7 @@
         "smoker": {
           "anyOf": [
             {
-              "const": "Never",
-              "enum": ["Never"],
+              "enum": ["Never", "Yes"],
               "type": "string"
             },
             {
@@ -417,32 +415,16 @@
           "title": "Accumulation N Frames"
         },
         "scan_type": {
-          "anyOf": [
-            {
-              "enum": ["helical", "zseries"],
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
           "description": "Type of scan.",
-          "title": "Scan Type"
+          "enum": ["helical", "zseries"],
+          "title": "Scan Type",
+          "type": "string"
         },
         "scan_range": {
-          "anyOf": [
-            {
-              "exclusiveMinimum": 0.0,
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
           "description": "Angular range of a single scan in degrees.",
-          "title": "Scan Range"
+          "exclusiveMinimum": 0.0,
+          "title": "Scan Range",
+          "type": "number"
         },
         "n_scans": {
           "anyOf": [
@@ -677,7 +659,14 @@
           "title": "Xray Magnification"
         }
       },
-      "required": ["dataset_name", "date", "beamline", "pixel_size"],
+      "required": [
+        "dataset_name",
+        "date",
+        "beamline",
+        "scan_type",
+        "scan_range",
+        "pixel_size"
+      ],
       "title": "ScanMetadata",
       "type": "object"
     }
@@ -694,6 +683,11 @@
       "title": "Organ",
       "type": "string"
     },
+    "scan_type": {
+      "enum": ["overview", "zoom"],
+      "title": "Scan Type",
+      "type": "string"
+    },
     "organ_context": {
       "anyOf": [
         {
@@ -706,14 +700,23 @@
       "description": "Context for location of the dataset within the whole organ.",
       "title": "Organ Context"
     },
-    "scan_type": {
-      "enum": ["overview", "zoom"],
-      "title": "Scan Type",
-      "type": "string"
-    },
     "roi": {
       "description": "Region of interest name for dataset.",
       "title": "Roi",
+      "type": "string"
+    },
+    "experiment_type": {
+      "const": "Tomography",
+      "default": "Tomography",
+      "enum": ["Tomography"],
+      "title": "Experiment Type",
+      "type": "string"
+    },
+    "technique": {
+      "const": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+      "default": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+      "enum": ["Hierarchical Phase-Contrast Tomography (HiP-CT)"],
+      "title": "Technique",
       "type": "string"
     },
     "resolution_um": {
@@ -770,8 +773,8 @@
   "required": [
     "name",
     "organ",
-    "organ_context",
     "scan_type",
+    "organ_context",
     "roi",
     "resolution_um",
     "shape",
