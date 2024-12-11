@@ -11,4 +11,4 @@ The actual metadata are stored in two locations:
 
 ## Schema docs
 
-A markdown (human readable) version of the schema can be viewed at [`markdwon/README.md`](./markdown/README.md).
+A human readable version of the metadata schema can be viewed at ...
