@@ -11,4 +11,4 @@ The actual metadata are stored in two locations:
 
 ## Schema docs
 
-A human readable version of the metadata schema can be viewed at ...
+A human readable version of the metadata schema can be viewed at https://humanorganatlas.github.io/metadata-schemas/.
