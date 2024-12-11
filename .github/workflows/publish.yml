@@ -41,6 +41,7 @@ jobs:
         run: |
           mkdir _static
           generate-schema-doc metadata-schema.json _static/index.html
+          ls _static
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
