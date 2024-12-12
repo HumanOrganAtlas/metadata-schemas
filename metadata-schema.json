@@ -38,6 +38,7 @@
       "description": "Donor data model.",
       "properties": {
         "id": {
+          "description": "Donor ID",
           "title": "Id",
           "type": "string"
         },
@@ -56,7 +57,7 @@
             }
           ],
           "default": null,
-          "description": "Age at death.",
+          "description": "Age in years at death.",
           "title": "Age"
         },
         "sex": {
@@ -110,8 +111,7 @@
             }
           ],
           "default": null,
-          "description": "Cause of death.",
-          "title": "Cause Of Death"
+          "title": "Cause of death"
         },
         "date_of_death": {
           "anyOf": [
@@ -124,8 +124,7 @@
             }
           ],
           "default": null,
-          "description": "Date of death.",
-          "title": "Date Of Death"
+          "title": "Date of death"
         },
         "medical_history": {
           "anyOf": [
@@ -137,8 +136,7 @@
             }
           ],
           "default": null,
-          "description": "Medical history.",
-          "title": "Medical History"
+          "title": "Medical history"
         },
         "diabetes": {
           "anyOf": [
@@ -151,8 +149,7 @@
             }
           ],
           "default": null,
-          "description": "Diabetes history.",
-          "title": "Diabetes"
+          "title": "Diabetes history"
         },
         "hypertension": {
           "anyOf": [
@@ -165,8 +162,7 @@
             }
           ],
           "default": null,
-          "description": "Hypertension history.",
-          "title": "Hypertension"
+          "title": "Hypertension history"
         },
         "smoker": {
           "anyOf": [
@@ -179,8 +175,7 @@
             }
           ],
           "default": null,
-          "description": "Smoking history.",
-          "title": "Smoker"
+          "title": "Smoking history"
         }
       },
       "required": ["id"],
@@ -213,7 +208,7 @@
       "type": "object"
     },
     "Registration": {
-      "description": "A set of registration parameters mapping array coordinates in\nsource_dataset to target_dataset.\n\nThe transform is specified as\n1. a rotation anticlockwise about the z-axis\n2. A isotropic scaling\n3. A translation",
+      "description": "A set of registration parameters mapping array coordinates from\n'source_datase' to 'target_dataset'.\n\nThe transform is specified as (in order):\n\n1. Rotation anticlockwise about the z-axis\n2. Isotropic scaling\n3. Translation",
       "properties": {
         "source_dataset": {
           "description": "Dataset that is registered",
@@ -226,7 +221,6 @@
           "type": "string"
         },
         "translation": {
-          "description": "Translation",
           "maxItems": 3,
           "minItems": 3,
           "prefixItems": [
@@ -507,6 +501,7 @@
                 "LuAG:Ce 100um, lead glass meniscus",
                 "LuAG:Ce 2000um",
                 "LuAG:Ce 2000um, reflective",
+                "Multi LuAG:Ce 2000um, reflective",
                 "LuAG:Ce 200um",
                 "LuAG:Ce 250um",
                 "LuAG:Ce 25um",
@@ -540,6 +535,7 @@
                 "Fixed x1",
                 "Fixed x0.125",
                 "Fixed x0.1",
+                "Fixed x2.85",
                 "Twinmic 5",
                 "Twinmic 10",
                 "Twinmic 20"
@@ -678,14 +674,14 @@
       "type": "string"
     },
     "organ": {
-      "description": "Organ name",
+      "description": "Organ name.",
       "enum": ["heart", "kidney", "lung", "brain", "spleen"],
       "title": "Organ",
       "type": "string"
     },
-    "scan_type": {
+    "scan_context": {
       "enum": ["overview", "zoom"],
-      "title": "Scan Type",
+      "title": "Scan Context",
       "type": "string"
     },
     "organ_context": {
@@ -697,35 +693,31 @@
           "type": "null"
         }
       ],
-      "description": "Context for location of the dataset within the whole organ.",
+      "description": "Context for location of the dataset within the whole organ. Only present for some zoom datasets.",
       "title": "Organ Context"
     },
     "roi": {
-      "description": "Region of interest name for dataset.",
-      "title": "Roi",
+      "description": "Region of interest name.This is an arbitrary string that is unique within datasets taken from a given organ from a given donor.",
+      "title": "Region of Interest",
       "type": "string"
     },
     "experiment_type": {
       "const": "Tomography",
-      "default": "Tomography",
-      "enum": ["Tomography"],
       "title": "Experiment Type",
       "type": "string"
     },
     "technique": {
       "const": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
-      "default": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
-      "enum": ["Hierarchical Phase-Contrast Tomography (HiP-CT)"],
-      "title": "Technique",
+      "title": "Experimental technique.",
       "type": "string"
     },
-    "resolution_um": {
+    "voxel_size_um": {
       "description": "Isotropic voxel size in micrometers.",
-      "title": "Resolution Um",
+      "title": "Voxel size",
       "type": "number"
     },
     "shape": {
-      "description": "Shape of dataset",
+      "description": "Shape of dataset.",
       "maxItems": 3,
       "minItems": 3,
       "prefixItems": [
@@ -744,15 +736,15 @@
     },
     "donor": {
       "$ref": "#/$defs/Donor",
-      "description": "Donor."
+      "title": "Donor metadata"
     },
     "scan": {
       "$ref": "#/$defs/ScanMetadata",
-      "description": "Scan metadata"
+      "title": "Scan metadata"
     },
     "proposal": {
       "$ref": "#/$defs/Proposal",
-      "description": "Proposal information"
+      "title": "Beamtime proposal metadata"
     },
     "registration": {
       "anyOf": [
@@ -763,20 +755,23 @@
           "type": "null"
         }
       ],
-      "description": "Registration parameters"
+      "description": "Metadata mapping high resolution volume of interest datasets to a full organ dataset. Not present for full organ datasets.",
+      "title": "Registration parameters"
     },
     "citation": {
       "$ref": "#/$defs/Citation",
-      "description": "Dataset citation"
+      "title": "Dataset citation"
     }
   },
   "required": [
     "name",
     "organ",
-    "scan_type",
+    "scan_context",
     "organ_context",
     "roi",
-    "resolution_um",
+    "experiment_type",
+    "technique",
+    "voxel_size_um",
     "shape",
     "donor",
     "scan",
