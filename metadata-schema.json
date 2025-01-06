@@ -33,6 +33,37 @@
       "title": "Citation",
       "type": "object"
     },
+    "Data": {
+      "description": "Data metadata.",
+      "properties": {
+        "shape": {
+          "description": "Shape of dataset.",
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "title": "Shape",
+          "type": "array"
+        },
+        "voxel_size_um": {
+          "description": "Isotropic voxel size in micrometers.",
+          "title": "Voxel size",
+          "type": "number"
+        }
+      },
+      "required": ["shape", "voxel_size_um"],
+      "title": "Data",
+      "type": "object"
+    },
     "Donor": {
       "additionalProperties": false,
       "description": "Donor data model.",
@@ -186,6 +217,7 @@
       "properties": {
         "proposal_number": {
           "description": "Proposal number.",
+          "enum": ["md1252", "md1290", "md1389"],
           "title": "Proposal Number",
           "type": "string"
         },
@@ -258,12 +290,130 @@
       "title": "Registration",
       "type": "object"
     },
-    "ScanMetadata": {
+    "Sample": {
       "properties": {
-        "dataset_name": {
-          "title": "Dataset Name",
+        "organ": {
+          "description": "Organ name.",
+          "enum": ["heart", "kidney", "lung", "brain", "spleen"],
+          "title": "Organ",
           "type": "string"
         },
+        "organ_context": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Context for location of the dataset within the whole organ. Only present for some zoom datasets.",
+          "title": "Organ Context"
+        },
+        "preparation": {
+          "default": null,
+          "title": "Sample preparation",
+          "type": "null"
+        },
+        "medium": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Mounting medium",
+          "title": "Medium"
+        },
+        "solvent": {
+          "anyOf": [
+            {
+              "enum": ["formalin", "ethanol"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Medium solvent",
+          "title": "Solvent"
+        },
+        "solvent_concentration": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Solvent concentration in percent.",
+          "title": "Solvent Concentration"
+        },
+        "temperature": {
+          "anyOf": [
+            {
+              "const": "room temperature",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Temperature during scan",
+          "title": "Temperature"
+        },
+        "degassing_method": {
+          "anyOf": [
+            {
+              "enum": ["inline", "vacuum"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Degassing Method"
+        },
+        "stabilisation_medium": {
+          "anyOf": [
+            {
+              "enum": ["agar_cubes", "agar_crushed", "beads"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stabilisation Medium"
+        },
+        "organ_infilled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organ Infilled"
+        }
+      },
+      "required": ["organ", "organ_context"],
+      "title": "Sample",
+      "type": "object"
+    },
+    "Scan": {
+      "properties": {
         "date": {
           "description": "Date when the scan was performed.",
           "format": "date",
@@ -536,6 +686,7 @@
                 "Fixed x0.125",
                 "Fixed x0.1",
                 "Fixed x2.85",
+                "Fixed x10",
                 "Twinmic 5",
                 "Twinmic 10",
                 "Twinmic 20"
@@ -653,30 +804,29 @@
           "default": null,
           "description": "Magnification of X-rays due to divergence between the source and detector.",
           "title": "Xray Magnification"
+        },
+        "technique": {
+          "const": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+          "default": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+          "title": "Experimental technique.",
+          "type": "string"
+        },
+        "experiment_type": {
+          "default": "Tomography",
+          "title": "Experiment Type",
+          "type": "string"
         }
       },
-      "required": [
-        "dataset_name",
-        "date",
-        "beamline",
-        "scan_type",
-        "scan_range",
-        "pixel_size"
-      ],
-      "title": "ScanMetadata",
+      "required": ["date", "beamline", "scan_type", "scan_range", "pixel_size"],
+      "title": "Scan",
       "type": "object"
     }
   },
+  "additionalProperties": false,
   "properties": {
     "name": {
       "description": "Unique name for dataset.",
       "title": "Name",
-      "type": "string"
-    },
-    "organ": {
-      "description": "Organ name.",
-      "enum": ["heart", "kidney", "lung", "brain", "spleen"],
-      "title": "Organ",
       "type": "string"
     },
     "scan_context": {
@@ -684,62 +834,25 @@
       "title": "Scan Context",
       "type": "string"
     },
-    "organ_context": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "null"
-        }
-      ],
-      "description": "Context for location of the dataset within the whole organ. Only present for some zoom datasets.",
-      "title": "Organ Context"
-    },
     "roi": {
       "description": "Region of interest name.This is an arbitrary string that is unique within datasets taken from a given organ from a given donor.",
       "title": "Region of Interest",
       "type": "string"
     },
-    "experiment_type": {
-      "const": "Tomography",
-      "title": "Experiment Type",
-      "type": "string"
+    "data": {
+      "$ref": "#/$defs/Data",
+      "title": "Data metadata"
     },
-    "technique": {
-      "const": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
-      "title": "Experimental technique.",
-      "type": "string"
-    },
-    "voxel_size_um": {
-      "description": "Isotropic voxel size in micrometers.",
-      "title": "Voxel size",
-      "type": "number"
-    },
-    "shape": {
-      "description": "Shape of dataset.",
-      "maxItems": 3,
-      "minItems": 3,
-      "prefixItems": [
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        },
-        {
-          "type": "integer"
-        }
-      ],
-      "title": "Shape",
-      "type": "array"
+    "sample": {
+      "$ref": "#/$defs/Sample",
+      "title": "Sample metadata"
     },
     "donor": {
       "$ref": "#/$defs/Donor",
       "title": "Donor metadata"
     },
     "scan": {
-      "$ref": "#/$defs/ScanMetadata",
+      "$ref": "#/$defs/Scan",
       "title": "Scan metadata"
     },
     "proposal": {
@@ -765,14 +878,10 @@
   },
   "required": [
     "name",
-    "organ",
     "scan_context",
-    "organ_context",
     "roi",
-    "experiment_type",
-    "technique",
-    "voxel_size_um",
-    "shape",
+    "data",
+    "sample",
     "donor",
     "scan",
     "proposal",
