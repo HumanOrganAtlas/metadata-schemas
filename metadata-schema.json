@@ -4,16 +4,16 @@
       "description": "Dataset citation.",
       "properties": {
         "title": {
-          "description": "Citation title.",
+          "description": "Citation title",
           "title": "Title",
           "type": "string"
         },
-        "authors": {
-          "description": "Dataset authors.",
+        "contributors": {
+          "description": "Dataset contributors, listed alphabetically by name.",
           "items": {
-            "type": "string"
+            "$ref": "#/$defs/Contributor"
           },
-          "title": "Authors",
+          "title": "Contributors",
           "type": "array"
         },
         "doi": {
@@ -25,12 +25,56 @@
               "type": "null"
             }
           ],
-          "description": "Dataset DOI.",
+          "description": "Dataset DOI",
           "title": "Doi"
+        },
+        "author_list": {
+          "description": "Author list. If citing this data, please use this authorship list in the order given",
+          "items": {
+            "type": "string"
+          },
+          "readOnly": true,
+          "title": "Author List",
+          "type": "array"
         }
       },
-      "required": ["title", "authors", "doi"],
+      "required": ["title", "contributors", "doi", "author_list"],
       "title": "Citation",
+      "type": "object"
+    },
+    "Contributor": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "roles": {
+          "description": "Contributor role(s), following the Contributor Role Taxonomy (CReditT)",
+          "items": {
+            "enum": [
+              "Conceptualization",
+              "Data curation",
+              "Formal analysis",
+              "Funding acquisition",
+              "Investigation",
+              "Methodology",
+              "Project administration",
+              "Resources",
+              "Software",
+              "Supervision",
+              "Validation",
+              "Vlisualization",
+              "Writing - original draft",
+              "Writing - review & editing"
+            ],
+            "type": "string"
+          },
+          "title": "Roles",
+          "type": "array"
+        }
+      },
+      "required": ["name", "roles"],
+      "title": "Contributor",
       "type": "object"
     },
     "Data": {
@@ -310,14 +354,23 @@
           "description": "Context for location of the dataset within the whole organ. Only present for some zoom datasets.",
           "title": "Organ Context"
         },
-        "preparation": {
-          "default": null,
-          "title": "Sample preparation",
-          "type": "null"
-        },
-        "medium": {
+        "post_mortem_interval_hours": {
           "anyOf": [
             {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval between death and fixation, in hours."
+        },
+        "fixation_method": {
+          "anyOf": [
+            {
+              "enum": ["immersion", "perfusion"],
               "type": "string"
             },
             {
@@ -325,10 +378,65 @@
             }
           ],
           "default": null,
-          "description": "Mounting medium",
-          "title": "Medium"
+          "title": "Fixation preparation method."
         },
-        "solvent": {
+        "fixation_medium": {
+          "anyOf": [
+            {
+              "const": "formalin",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Fixation medium",
+          "title": "Fixation Medium"
+        },
+        "organ_infilled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "const": "n/a",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organ Infilled"
+        },
+        "stabilisation_medium": {
+          "anyOf": [
+            {
+              "enum": ["agar cubes", "crushed agar", "beads"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stabilisation Medium"
+        },
+        "degassing_method": {
+          "anyOf": [
+            {
+              "enum": ["inline", "vacuum", "vacuum+inline"],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Degassing Method"
+        },
+        "scan_solvent": {
           "anyOf": [
             {
               "enum": ["formalin", "ethanol"],
@@ -340,9 +448,9 @@
           ],
           "default": null,
           "description": "Medium solvent",
-          "title": "Solvent"
+          "title": "Scan Solvent"
         },
-        "solvent_concentration": {
+        "scan_solvent_concentration": {
           "anyOf": [
             {
               "type": "number"
@@ -353,59 +461,24 @@
           ],
           "default": null,
           "description": "Solvent concentration in percent.",
-          "title": "Solvent Concentration"
+          "title": "Scan Solvent Concentration"
         },
-        "temperature": {
+        "scan_temperature": {
           "anyOf": [
             {
               "const": "room temperature",
               "type": "string"
             },
             {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "description": "Temperature during scan",
-          "title": "Temperature"
-        },
-        "degassing_method": {
-          "anyOf": [
-            {
-              "enum": ["inline", "vacuum"],
-              "type": "string"
+              "type": "number"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "title": "Degassing Method"
-        },
-        "stabilisation_medium": {
-          "anyOf": [
-            {
-              "enum": ["agar_cubes", "agar_crushed", "beads"],
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Stabilisation Medium"
-        },
-        "organ_infilled": {
-          "anyOf": [
-            {
-              "type": "boolean"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Organ Infilled"
+          "description": "Temperature during scan, in degees celsius (if a number).",
+          "title": "Scan Temperature"
         }
       },
       "required": ["organ", "organ_context"],
