@@ -44,6 +44,7 @@ jobs:
         run: |
           mkdir _static
           generate-schema-doc metadata-schema.json _static/index.html
+          cp metadata-schema.json _static/
           ls _static
 
       - name: Setup Pages
