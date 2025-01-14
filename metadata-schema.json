@@ -81,17 +81,20 @@
       "description": "Data metadata.",
       "properties": {
         "shape": {
-          "description": "Shape of dataset.",
+          "description": "Array shape for dataset.",
           "maxItems": 3,
           "minItems": 3,
           "prefixItems": [
             {
+              "exclusiveMinimum": 0,
               "type": "integer"
             },
             {
+              "exclusiveMinimum": 0,
               "type": "integer"
             },
             {
+              "exclusiveMinimum": 0,
               "type": "integer"
             }
           ],
@@ -99,7 +102,8 @@
           "type": "array"
         },
         "voxel_size_um": {
-          "description": "Isotropic voxel size in micrometers.",
+          "description": "Isotropic size of a single voxel, in micrometers.",
+          "exclusiveMinimum": 0.0,
           "title": "Voxel size",
           "type": "number"
         }
@@ -110,11 +114,10 @@
     },
     "Donor": {
       "additionalProperties": false,
-      "description": "Donor data model.",
       "properties": {
         "id": {
-          "description": "Donor ID",
-          "title": "Id",
+          "description": "Unique donor ID.",
+          "title": "ID",
           "type": "string"
         },
         "age": {
@@ -284,19 +287,20 @@
       "type": "object"
     },
     "Registration": {
-      "description": "A set of registration parameters mapping array coordinates from\n'source_datase' to 'target_dataset'.\n\nThe transform is specified as (in order):\n\n1. Rotation anticlockwise about the z-axis\n2. Isotropic scaling\n3. Translation",
+      "description": "A set of registration parameters mapping array coordinates from\n`source_dataset` to `target_dataset`.\n\nThe transform is specified as (in order):\n\n1. Rotation anticlockwise about the z-axis\n2. Isotropic scaling\n3. Translation",
       "properties": {
         "source_dataset": {
-          "description": "Dataset that is registered",
+          "description": "Name of dataset that is registered (this dataset).",
           "title": "Source Dataset",
           "type": "string"
         },
         "target_dataset": {
-          "description": "Dataset that source_dataset is registered to.",
+          "description": "Name of dataset that this dataset is registered to.",
           "title": "Target Dataset",
           "type": "string"
         },
         "translation": {
+          "description": "Translation vector.",
           "maxItems": 3,
           "minItems": 3,
           "prefixItems": [
@@ -319,7 +323,7 @@
           "type": "number"
         },
         "scale": {
-          "description": "Isotropic scaling factor",
+          "description": "Isotropic scaling factor.",
           "title": "Scale",
           "type": "number"
         }
@@ -351,7 +355,8 @@
               "type": "null"
             }
           ],
-          "description": "Context for location of the dataset within the whole organ. Only present for some zoom datasets.",
+          "description": "Human-readable context for location of the dataset within the whole organ. Only present for some zoom datasets.",
+          "examples": ["upper_lobe", "left", "tumor"],
           "title": "Organ Context"
         },
         "post_mortem_interval_hours": {
@@ -365,7 +370,8 @@
             }
           ],
           "default": null,
-          "title": "Interval between death and fixation, in hours."
+          "description": "Interval between death and fixation, in hours.",
+          "title": "Post-mortem interval"
         },
         "fixation_method": {
           "anyOf": [
@@ -378,7 +384,8 @@
             }
           ],
           "default": null,
-          "title": "Fixation preparation method."
+          "description": "Fixation preparation method.",
+          "title": "Fixation Method"
         },
         "fixation_medium": {
           "anyOf": [
@@ -447,7 +454,7 @@
             }
           ],
           "default": null,
-          "description": "Medium solvent",
+          "description": "Scan medium solvent.",
           "title": "Scan Solvent"
         },
         "scan_solvent_concentration": {
@@ -460,8 +467,8 @@
             }
           ],
           "default": null,
-          "description": "Solvent concentration in percent.",
-          "title": "Scan Solvent Concentration"
+          "description": "Scan medium solvent concentration in percent.",
+          "title": "Solvent concentration"
         },
         "scan_temperature": {
           "anyOf": [
@@ -559,7 +566,7 @@
           ],
           "default": null,
           "description": "Number of projection images acquired during the scan.",
-          "title": "N Projections"
+          "title": "Number of projections"
         },
         "n_ref": {
           "anyOf": [
@@ -573,7 +580,7 @@
           ],
           "default": null,
           "description": "Number of reference images collected during the scan.",
-          "title": "N Ref"
+          "title": "Number of references"
         },
         "n_dark": {
           "anyOf": [
@@ -587,7 +594,7 @@
           ],
           "default": null,
           "description": "Number of dark images (without illumination) collected during the scan.",
-          "title": "N Dark"
+          "title": "Number of darks"
         },
         "latency_time": {
           "anyOf": [
@@ -629,7 +636,7 @@
           ],
           "default": null,
           "description": "Number of frames accumulated per exposure.",
-          "title": "Accumulation N Frames"
+          "title": "Number of accumulation frames"
         },
         "scan_type": {
           "description": "Type of scan.",
@@ -655,7 +662,7 @@
           ],
           "default": null,
           "description": "Total number of scans. For a helical scan this is always 1. For a zseries this is the total number of scans concatenated to make the full data volume.",
-          "title": "N Scans"
+          "title": "Number of scans"
         },
         "acquisition": {
           "anyOf": [
@@ -896,41 +903,43 @@
     }
   },
   "additionalProperties": false,
+  "description": "Metadata for a Human Organ Atlas dataset.",
   "properties": {
     "name": {
       "description": "Unique name for dataset.",
       "title": "Name",
       "type": "string"
     },
-    "scan_context": {
+    "dataset_type": {
+      "description": "Type of dataset. Overview datasets contain the full sample. Zoom datasets contain a zoom into a particular volume of interest within the sample.",
       "enum": ["overview", "zoom"],
-      "title": "Scan Context",
+      "title": "Dataset Type",
       "type": "string"
     },
-    "roi": {
-      "description": "Region of interest name.This is an arbitrary string that is unique within datasets taken from a given organ from a given donor.",
-      "title": "Region of Interest",
+    "voi": {
+      "description": "Volume of interest name. For zoom datasets this gives a unique identifier among zoom datasets taken within the same sample.",
+      "title": "Volume of Interest",
       "type": "string"
     },
     "data": {
       "$ref": "#/$defs/Data",
-      "title": "Data metadata"
+      "description": "Data metadata"
     },
     "sample": {
       "$ref": "#/$defs/Sample",
-      "title": "Sample metadata"
+      "description": "Sample metadata"
     },
     "donor": {
       "$ref": "#/$defs/Donor",
-      "title": "Donor metadata"
+      "description": "Donor metadata"
     },
     "scan": {
       "$ref": "#/$defs/Scan",
-      "title": "Scan metadata"
+      "description": "Scan metadata"
     },
     "proposal": {
       "$ref": "#/$defs/Proposal",
-      "title": "Beamtime proposal metadata"
+      "description": "Beamtime proposal metadata"
     },
     "registration": {
       "anyOf": [
@@ -951,8 +960,8 @@
   },
   "required": [
     "name",
-    "scan_context",
-    "roi",
+    "dataset_type",
+    "voi",
     "data",
     "sample",
     "donor",
@@ -962,5 +971,7 @@
     "citation"
   ],
   "title": "HOAMetadata",
-  "type": "object"
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://humanorganatlas.github.io/metadata-schemas/metadata-schema.json"
 }

@@ -4,3 +4,10 @@ repos:
     hooks:
       - id: prettier
         types: [json]
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.31.0
+    hooks:
+      - id: check-jsonschema
+        files: metadata-example.json
+        args: ["--schemafile", "metadata-schema.json"]

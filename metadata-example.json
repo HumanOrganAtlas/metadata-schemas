@@ -1,0 +1,166 @@
+{
+  "name": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
+  "dataset_type": "zoom",
+  "voi": "central-column",
+  "data": {
+    "shape": [3795, 3795, 7540],
+    "voxel_size_um": 6.05
+  },
+  "sample": {
+    "organ": "kidney",
+    "organ_context": "left",
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": "n/a",
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": null
+  },
+  "donor": {
+    "id": "LADAF-2020-27",
+    "age": 94,
+    "sex": "F",
+    "weight": 45.0,
+    "height": 140.0,
+    "cause_of_death": null,
+    "date_of_death": "2020-06-11",
+    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2020-07-13",
+    "beamline": "BM05",
+    "energy": 89.0,
+    "current_start": 200.0,
+    "filling_mode": null,
+    "n_projections": 6000,
+    "n_ref": 0,
+    "n_dark": 400,
+    "latency_time": 0.01,
+    "exposure_time": 0.04,
+    "accumulation_n_frames": 4,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 13,
+    "acquisition": "half",
+    "z_step": 3.5,
+    "scan_time": 5.0,
+    "filters": ["Al 2mm", "Mo 0.1mm", "SiO2 60mm rods 12x5mm"],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "distance_sample_detector": 3475.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "rolling shutter",
+    "sensor_magnification": 1.0,
+    "sensor_roi_x_size": 688,
+    "sensor_roi_y_size": 688,
+    "pixel_size": 6.05,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": {
+    "source_dataset": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
+    "target_dataset": "LADAF-2020-27_kidney_left_complete-organ_25.08um_bm05",
+    "translation": [1015.647710639054, 1216.3270767034828, 906.143929656302],
+    "rotation": -0.09977031883926162,
+    "scale": 0.24122780183119433
+  },
+  "citation": {
+    "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-572183366",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Paul Tafforeau",
+      "Theresa Urban",
+      "Willi Wagner",
+      "Claire Walsh",
+      "Peter Lee"
+    ]
+  }
+}
