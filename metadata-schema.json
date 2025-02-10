@@ -734,13 +734,16 @@
                 "Multi LuAG:Ce 2000um, reflective",
                 "LuAG:Ce 200um",
                 "LuAG:Ce 250um",
+                "LuAG:Ce 250um, reflective",
                 "LuAG:Ce 25um",
                 "LuAG:Ce 50um",
                 "LuAG:Ce 50um, reflective",
                 "LuAG:Ce 500um",
                 "LySO:Ce 8.5um",
                 "LySO:Ce 23um",
-                "Gadox 60um"
+                "Gadox 60um",
+                "GGG 8um",
+                "CSI trixell structured 650um, 5um pitch"
               ],
               "type": "string"
             },
@@ -762,6 +765,7 @@
                 "Hasselblad tandem optic 100mm/300mm",
                 "Hasselblad revolved 100 100",
                 "LAFIP2 optic with canon 50mm",
+                "Fixed x2",
                 "Fixed x1",
                 "Fixed x0.125",
                 "Fixed x0.1",
@@ -769,7 +773,8 @@
                 "Fixed x10",
                 "Twinmic 5",
                 "Twinmic 10",
-                "Twinmic 20"
+                "Twinmic 20",
+                "Triplemic 10"
               ],
               "type": "string"
             },
@@ -780,6 +785,34 @@
           "default": null,
           "description": "Optical components used during the scan",
           "title": "Optic"
+        },
+        "optic_magnification": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Magnification in the optical setup.",
+          "title": "Optic Magnification"
+        },
+        "distance_source_sample": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Distance between the source and the sample, measured in millimeters.",
+          "title": "Source-sample distance"
         },
         "distance_sample_detector": {
           "anyOf": [
@@ -793,7 +826,7 @@
           ],
           "default": null,
           "description": "Distance between the sample and the detector, measured in millimeters.",
-          "title": "Distance Sample Detector"
+          "title": "Sample-detector distance"
         },
         "sensor_name": {
           "anyOf": [
@@ -823,20 +856,6 @@
           "description": "Operating mode of the sensor during the scan.",
           "title": "Sensor Mode"
         },
-        "sensor_magnification": {
-          "anyOf": [
-            {
-              "exclusiveMinimum": 0.0,
-              "type": "number"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "description": "Magnification in the sensor setup.",
-          "title": "Sensor Magnification"
-        },
         "sensor_roi_x_size": {
           "anyOf": [
             {
@@ -865,8 +884,33 @@
           "description": "Number of pixels in the y-dimension of the sensor's region of interest (ROI).",
           "title": "Sensor Roi Y Size"
         },
+        "sensor_binning": {
+          "anyOf": [
+            {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "exclusiveMinimum": 0,
+                  "type": "integer"
+                },
+                {
+                  "exclusiveMinimum": 0,
+                  "type": "integer"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Pixel binning on the sensor.",
+          "title": "Sensor Binning"
+        },
         "pixel_size": {
-          "description": "Size of a pixel at the source, measured in micrometers.",
+          "description": "Size of a pixel at the sample, measured in micrometers.",
           "exclusiveMinimum": 0.0,
           "title": "Pixel Size",
           "type": "number"
