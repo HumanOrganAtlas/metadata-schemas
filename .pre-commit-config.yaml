@@ -6,7 +6,7 @@ repos:
         types: [json]
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.31.0
+    rev: 0.31.1
     hooks:
       - id: check-jsonschema
         files: metadata-example.json
