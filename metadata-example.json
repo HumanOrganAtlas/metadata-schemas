@@ -17,7 +17,7 @@
     "degassing_method": null,
     "scan_solvent": null,
     "scan_solvent_concentration": null,
-    "scan_temperature": null
+    "scan_temperature": "room temperature"
   },
   "donor": {
     "id": "LADAF-2020-27",
@@ -38,18 +38,19 @@
     "energy": 89.0,
     "current_start": 200.0,
     "filling_mode": null,
-    "n_projections": 6000,
+    "n_frames": 6000,
     "n_ref": 0,
     "n_dark": 400,
     "latency_time": 0.01,
     "exposure_time": 0.04,
-    "accumulation_n_frames": 4,
+    "subframe_time": null,
+    "n_subframes": 4,
     "scan_type": "zseries",
     "scan_range": 360.0,
     "n_scans": 13,
     "acquisition": "half",
     "z_step": 3.5,
-    "scan_time": 5.0,
+    "scan_time": 300.0,
     "filters": ["Al 2mm", "Mo 0.1mm", "SiO2 60mm rods 12x5mm"],
     "scintillator": "LuAG:Ce 2000um",
     "optic": "DZoom",
@@ -90,40 +91,37 @@
     "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
         "name": "Peter Lee",
         "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Paul Tafforeau",
-        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Danny Jonigk",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Maximilian Ackermann",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Mark P. Kuhnel",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Elodie Boller",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Willi Wagner",
-        "roles": ["Funding acquisition", "Investigation"]
       },
       {
         "name": "Claire Walsh",
         "roles": ["Conceptualization", "Funding acquisition"]
       },
       {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
         "name": "David Stansby",
         "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
       },
       {
         "name": "Guillaume Gaisne",
@@ -142,26 +140,39 @@
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
         "name": "Theresa Urban",
         "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
       }
     ],
     "doi": "10.15151/ESRF-DC-572183366",
     "author_list": [
+      "The Human Organ Atlas Collaboration",
       "Peter Lee",
+      "Claire Walsh",
       "Paul Tafforeau",
       "Danny Jonigk",
-      "Maximilian Ackermann",
-      "Mark P. Kuhnel",
-      "Elodie Boller",
-      "Willi Wagner",
-      "Claire Walsh",
       "David Stansby",
+      "Elodie Boller",
       "Guillaume Gaisne",
       "Hector Dejea I Velardo",
       "Joanna Purzycka",
       "Joseph Brunet",
-      "Theresa Urban"
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Theresa Urban",
+      "Willi Wagner"
     ]
   }
 }
