@@ -478,12 +478,9 @@
             },
             {
               "type": "number"
-            },
-            {
-              "type": "null"
             }
           ],
-          "default": null,
+          "default": "room temperature",
           "description": "Temperature during scan, in degees celsius (if a number).",
           "title": "Scan Temperature"
         }
@@ -493,6 +490,7 @@
       "type": "object"
     },
     "Scan": {
+      "description": "Scan metadata.\n\nSome helpful definitions:\n\n- A single scan is composed of a number of frames.\n- Each frame is composed of one or more sub-frames.\n- Each sub-frame is divided into some exposure time, when the sensor is active,\nand some latency time, when the sensor is not active.\nThe latency time is typically 10% of the exposure time.",
       "properties": {
         "date": {
           "description": "Date when the scan was performed.",
@@ -554,7 +552,7 @@
           "description": "Mode of filling used in the synchrotron storage ring.",
           "title": "Filling Mode"
         },
-        "n_projections": {
+        "n_frames": {
           "anyOf": [
             {
               "exclusiveMinimum": 0,
@@ -565,8 +563,8 @@
             }
           ],
           "default": null,
-          "description": "Number of projection images acquired during the scan.",
-          "title": "Number of projections"
+          "description": "Number of frames acquired during the scan.",
+          "title": "Number of frames"
         },
         "n_ref": {
           "anyOf": [
@@ -607,7 +605,7 @@
             }
           ],
           "default": null,
-          "description": "Time delay between projections, measured in seconds.",
+          "description": "Inactive time between active sensor times, measured in seconds.",
           "title": "Latency Time"
         },
         "exposure_time": {
@@ -621,10 +619,24 @@
             }
           ],
           "default": null,
-          "description": "Exposure time of each frame, measured in seconds.",
+          "description": "Exposure time of a single frame, measured in seconds. This is the sub-frame time multiplied by the number of sub-frames.",
           "title": "Exposure Time"
         },
-        "accumulation_n_frames": {
+        "subframe_time": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Exposure time of a single sub-frame, measured in seconds.",
+          "title": "Subframe Time"
+        },
+        "n_subframes": {
           "anyOf": [
             {
               "exclusiveMinimum": 0,
@@ -636,7 +648,7 @@
           ],
           "default": null,
           "description": "Number of frames accumulated per exposure.",
-          "title": "Number of accumulation frames"
+          "title": "Number of sub-frames"
         },
         "scan_type": {
           "description": "Type of scan.",
@@ -742,8 +754,10 @@
                 "LySO:Ce 8.5um",
                 "LySO:Ce 23um",
                 "Gadox 60um",
+                "CSI trixell structured 650um, 5um pitch",
                 "GGG 8um",
-                "CSI trixell structured 650um, 5um pitch"
+                "gagg1000_refl",
+                "dual-lso5000_refl"
               ],
               "type": "string"
             },
