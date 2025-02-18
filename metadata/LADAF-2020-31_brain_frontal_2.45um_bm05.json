@@ -1,0 +1,229 @@
+{
+  "name": "LADAF-2020-31_brain_frontal_2.45um_bm05",
+  "dataset_type": "zoom",
+  "voi": "frontal",
+  "data": {
+    "shape": [3887, 3887, 7768],
+    "voxel_size_um": 2.45,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-31/brain/2.45um_frontal_bm05/"
+  },
+  "sample": {
+    "organ": "brain",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2020-31",
+    "age": 69,
+    "sex": "F",
+    "weight": 40.0,
+    "height": 145.0,
+    "cause_of_death": null,
+    "date_of_death": "2020-06-22",
+    "medical_history": "pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+    "diabetes": "Type 2",
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2020-07-25",
+    "beamline": "BM05",
+    "energy": 83.0,
+    "current_start": 200.0,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 0,
+    "n_dark": 400,
+    "latency_time": 0.0005,
+    "exposure_time": 0.15,
+    "subframe_time": null,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 5,
+    "acquisition": "half",
+    "z_step": 3.5,
+    "scan_time": 948.0,
+    "filters": ["Al 3mm", "SiO2 40mm rods 8x5mm"],
+    "scintillator": "LuAG:Ce 250um",
+    "optic": "Zoom",
+    "optic_magnification": 2.58,
+    "distance_source_sample": null,
+    "distance_sample_detector": 1500.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "rolling shutter",
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 2048,
+    "sensor_binning": null,
+    "pixel_size": 2.45,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": {
+    "source_dataset": "LADAF-2020-31_brain_frontal_2.45um_bm05",
+    "target_dataset": "LADAF-2020-31_brain_complete-organ_25.08um_bm05",
+    "translation": [2655.0149055007973, 2080.9878555664436, 5427.145104964328],
+    "rotation": -1.5997541356060212,
+    "scale": 0.09768748108851574
+  },
+  "citation": {
+    "title": "Zoom (frontal) at 2.45um of the brain of donor LADAF-2020-31, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-1773966423",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

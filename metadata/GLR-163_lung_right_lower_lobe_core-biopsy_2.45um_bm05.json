@@ -1,0 +1,173 @@
+{
+  "name": "GLR-163_lung_right_lower_lobe_core-biopsy_2.45um_bm05",
+  "dataset_type": "zoom",
+  "voi": "core-biopsy",
+  "data": {
+    "shape": [3893, 3893, 4141],
+    "voxel_size_um": 2.45,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/GLR-163/lung-right_lower_lobe/2.45um_core-biopsy_bm05/"
+  },
+  "sample": {
+    "organ": "lung",
+    "organ_context": "right_lower_lobe",
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "GLR-163",
+    "age": 77,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": null,
+    "date_of_death": null,
+    "medical_history": "resection of the lower lobe segment 6 due to small pulmonary adenocarcinoma (1.4 cm), coronary heart disease, chronic rheumatic disease (polymyalgia rheumatica)",
+    "diabetes": null,
+    "hypertension": "Yes",
+    "smoker": null
+  },
+  "scan": {
+    "date": "2020-07-25",
+    "beamline": "BM05",
+    "energy": 83.0,
+    "current_start": 192.01,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 41,
+    "n_dark": 40,
+    "latency_time": 0.0005,
+    "exposure_time": 0.08,
+    "subframe_time": null,
+    "n_subframes": null,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": null,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": null,
+    "filters": null,
+    "scintillator": null,
+    "optic": null,
+    "optic_magnification": null,
+    "distance_source_sample": null,
+    "distance_sample_detector": 1500.0,
+    "sensor_name": null,
+    "sensor_mode": "FFM",
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 2048,
+    "sensor_binning": null,
+    "pixel_size": 2.45,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Zoom (core-biopsy) at 2.45um of the lung of donor GLR-163, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-574369994",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

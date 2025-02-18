@@ -106,9 +106,14 @@
           "exclusiveMinimum": 0.0,
           "title": "Voxel size",
           "type": "number"
+        },
+        "gcs_url": {
+          "description": "URL to data in Google Cloud Storage. Starts with either n5:// or zarr:// to specify whether data is in N5 or OME-Zarr 0.4 format.",
+          "title": "Google cloud storage URL",
+          "type": "string"
         }
       },
-      "required": ["shape", "voxel_size_um"],
+      "required": ["shape", "voxel_size_um", "gcs_url"],
       "title": "Data",
       "type": "object"
     },
