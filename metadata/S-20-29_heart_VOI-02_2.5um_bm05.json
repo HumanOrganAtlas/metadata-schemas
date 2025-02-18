@@ -1,0 +1,253 @@
+{
+  "name": "S-20-29_heart_VOI-02_2.5um_bm05",
+  "dataset_type": "zoom",
+  "voi": "VOI-02",
+  "data": {
+    "shape": [3867, 3867, 5680],
+    "voxel_size_um": 2.5,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/2.5um_VOI-02_bm05/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "S-20-29",
+    "age": 80,
+    "sex": "M",
+    "weight": 170.0,
+    "height": 90.0,
+    "cause_of_death": "Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease",
+    "date_of_death": null,
+    "medical_history": "Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
+    "diabetes": "Type 2",
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2021-02-05",
+    "beamline": "BM05",
+    "energy": 77.0,
+    "current_start": 196.912,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 3,
+    "n_dark": 0,
+    "latency_time": 0.002,
+    "exposure_time": 0.035,
+    "subframe_time": null,
+    "n_subframes": 1,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 7,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": 245.99999999999997,
+    "filters": ["Mo 0.24mm"],
+    "scintillator": "LuAG:Ce 100um",
+    "optic": "Zoom",
+    "optic_magnification": 2.535,
+    "distance_source_sample": null,
+    "distance_sample_detector": 3500.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "rolling shutter",
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 880,
+    "sensor_binning": null,
+    "pixel_size": 2.5,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Zoom (VOI-02) at 2.5um of the heart of donor S-20-29, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Camille Berruyer",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Jingwen Liu",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rui Xian",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Ryo Torii",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Sebastian Marussi",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Shahrokh Rahmani",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-1773964921",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Camille Berruyer",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Jingwen Liu",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Rui Xian",
+      "Ryo Torii",
+      "Sebastian Marussi",
+      "Shahrokh Rahmani",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

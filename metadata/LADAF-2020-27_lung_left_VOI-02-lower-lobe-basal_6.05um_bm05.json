@@ -1,0 +1,229 @@
+{
+  "name": "LADAF-2020-27_lung_left_VOI-02-lower-lobe-basal_6.05um_bm05",
+  "dataset_type": "zoom",
+  "voi": "VOI-02-lower-lobe-basal",
+  "data": {
+    "shape": [3818, 3818, 6969],
+    "voxel_size_um": 6.05,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-27/lung-left/6.05um_VOI-02-lower-lobe-basal_bm05/"
+  },
+  "sample": {
+    "organ": "lung",
+    "organ_context": "left",
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2020-27",
+    "age": 94,
+    "sex": "F",
+    "weight": 45.0,
+    "height": 140.0,
+    "cause_of_death": null,
+    "date_of_death": "2020-06-11",
+    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2020-07-26",
+    "beamline": "BM05",
+    "energy": 89.0,
+    "current_start": 200.0,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 0,
+    "n_dark": 400,
+    "latency_time": 0.015,
+    "exposure_time": 0.06,
+    "subframe_time": null,
+    "n_subframes": 4,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 12,
+    "acquisition": "half",
+    "z_step": 3.5,
+    "scan_time": 420.0,
+    "filters": ["Al 3mm", "SiO2 60mm rods 12x5mm"],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": 1.0,
+    "distance_source_sample": null,
+    "distance_sample_detector": 3475.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "rolling shutter",
+    "sensor_roi_x_size": 688,
+    "sensor_roi_y_size": 688,
+    "sensor_binning": null,
+    "pixel_size": 6.05,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": {
+    "source_dataset": "LADAF-2020-27_lung_left_VOI-02-lower-lobe-basal_6.05um_bm05",
+    "target_dataset": "LADAF-2020-27_lung_left_complete-organ_25.08um_bm05",
+    "translation": [2273.9599033501977, 2963.392867775875, 6091.85320403002],
+    "rotation": -3.7998070815716054,
+    "scale": 0.24122711555631404
+  },
+  "citation": {
+    "title": "Zoom (VOI-02-lower-lobe-basal) at 6.05um of the lung of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-572231249",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

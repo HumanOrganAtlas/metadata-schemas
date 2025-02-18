@@ -1,0 +1,265 @@
+{
+  "name": "LADAF-2021-64_heart_VOI-5.1_2.26um_bm18",
+  "dataset_type": "zoom",
+  "voi": "VOI-5.1",
+  "data": {
+    "shape": [3836, 3836, 6698],
+    "voxel_size_um": 2.26,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-64/heart/2.26um_VOI-5.1_bm18/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2021-64",
+    "age": 87,
+    "sex": "F",
+    "weight": 65.0,
+    "height": 156.0,
+    "cause_of_death": null,
+    "date_of_death": "2021-10-25",
+    "medical_history": "failure (stage IIIb) due to probable nephroangiosclerosis (and not polycystic kidney disease as initially hypothesized). We may be able to confirm this on imaging. Other medical history includes: - ischemic and rhythmic heart disease with inferior myocardial infarction in 2007 and coronary stenting (right coronary artery and circumflex artery) - chronic obstructive pulmonary disease and pulmonary hamartochrondroma - pulmonary embolism in 2012 - high blood pressure - stented right carotid stenosis - Helicobacter pylori gastric ulcer",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2022-07-03",
+    "beamline": "BM18",
+    "energy": 94.0,
+    "current_start": 193.16,
+    "filling_mode": null,
+    "n_frames": 9900,
+    "n_ref": 3,
+    "n_dark": 40,
+    "latency_time": 0.006,
+    "exposure_time": 0.06,
+    "subframe_time": null,
+    "n_subframes": 1,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 4,
+    "acquisition": "half",
+    "z_step": 3.5,
+    "scan_time": 690.0,
+    "filters": ["Mo 0.44mm"],
+    "scintillator": "LuAG:Ce 2000um, reflective",
+    "optic": "Zoom",
+    "optic_magnification": 0.3,
+    "distance_source_sample": null,
+    "distance_sample_detector": 2500.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 2048,
+    "sensor_binning": null,
+    "pixel_size": 2.26,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": {
+    "source_dataset": "LADAF-2021-64_heart_VOI-5.1_2.26um_bm18",
+    "target_dataset": "LADAF-2021-64_heart_complete-organ_19.89um_bm18",
+    "translation": [5054.014843337111, 4020.44103511091, 4308.253546820956],
+    "rotation": -0.40051177670033805,
+    "scale": 0.11362427033047898
+  },
+  "citation": {
+    "title": "Zoom (VOI-5.1) at 2.26um of the heart of donor LADAF-2021-64, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Camille Berruyer",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Jingwen Liu",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rui Xian",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Ryo Torii",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Sebastian Marussi",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Shahrokh Rahmani",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-1659306682",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Camille Berruyer",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Jingwen Liu",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Rui Xian",
+      "Ryo Torii",
+      "Sebastian Marussi",
+      "Shahrokh Rahmani",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

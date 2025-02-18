@@ -1,18 +1,19 @@
 {
-  "name": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
-  "dataset_type": "zoom",
-  "voi": "central-column",
+  "name": "FO-20-129_lung_left_upper_lobe_complete-upper-lobe_26.38um_bm05",
+  "dataset_type": "overview",
+  "voi": "complete-upper-lobe",
   "data": {
-    "shape": [3795, 3795, 7540],
-    "voxel_size_um": 6.05
+    "shape": [3629, 2724, 5413],
+    "voxel_size_um": 26.38,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/FO-20-129/lung-left_upper_lobe/26.38um_complete-upper-lobe_bm05/"
   },
   "sample": {
-    "organ": "kidney",
-    "organ_context": "left",
+    "organ": "lung",
+    "organ_context": "left_upper_lobe",
     "post_mortem_interval_hours": null,
     "fixation_method": null,
     "fixation_medium": null,
-    "organ_infilled": "n/a",
+    "organ_infilled": null,
     "stabilisation_medium": null,
     "degassing_method": null,
     "scan_solvent": null,
@@ -20,49 +21,53 @@
     "scan_temperature": "room temperature"
   },
   "donor": {
-    "id": "LADAF-2020-27",
-    "age": 94,
-    "sex": "F",
-    "weight": 45.0,
-    "height": 140.0,
-    "cause_of_death": null,
-    "date_of_death": "2020-06-11",
-    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "id": "FO-20-129",
+    "age": 54,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": "Covid",
+    "date_of_death": null,
+    "medical_history": "died from COVID-19 21 days after hospitalisation, mechanical ventilation, pulmonary failure, renal failure,bacterial pneumonia with Klebsiella aerogenes, general brain edema, subarachnoidal and intracranial bleeding",
     "diabetes": null,
     "hypertension": null,
     "smoker": null
   },
   "scan": {
-    "date": "2020-07-13",
+    "date": "2020-06-02",
     "beamline": "BM05",
-    "energy": 89.0,
+    "energy": 74.0,
     "current_start": 200.0,
     "filling_mode": null,
     "n_frames": 6000,
     "n_ref": 0,
     "n_dark": 400,
-    "latency_time": 0.01,
-    "exposure_time": 0.04,
+    "latency_time": null,
+    "exposure_time": 0.15,
     "subframe_time": null,
-    "n_subframes": 4,
+    "n_subframes": 5,
     "scan_type": "zseries",
     "scan_range": 360.0,
-    "n_scans": 13,
+    "n_scans": 68,
     "acquisition": "half",
-    "z_step": 3.5,
-    "scan_time": 300.0,
-    "filters": ["Al 2mm", "Mo 0.1mm", "SiO2 60mm rods 12x5mm"],
+    "z_step": -2.25,
+    "scan_time": 540.0,
+    "filters": [
+      "Al 3.5mm",
+      "Glassy carbon 135mm rods 27x5mm",
+      "Glassy carbon 48mm rods 12x4mm"
+    ],
     "scintillator": "LuAG:Ce 2000um",
     "optic": "DZoom",
-    "optic_magnification": 1.0,
+    "optic_magnification": 0.24,
     "distance_source_sample": null,
-    "distance_sample_detector": 3475.0,
+    "distance_sample_detector": 3675.0,
     "sensor_name": "PCO edge 4.2 CLHS",
     "sensor_mode": "rolling shutter",
-    "sensor_roi_x_size": 688,
-    "sensor_roi_y_size": 688,
+    "sensor_roi_x_size": 172,
+    "sensor_roi_y_size": 172,
     "sensor_binning": null,
-    "pixel_size": 6.05,
+    "pixel_size": 26.38,
     "xray_magnification": null,
     "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
     "experiment_type": "Tomography"
@@ -80,15 +85,9 @@
       "Willi Wagner"
     ]
   },
-  "registration": {
-    "source_dataset": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
-    "target_dataset": "LADAF-2020-27_kidney_left_complete-organ_25.08um_bm05",
-    "translation": [1015.647710639054, 1216.3270767034828, 906.143929656302],
-    "rotation": -0.09977031883926162,
-    "scale": 0.24122780183119433
-  },
+  "registration": null,
   "citation": {
-    "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "title": "Overview at 26.38um of the lung of donor FO-20-129, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
         "name": "The Human Organ Atlas Collaboration",
@@ -156,7 +155,7 @@
         "roles": ["Funding acquisition", "Investigation"]
       }
     ],
-    "doi": "10.15151/ESRF-DC-572183366",
+    "doi": "10.15151/ESRF-DC-571998188",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Peter Lee",

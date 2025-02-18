@@ -1,0 +1,260 @@
+{
+  "name": "LADAF-2021-17_heart_ROI-05_6.36um_bm18",
+  "dataset_type": "zoom",
+  "voi": "ROI-05",
+  "data": {
+    "shape": [3821, 3821, 9375],
+    "voxel_size_um": 6.36,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/heart/6.36um_ROI-05_bm18/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2021-17",
+    "age": 63,
+    "sex": "M",
+    "weight": 60.0,
+    "height": 178.0,
+    "cause_of_death": "Pancreatic cancer",
+    "date_of_death": "2020-03-27",
+    "medical_history": "stomach hypertrophy noticed during autopsy, stomach liquid into the lungs",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2022-05-06",
+    "beamline": "BM18",
+    "energy": 103.0,
+    "current_start": 56.001,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 3,
+    "n_dark": 100,
+    "latency_time": 0.003,
+    "exposure_time": 0.03,
+    "subframe_time": null,
+    "n_subframes": 4,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": null,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": null,
+    "filters": ["Mo 0.21mm"],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": null,
+    "distance_source_sample": null,
+    "distance_sample_detector": 10000.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 1696,
+    "sensor_binning": null,
+    "pixel_size": 6.36,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": {
+    "source_dataset": "LADAF-2021-17_heart_ROI-05_6.36um_bm18",
+    "target_dataset": "LADAF-2021-17_heart_complete-organ_25.08um_bm05",
+    "translation": [1461.0661467902848, 3772.1118452325036, 3028.719533126721],
+    "rotation": 46.40003796833386,
+    "scale": 0.25358881808035927
+  },
+  "citation": {
+    "title": "Zoom (ROI-05) at 6.36um of the heart of donor LADAF-2021-17, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Camille Berruyer",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rui Xian",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Ryo Torii",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Sebastian Marussi",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Shahrokh Rahmani",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-1659302250",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Camille Berruyer",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Rui Xian",
+      "Ryo Torii",
+      "Sebastian Marussi",
+      "Shahrokh Rahmani",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}

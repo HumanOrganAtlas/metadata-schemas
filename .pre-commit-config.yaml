@@ -9,5 +9,5 @@ repos:
     rev: 0.31.1
     hooks:
       - id: check-jsonschema
-        files: metadata-example.json
+        files: ^metadata/.*\.json$
         args: ["--schemafile", "metadata-schema.json"]

@@ -1,0 +1,305 @@
+{
+  "name": "A186_lung_right_complete-organ_24.132um_bm18",
+  "dataset_type": "overview",
+  "voi": "complete-organ",
+  "data": {
+    "shape": [8308, 8308, 9564],
+    "voxel_size_um": 24.132,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/A186/lung-right/24.132um_complete-organ_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "lung",
+    "organ_context": "right",
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "A186",
+    "age": null,
+    "sex": null,
+    "weight": null,
+    "height": null,
+    "cause_of_death": "not applicable - transplant organ",
+    "date_of_death": null,
+    "medical_history": "lung from patient with PVOD",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2024-07-12",
+    "beamline": "BM18",
+    "energy": 111.0,
+    "current_start": 193.458228,
+    "filling_mode": "7/8 multibunch",
+    "n_frames": 12000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.0015,
+    "exposure_time": 0.045,
+    "subframe_time": 0.015,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 33,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": 595.699493,
+    "filters": ["Sapphire 5mm", "Silver 0.2mm"],
+    "scintillator": "Gadox 60um",
+    "optic": "DZoom",
+    "optic_magnification": 0.2657040967535242,
+    "distance_source_sample": 178000.0,
+    "distance_sample_detector": 25000.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2528,
+    "sensor_roi_y_size": 350,
+    "sensor_binning": [2, 2],
+    "pixel_size": 24.132,
+    "xray_magnification": 1.1404494382022472,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1389",
+    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Anastasia Yendiki",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Bernadette De Bakker",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Stijn Verleden"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 24.132um of the lung of donor A186, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Anastasia Yendiki",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Andrew Keenlyside",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Bernadette De Bakker",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Birger Tielemans",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Camille Berruyer",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Daisuke Yamada",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Jana Dietrich",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Jingwen Liu",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark Kuehnel",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Matthieu Chourrout",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition", "Resources"]
+      },
+      {
+        "name": "Mei Yang",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rui Xian",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Ryo Torii",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Sebastian Marussi",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Shahrokh Rahmani",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Stijn Verleden",
+        "roles": ["Funding acquisition", "Resources"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Joseph Jacob",
+        "roles": ["Resources"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Anastasia Yendiki",
+      "Andrew Keenlyside",
+      "Bernadette De Bakker",
+      "Birger Tielemans",
+      "Brian Bay",
+      "Camille Berruyer",
+      "Claire Walsh",
+      "Daisuke Yamada",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Jana Dietrich",
+      "Jingwen Liu",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark Kuehnel",
+      "Mark P. Kuhnel",
+      "Matthieu Chourrout",
+      "Maximilian Ackermann",
+      "Mei Yang",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Rui Xian",
+      "Ryo Torii",
+      "Sebastian Marussi",
+      "Shahrokh Rahmani",
+      "Simon Walker-Samuel",
+      "Stijn Verleden",
+      "Theresa Urban",
+      "Willi Wagner",
+      "Joseph Jacob"
+    ]
+  }
+}

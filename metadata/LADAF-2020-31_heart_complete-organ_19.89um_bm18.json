@@ -1,0 +1,229 @@
+{
+  "name": "LADAF-2020-31_heart_complete-organ_19.89um_bm18",
+  "dataset_type": "overview",
+  "voi": "complete-organ",
+  "data": {
+    "shape": [6840, 6840, 8228],
+    "voxel_size_um": 19.89,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-31/heart/19.89um_complete-organ_bm18/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2020-31",
+    "age": 69,
+    "sex": "F",
+    "weight": 40.0,
+    "height": 145.0,
+    "cause_of_death": null,
+    "date_of_death": "2020-06-22",
+    "medical_history": "pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+    "diabetes": "Type 2",
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2022-04-10",
+    "beamline": "BM18",
+    "energy": 126.0,
+    "current_start": 192.824,
+    "filling_mode": null,
+    "n_frames": 9900,
+    "n_ref": 3,
+    "n_dark": 100,
+    "latency_time": 0.0015,
+    "exposure_time": 0.015,
+    "subframe_time": null,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 26,
+    "acquisition": "quarter",
+    "z_step": 7.0,
+    "scan_time": null,
+    "filters": ["Mo 0.65mm"],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": 0.33,
+    "distance_source_sample": null,
+    "distance_sample_detector": 31600.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 512,
+    "sensor_roi_y_size": 512,
+    "sensor_binning": null,
+    "pixel_size": 19.89,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 19.89um of the heart of donor LADAF-2020-31, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "name": "The Human Organ Atlas Collaboration",
+        "roles": []
+      },
+      {
+        "name": "Peter Lee",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Claire Walsh",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Paul Tafforeau",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "name": "Alexandre Bellier",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Alissa Parmenter",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Brian Bay",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Danny Jonigk",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "David Stansby",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Elodie Boller",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "name": "Emer Burke O'Leary",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Guillaume Gaisne",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "name": "Hannah Coleman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Hector Dejea I Velardo",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "name": "Joanna Purzycka",
+        "roles": ["Data curation"]
+      },
+      {
+        "name": "Joseph Brunet",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Kathleen Dollman",
+        "roles": ["Investigation"]
+      },
+      {
+        "name": "Mark P. Kuhnel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Maximilian Ackermann",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Olivier Palombi",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Philippe Chaffanjon",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Rebecca Shipley",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Simon Walker-Samuel",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "name": "Theresa Urban",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "name": "Willi Wagner",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-1965462390",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Peter Lee",
+      "Claire Walsh",
+      "Paul Tafforeau",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hannah Coleman",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  }
+}
