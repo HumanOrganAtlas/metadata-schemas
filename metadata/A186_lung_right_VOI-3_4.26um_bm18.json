@@ -94,119 +94,129 @@
     "title": "Zoom (VOI-3) at 4.26um of the lung of donor A186, scanned at ESRF on beamline BM18.",
     "contributors": [
       {
-        "name": "Alexandre Bellier",
-        "roles": ["Funding acquisition", "Investigation"]
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
       },
       {
-        "name": "Alissa Parmenter",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Anastasia Yendiki",
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Andrew Keenlyside",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Bernadette De Bakker",
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Birger Tielemans",
+        "first_name": "Andrew",
+        "last_name": "Keenlyside",
+        "orcid": "0000-0002-6059-2103",
         "roles": ["Investigation"]
       },
       {
-        "name": "Brian Bay",
+        "first_name": "Bernadette",
+        "last_name": "De Bakker",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Camille Berruyer",
+        "first_name": "Birger",
+        "last_name": "Tielemans",
+        "orcid": "0000-0002-1775-1797",
         "roles": ["Investigation"]
       },
       {
-        "name": "Claire Walsh",
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
         "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
-        "name": "Daisuke Yamada",
+        "first_name": "Daisuke",
+        "last_name": "Yamada",
+        "orcid": "0000-0003-1561-5908",
         "roles": ["Investigation"]
       },
       {
-        "name": "Danny Jonigk",
-        "roles": ["Funding acquisition", "Investigation"]
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
       },
       {
-        "name": "David Stansby",
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Elodie Boller",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Emer Burke O'Leary",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Guillaume Gaisne",
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
         "roles": ["Data curation", "Software"]
       },
       {
-        "name": "Hannah Coleman",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Hector Dejea I Velardo",
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
         "roles": ["Data curation", "Investigation"]
       },
       {
-        "name": "Jana Dietrich",
+        "first_name": "Jana",
+        "last_name": "Dietrich",
+        "orcid": null,
         "roles": ["Investigation"]
       },
       {
-        "name": "Jingwen Liu",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Joanna Purzycka",
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
         "roles": ["Data curation"]
       },
       {
-        "name": "Joseph Brunet",
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Kathleen Dollman",
+        "first_name": "Joseph",
+        "last_name": "Jacob",
+        "orcid": "0000-0002-8054-2293",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Mark",
+        "last_name": "Kuehnel",
+        "orcid": "0000-0003-3558-2576",
         "roles": ["Investigation"]
       },
       {
-        "name": "Mark Kuehnel",
+        "first_name": "Matthieu",
+        "last_name": "Chourrout",
+        "orcid": "0000-0002-2282-6976",
         "roles": ["Investigation"]
       },
       {
-        "name": "Mark P. Kuhnel",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Matthieu Chourrout",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Maximilian Ackermann",
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
         "roles": ["Funding acquisition", "Resources"]
       },
       {
-        "name": "Mei Yang",
+        "first_name": "Mei",
+        "last_name": "Yang",
+        "orcid": "0009-0005-4035-0966",
         "roles": ["Investigation"]
       },
       {
-        "name": "Olivier Palombi",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Paul Tafforeau",
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
         "roles": [
           "Conceptualization",
           "Data curation",
@@ -215,97 +225,51 @@
         ]
       },
       {
-        "name": "Peter Lee",
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
         "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
-        "name": "Philippe Chaffanjon",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Rebecca Shipley",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Rui Xian",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Ryo Torii",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Sebastian Marussi",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Shahrokh Rahmani",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Simon Walker-Samuel",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Stijn Verleden",
+        "first_name": "Stijn",
+        "last_name": "Verleden",
+        "orcid": "0000-0002-9656-5844",
         "roles": ["Funding acquisition", "Resources"]
       },
       {
-        "name": "Theresa Urban",
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
         "roles": ["Data curation", "Investigation", "Software"]
-      },
-      {
-        "name": "Willi Wagner",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Joseph Jacob",
-        "roles": ["Resources"]
       }
     ],
     "doi": null,
     "author_list": [
+      "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",
-      "Alissa Parmenter",
       "Anastasia Yendiki",
       "Andrew Keenlyside",
       "Bernadette De Bakker",
       "Birger Tielemans",
-      "Brian Bay",
-      "Camille Berruyer",
       "Claire Walsh",
       "Daisuke Yamada",
       "Danny Jonigk",
       "David Stansby",
-      "Elodie Boller",
-      "Emer Burke O'Leary",
       "Guillaume Gaisne",
-      "Hannah Coleman",
       "Hector Dejea I Velardo",
       "Jana Dietrich",
-      "Jingwen Liu",
       "Joanna Purzycka",
       "Joseph Brunet",
-      "Kathleen Dollman",
+      "Joseph Jacob",
       "Mark Kuehnel",
-      "Mark P. Kuhnel",
       "Matthieu Chourrout",
       "Maximilian Ackermann",
       "Mei Yang",
-      "Olivier Palombi",
       "Paul Tafforeau",
       "Peter Lee",
-      "Philippe Chaffanjon",
-      "Rebecca Shipley",
-      "Rui Xian",
-      "Ryo Torii",
-      "Sebastian Marussi",
-      "Shahrokh Rahmani",
-      "Simon Walker-Samuel",
       "Stijn Verleden",
-      "Theresa Urban",
-      "Willi Wagner",
-      "Joseph Jacob"
+      "Theresa Urban"
     ]
-  }
+  },
+  "metadata_version": "0.9"
 }

@@ -1,15 +1,15 @@
 {
-  "name": "LADAF-2020-27_lung_left_VOI-02b-upper-lobe-apical_2.5um_bm05",
-  "dataset_type": "zoom",
-  "voi": "VOI-02b-upper-lobe-apical",
+  "name": "FO-20-124_lung_upper_lobe_complete-organ_26.38um_bm05",
+  "dataset_type": "overview",
+  "voi": "complete-organ",
   "data": {
-    "shape": [3879, 3879, 5600],
-    "voxel_size_um": 2.5,
-    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-27/lung-left/2.5um_VOI-02b-upper-lobe-apical_bm05/"
+    "shape": [3834, 3834, 4992],
+    "voxel_size_um": 26.38,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/FO-20-124/lung-upper_lobe/26.38um_complete-organ_bm05/"
   },
   "sample": {
     "organ": "lung",
-    "organ_context": "left",
+    "organ_context": "upper_lobe",
     "post_mortem_interval_hours": null,
     "fixation_method": null,
     "fixation_medium": null,
@@ -21,49 +21,53 @@
     "scan_temperature": "room temperature"
   },
   "donor": {
-    "id": "LADAF-2020-27",
-    "age": 94,
-    "sex": "F",
-    "weight": 45.0,
-    "height": 140.0,
-    "cause_of_death": null,
-    "date_of_death": "2020-06-11",
-    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "id": "FO-20-124",
+    "age": 76,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": "Covid",
+    "date_of_death": null,
+    "medical_history": "Hospitalisation for 22 days; Mechanical ventilation yes for 22 days;BMI 30.5; Bacterial superinfection in the lower lobe",
     "diabetes": null,
-    "hypertension": "Yes",
+    "hypertension": null,
     "smoker": null
   },
   "scan": {
-    "date": "2021-01-27",
+    "date": "2020-05-31",
     "beamline": "BM05",
-    "energy": 77.0,
-    "current_start": 197.0,
+    "energy": 70.0,
+    "current_start": 200.199,
     "filling_mode": null,
     "n_frames": 6000,
-    "n_ref": 0,
-    "n_dark": 400,
-    "latency_time": 0.04,
-    "exposure_time": 0.04,
+    "n_ref": 1,
+    "n_dark": 0,
+    "latency_time": 0.002,
+    "exposure_time": 0.014286,
     "subframe_time": null,
-    "n_subframes": 1,
+    "n_subframes": 7,
     "scan_type": "zseries",
     "scan_range": 360.0,
-    "n_scans": 9,
+    "n_scans": null,
     "acquisition": "half",
-    "z_step": 1.5,
-    "scan_time": 243.0,
-    "filters": ["Mo 0.24mm", "SiO2 4mm rods 1x4mm"],
-    "scintillator": "LuAG:Ce 250um",
-    "optic": "Zoom",
-    "optic_magnification": 2.61,
+    "z_step": null,
+    "scan_time": 708.0,
+    "filters": [
+      "Al 3.5mm",
+      "Glassy carbon 135mm rods 27x5mm",
+      "Glassy carbon 64mm rods 16x4mm"
+    ],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": null,
+    "optic_magnification": 1.077,
     "distance_source_sample": null,
-    "distance_sample_detector": 1440.0,
-    "sensor_name": "PCO edge 4.2 CLHS",
-    "sensor_mode": "rolling shutter",
-    "sensor_roi_x_size": 800,
-    "sensor_roi_y_size": 800,
+    "distance_sample_detector": 3675.0,
+    "sensor_name": null,
+    "sensor_mode": "FFM",
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 176,
     "sensor_binning": null,
-    "pixel_size": 2.5,
+    "pixel_size": 26.38,
     "xray_magnification": null,
     "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
     "experiment_type": "Tomography"
@@ -81,15 +85,9 @@
       "Willi Wagner"
     ]
   },
-  "registration": {
-    "source_dataset": "LADAF-2020-27_lung_left_VOI-02b-upper-lobe-apical_2.5um_bm05",
-    "target_dataset": "LADAF-2020-27_lung_left_complete-organ_25.08um_bm05",
-    "translation": [2923.6090655436055, 1908.548498235083, 744.0428868177607],
-    "rotation": -28.79680309971943,
-    "scale": 0.09968116160161132
-  },
+  "registration": null,
   "citation": {
-    "title": "Zoom (VOI-02b-upper-lobe-apical) at 2.5um of the lung of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "title": "Overview at 26.38um of the lung of donor FO-20-124, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
         "first_name": "The",
@@ -107,7 +105,7 @@
         "first_name": "Danny",
         "last_name": "Jonigk",
         "orcid": "0000-0002-5251-2281",
-        "roles": ["Funding acquisition"]
+        "roles": ["Funding acquisition", "Investigation"]
       },
       {
         "first_name": "David",
@@ -119,7 +117,7 @@
         "first_name": "Elodie",
         "last_name": "Boller",
         "orcid": null,
-        "roles": ["Funding acquisition"]
+        "roles": ["Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Guillaume",
@@ -161,13 +159,18 @@
         "first_name": "Paul",
         "last_name": "Tafforeau",
         "orcid": "0000-0002-5962-1683",
-        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
       },
       {
         "first_name": "Peter",
         "last_name": "Lee",
         "orcid": "0000-0002-3898-8881",
-        "roles": ["Conceptualization", "Funding acquisition"]
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Theresa",
@@ -179,10 +182,10 @@
         "first_name": "Willi",
         "last_name": "Wagner",
         "orcid": null,
-        "roles": ["Funding acquisition"]
+        "roles": ["Funding acquisition", "Investigation"]
       }
     ],
-    "doi": "10.15151/ESRF-DC-572222783",
+    "doi": null,
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",

@@ -28,7 +28,7 @@
     "height": null,
     "cause_of_death": "Covid",
     "date_of_death": null,
-    "medical_history": "died from COVID-19 21 days after hospitalisation, mechanical ventilation, pulmonary failure, renal failure,bacterial pneumonia with Klebsiella aerogenes, general brain edema, subarachnoidal and intracranial bleeding",
+    "medical_history": "21 days after hospitalisation, mechanical ventilation, pulmonary failure, renal failure,bacterial pneumonia with Klebsiella aerogenes, general brain edema, subarachnoidal and intracranial bleeding",
     "diabetes": null,
     "hypertension": null,
     "smoker": null
@@ -86,72 +86,100 @@
     "title": "Zoom (VOI-aa) at 0.65um of the lung of donor FO-20-129, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
-        "name": "The Human Organ Atlas Collaboration",
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
         "roles": []
       },
       {
-        "name": "Peter Lee",
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
         "roles": ["Conceptualization", "Funding acquisition"]
       },
       {
-        "name": "Claire Walsh",
-        "roles": ["Conceptualization", "Funding acquisition"]
-      },
-      {
-        "name": "Paul Tafforeau",
-        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
-      },
-      {
-        "name": "Danny Jonigk",
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "David Stansby",
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
         "roles": ["Data curation", "Software"]
       },
       {
-        "name": "Elodie Boller",
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Guillaume Gaisne",
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
         "roles": ["Data curation", "Software"]
       },
       {
-        "name": "Hector Dejea I Velardo",
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
         "roles": ["Data curation", "Investigation"]
       },
       {
-        "name": "Joanna Purzycka",
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
         "roles": ["Data curation"]
       },
       {
-        "name": "Joseph Brunet",
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Mark P. Kuhnel",
+        "first_name": "Mark",
+        "last_name": "P. Kuhnel",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Maximilian Ackermann",
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Theresa Urban",
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Willi Wagner",
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       }
     ],
     "doi": "10.15151/ESRF-DC-572172172",
     "author_list": [
       "The Human Organ Atlas Collaboration",
-      "Peter Lee",
       "Claire Walsh",
-      "Paul Tafforeau",
       "Danny Jonigk",
       "David Stansby",
       "Elodie Boller",
@@ -161,8 +189,11 @@
       "Joseph Brunet",
       "Mark P. Kuhnel",
       "Maximilian Ackermann",
+      "Paul Tafforeau",
+      "Peter Lee",
       "Theresa Urban",
       "Willi Wagner"
     ]
-  }
+  },
+  "metadata_version": "0.9"
 }
