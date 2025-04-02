@@ -44,9 +44,27 @@
     },
     "Contributor": {
       "properties": {
-        "name": {
-          "title": "Name",
+        "first_name": {
+          "title": "First Name",
           "type": "string"
+        },
+        "last_name": {
+          "title": "Last Name",
+          "type": "string"
+        },
+        "orcid": {
+          "anyOf": [
+            {
+              "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[0-9X]{1}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "ORCID iD",
+          "title": "Orcid"
         },
         "roles": {
           "description": "Contributor role(s), following the Contributor Role Taxonomy (CReditT)",
@@ -73,7 +91,7 @@
           "type": "array"
         }
       },
-      "required": ["name", "roles"],
+      "required": ["first_name", "last_name", "roles"],
       "title": "Contributor",
       "type": "object"
     },
@@ -359,6 +377,7 @@
             "heart",
             "oesophagus",
             "spinalCord",
+            "spine",
             "spleen",
             "heart+lungs",
             "pancreas",
@@ -368,7 +387,9 @@
             "uterus",
             "thoracicBlock",
             "soleus",
-            "achillesTendon"
+            "achillesTendon",
+            "knee",
+            "tibia"
           ],
           "title": "Organ",
           "type": "string"
@@ -780,6 +801,7 @@
                 "LuAG:Ce 500um",
                 "LySO:Ce 8.5um",
                 "LySO:Ce 23um",
+                "LySO:Ce 2000um, reflective",
                 "Gadox 60um",
                 "CSI trixell structured 650um, 5um pitch",
                 "GGG 8um",
@@ -1041,6 +1063,13 @@
     "citation": {
       "$ref": "#/$defs/Citation",
       "title": "Dataset citation"
+    },
+    "metadata_version": {
+      "const": "0.9",
+      "default": "0.9",
+      "description": "Version of this metadata file.",
+      "title": "Metadata Version",
+      "type": "string"
     }
   },
   "required": [

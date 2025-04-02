@@ -92,168 +92,114 @@
     "title": "Zoom (VOI-01) at 2.5um of the heart of donor S-20-29, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
-        "name": "The Human Organ Atlas Collaboration",
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
         "roles": []
       },
       {
-        "name": "Peter Lee",
-        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition"]
       },
       {
-        "name": "Claire Walsh",
-        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Paul Tafforeau",
-        "roles": [
-          "Conceptualization",
-          "Data curation",
-          "Funding acquisition",
-          "Investigation"
-        ]
-      },
-      {
-        "name": "Alexandre Bellier",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "Alissa Parmenter",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Brian Bay",
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Camille Berruyer",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Danny Jonigk",
-        "roles": ["Funding acquisition", "Investigation"]
-      },
-      {
-        "name": "David Stansby",
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
         "roles": ["Data curation", "Software"]
       },
       {
-        "name": "Elodie Boller",
-        "roles": ["Funding acquisition", "Investigation"]
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
       },
       {
-        "name": "Emer Burke O'Leary",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Guillaume Gaisne",
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
         "roles": ["Data curation", "Software"]
       },
       {
-        "name": "Hannah Coleman",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Hector Dejea I Velardo",
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
         "roles": ["Data curation", "Investigation"]
       },
       {
-        "name": "Jingwen Liu",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Joanna Purzycka",
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
         "roles": ["Data curation"]
       },
       {
-        "name": "Joseph Brunet",
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Kathleen Dollman",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Mark P. Kuhnel",
+        "first_name": "Mark",
+        "last_name": "P. Kuhnel",
+        "orcid": null,
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Maximilian Ackermann",
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
         "roles": ["Funding acquisition"]
       },
       {
-        "name": "Olivier Palombi",
-        "roles": ["Funding acquisition"]
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
       },
       {
-        "name": "Philippe Chaffanjon",
-        "roles": ["Funding acquisition"]
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition"]
       },
       {
-        "name": "Rebecca Shipley",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Rui Xian",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Ryo Torii",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Sebastian Marussi",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Shahrokh Rahmani",
-        "roles": ["Investigation"]
-      },
-      {
-        "name": "Simon Walker-Samuel",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "name": "Theresa Urban",
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "name": "Willi Wagner",
-        "roles": ["Funding acquisition", "Investigation"]
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
       }
     ],
     "doi": "10.15151/ESRF-DC-1773964457",
     "author_list": [
       "The Human Organ Atlas Collaboration",
-      "Peter Lee",
       "Claire Walsh",
-      "Paul Tafforeau",
-      "Alexandre Bellier",
-      "Alissa Parmenter",
-      "Brian Bay",
-      "Camille Berruyer",
       "Danny Jonigk",
       "David Stansby",
       "Elodie Boller",
-      "Emer Burke O'Leary",
       "Guillaume Gaisne",
-      "Hannah Coleman",
       "Hector Dejea I Velardo",
-      "Jingwen Liu",
       "Joanna Purzycka",
       "Joseph Brunet",
-      "Kathleen Dollman",
       "Mark P. Kuhnel",
       "Maximilian Ackermann",
-      "Olivier Palombi",
-      "Philippe Chaffanjon",
-      "Rebecca Shipley",
-      "Rui Xian",
-      "Ryo Torii",
-      "Sebastian Marussi",
-      "Shahrokh Rahmani",
-      "Simon Walker-Samuel",
+      "Paul Tafforeau",
+      "Peter Lee",
       "Theresa Urban",
       "Willi Wagner"
     ]
-  }
+  },
+  "metadata_version": "0.9"
 }
