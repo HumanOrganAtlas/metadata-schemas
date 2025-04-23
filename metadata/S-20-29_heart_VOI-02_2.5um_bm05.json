@@ -81,7 +81,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "S-20-29_heart_VOI-02_2.5um_bm05",
+    "target_dataset": "S-20-29_heart_complete-organ_25.25um_bm05",
+    "translation": [2898.1250242901824, 2999.813053962212, 2379.4239185393576],
+    "rotation": 0.6000682863384358,
+    "scale": 0.09901000006140664
+  },
   "citation": {
     "title": "Zoom (VOI-02) at 2.5um of the heart of donor S-20-29, scanned at ESRF on beamline BM05.",
     "contributors": [
@@ -195,5 +201,5 @@
       "Willi Wagner"
     ]
   },
-  "metadata_version": "0.9"
+  "metadata_version": "1.0"
 }
