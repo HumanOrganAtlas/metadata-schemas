@@ -160,7 +160,7 @@
       {
         "first_name": "Jingwen",
         "last_name": "Liu",
-        "orcid": null,
+        "orcid": "0009-0009-8373-0079",
         "roles": ["Investigation"]
       },
       {
@@ -268,5 +268,5 @@
       "Willi Wagner"
     ]
   },
-  "metadata_version": "0.9"
+  "metadata_version": "1.0"
 }

@@ -81,7 +81,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "S-20-29_brain_VOI-01_6.5um_bm05",
+    "target_dataset": "S-20-29_brain_complete-organ_25.33um_bm05",
+    "translation": [1445.4614475655474, 2963.564699261556, 1761.0263294551992],
+    "rotation": -0.7999382392101861,
+    "scale": 0.25661317891842633
+  },
   "citation": {
     "title": "Zoom (VOI-01) at 6.5um of the brain of donor S-20-29, scanned at ESRF on beamline BM05.",
     "contributors": [
@@ -214,5 +220,5 @@
       "Willi Wagner"
     ]
   },
-  "metadata_version": "0.9"
+  "metadata_version": "1.0"
 }
