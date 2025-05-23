@@ -1,6 +1,6 @@
 # Human Organ Atlas metadata schemas
 
-Metadata schemas for the Human Organ Atlas data.
+Metadata schemas for Human Organ Atlas data.
 
 ## Schema docs
 
