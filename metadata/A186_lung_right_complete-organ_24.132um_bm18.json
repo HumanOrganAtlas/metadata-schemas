@@ -77,7 +77,7 @@
       "Anastasia Yendiki",
       "Maximilian Ackermann",
       "Alexandre Bellier",
-      "Bernadette De Bakker",
+      "Bernadette de Bakker",
       "Paul Tafforeau",
       "Danny Jonigk",
       "Stijn Verleden"
@@ -102,7 +102,7 @@
       {
         "first_name": "Anastasia",
         "last_name": "Yendiki",
-        "orcid": null,
+        "orcid": "0000-0003-1386-3828",
         "roles": ["Funding acquisition"]
       },
       {
@@ -113,8 +113,8 @@
       },
       {
         "first_name": "Bernadette",
-        "last_name": "De Bakker",
-        "orcid": null,
+        "last_name": "de Bakker",
+        "orcid": "0000-0003-0758-4064",
         "roles": ["Funding acquisition"]
       },
       {
@@ -243,7 +243,7 @@
       "Alexandre Bellier",
       "Anastasia Yendiki",
       "Andrew Keenlyside",
-      "Bernadette De Bakker",
+      "Bernadette de Bakker",
       "Birger Tielemans",
       "Claire Walsh",
       "Daisuke Yamada",

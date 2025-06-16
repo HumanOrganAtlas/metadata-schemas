@@ -1,19 +1,19 @@
 {
-  "name": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
+  "name": "FO-20-124_lung_upper_lobe_VOI-03_2.5um_bm05",
   "dataset_type": "zoom",
-  "voi": "central-column",
+  "voi": "VOI-03",
   "data": {
-    "shape": [3795, 3795, 7540],
-    "voxel_size_um": 6.05,
-    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-27/kidney-left/6.05um_central-column_bm05/"
+    "shape": [3878, 3878, 6139],
+    "voxel_size_um": 2.5,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/FO-20-124/lung-upper_lobe/2.5um_VOI-03_bm05/"
   },
   "sample": {
-    "organ": "kidney",
-    "organ_context": "left",
+    "organ": "lung",
+    "organ_context": "upper_lobe",
     "post_mortem_interval_hours": null,
     "fixation_method": null,
     "fixation_medium": null,
-    "organ_infilled": "n/a",
+    "organ_infilled": null,
     "stabilisation_medium": null,
     "degassing_method": null,
     "scan_solvent": null,
@@ -21,49 +21,49 @@
     "scan_temperature": "room temperature"
   },
   "donor": {
-    "id": "LADAF-2020-27",
-    "age": 94,
-    "sex": "F",
-    "weight": 45.0,
-    "height": 140.0,
-    "cause_of_death": null,
-    "date_of_death": "2020-06-11",
-    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "id": "FO-20-124",
+    "age": 76,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": "Covid",
+    "date_of_death": null,
+    "medical_history": "Hospitalisation for 22 days; Mechanical ventilation yes for 22 days;BMI 30.5; Bacterial superinfection in the lower lobe",
     "diabetes": null,
-    "hypertension": "Yes",
+    "hypertension": null,
     "smoker": null
   },
   "scan": {
-    "date": "2020-07-13",
+    "date": "2021-04-15",
     "beamline": "BM05",
-    "energy": 89.0,
-    "current_start": 200.0,
+    "energy": 84.0,
+    "current_start": 200.117,
     "filling_mode": null,
     "n_frames": 6000,
-    "n_ref": 0,
-    "n_dark": 400,
-    "latency_time": 0.01,
-    "exposure_time": 0.04,
+    "n_ref": 3,
+    "n_dark": 0,
+    "latency_time": 0.002,
+    "exposure_time": 0.025,
     "subframe_time": null,
-    "n_subframes": 4,
+    "n_subframes": 3,
     "scan_type": "zseries",
     "scan_range": 360.0,
-    "n_scans": 13,
+    "n_scans": null,
     "acquisition": "half",
-    "z_step": 3.5,
-    "scan_time": 300.0,
-    "filters": ["Al 2mm", "Mo 0.1mm", "SiO2 60mm rods 12x5mm"],
-    "scintillator": "LuAG:Ce 2000um",
-    "optic": "DZoom",
-    "optic_magnification": 1.0,
+    "z_step": null,
+    "scan_time": 516.0,
+    "filters": ["Cu 0.23mm", "Mo 0.24mm", "SiO2 16mm rods 4x4mm"],
+    "scintillator": "LuAG:Ce 200um",
+    "optic": "Zoom",
+    "optic_magnification": 2.535,
     "distance_source_sample": null,
-    "distance_sample_detector": 3475.0,
+    "distance_sample_detector": 1440.0,
     "sensor_name": "PCO edge 4.2 CLHS",
-    "sensor_mode": "rolling shutter",
-    "sensor_roi_x_size": 688,
-    "sensor_roi_y_size": 688,
+    "sensor_mode": null,
+    "sensor_roi_x_size": 1120,
+    "sensor_roi_y_size": 1120,
     "sensor_binning": null,
-    "pixel_size": 6.05,
+    "pixel_size": 2.5,
     "xray_magnification": null,
     "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
     "experiment_type": "Tomography"
@@ -83,7 +83,7 @@
   },
   "registration": null,
   "citation": {
-    "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "title": "Zoom (VOI-03) at 2.5um of the lung of donor FO-20-124, scanned at ESRF on beamline BM05.",
     "contributors": [
       {
         "first_name": "The",
@@ -101,7 +101,7 @@
         "first_name": "Danny",
         "last_name": "Jonigk",
         "orcid": "0000-0002-5251-2281",
-        "roles": ["Funding acquisition", "Investigation"]
+        "roles": ["Funding acquisition"]
       },
       {
         "first_name": "David",
@@ -113,7 +113,7 @@
         "first_name": "Elodie",
         "last_name": "Boller",
         "orcid": null,
-        "roles": ["Funding acquisition", "Investigation"]
+        "roles": ["Funding acquisition"]
       },
       {
         "first_name": "Guillaume",
@@ -138,6 +138,12 @@
         "last_name": "Brunet",
         "orcid": "0000-0002-8424-9510",
         "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Kathleen",
+        "last_name": "Dollman",
+        "orcid": "0000-0002-5468-4896",
+        "roles": ["Investigation"]
       },
       {
         "first_name": "Mark",
@@ -178,10 +184,10 @@
         "first_name": "Willi",
         "last_name": "Wagner",
         "orcid": null,
-        "roles": ["Funding acquisition", "Investigation"]
+        "roles": ["Funding acquisition"]
       }
     ],
-    "doi": "10.15151/ESRF-DC-572183366",
+    "doi": null,
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",
@@ -192,6 +198,7 @@
       "Hector Dejea I Velardo",
       "Joanna Purzycka",
       "Joseph Brunet",
+      "Kathleen Dollman",
       "Mark P. Kuhnel",
       "Maximilian Ackermann",
       "Paul Tafforeau",

@@ -81,13 +81,7 @@
       "Willi Wagner"
     ]
   },
-  "registration": {
-    "source_dataset": "S-20-29_kidney_VOI-01_1.4um_bm05",
-    "target_dataset": "S-20-29_kidney_complete-organ_25.38um_bm05",
-    "translation": [489.54624300094076, 568.0944131981872, 640.6147383414886],
-    "rotation": 177.50261493690053,
-    "scale": 0.055159223169650606
-  },
+  "registration": null,
   "citation": {
     "title": "Zoom (VOI-01) at 1.4um of the kidney of donor S-20-29, scanned at ESRF on beamline BM05.",
     "contributors": [
