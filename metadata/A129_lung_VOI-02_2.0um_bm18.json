@@ -1,15 +1,15 @@
 {
-  "name": "FO-20-124_lung_upper_lobe_complete-organ_26.38um_bm05",
-  "dataset_type": "overview",
-  "voi": "complete-organ",
+  "name": "A129_lung_VOI-02_2.0um_bm18",
+  "dataset_type": "zoom",
+  "voi": "VOI-02",
   "data": {
-    "shape": [3834, 3834, 4992],
-    "voxel_size_um": 26.38,
-    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/FO-20-124/lung-upper_lobe/26.38um_complete-organ_bm05/"
+    "shape": [7102, 7102, 15491],
+    "voxel_size_um": 2.0,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/A129/lung/2.0um_VOI-02_bm18/"
   },
   "sample": {
     "organ": "lung",
-    "organ_context": "upper_lobe",
+    "organ_context": null,
     "post_mortem_interval_hours": null,
     "fixation_method": null,
     "fixation_medium": null,
@@ -21,79 +21,101 @@
     "scan_temperature": "room temperature"
   },
   "donor": {
-    "id": "FO-20-124",
-    "age": 76,
+    "id": "A129",
+    "age": 30,
     "sex": "M",
     "weight": null,
     "height": null,
-    "cause_of_death": "Covid",
+    "cause_of_death": "not applicable - transplant organ",
     "date_of_death": null,
-    "medical_history": "Hospitalisation for 22 days; Mechanical ventilation yes for 22 days;BMI 30.5; Bacterial superinfection in the lower lobe",
+    "medical_history": "transplant-yes, explant: PPFE",
     "diabetes": null,
     "hypertension": null,
     "smoker": null
   },
   "scan": {
-    "date": "2020-05-31",
-    "beamline": "BM05",
-    "energy": 70.0,
-    "current_start": 200.199,
-    "filling_mode": null,
-    "n_frames": 6000,
-    "n_ref": 1,
-    "n_dark": 0,
-    "latency_time": 0.002,
-    "exposure_time": 0.014286,
-    "subframe_time": null,
-    "n_subframes": 7,
+    "date": "2023-11-04",
+    "beamline": "BM18",
+    "energy": 84.0,
+    "current_start": 198.36135,
+    "filling_mode": "uniform multibunch",
+    "n_frames": 12000,
+    "n_ref": 101,
+    "n_dark": 3,
+    "latency_time": 0.0075,
+    "exposure_time": 0.075,
+    "subframe_time": 0.075,
+    "n_subframes": 1,
     "scan_type": "zseries",
     "scan_range": 360.0,
-    "n_scans": null,
+    "n_scans": 6,
     "acquisition": "half",
-    "z_step": null,
-    "scan_time": 708.0,
-    "filters": [
-      "Al 3.5mm",
-      "Glassy carbon 135mm rods 27x5mm",
-      "Glassy carbon 64mm rods 16x4mm"
-    ],
-    "scintillator": "LuAG:Ce 2000um",
-    "optic": null,
-    "optic_magnification": 1.077,
-    "distance_source_sample": null,
-    "distance_sample_detector": 3675.0,
-    "sensor_name": null,
-    "sensor_mode": "FFM",
-    "sensor_roi_x_size": 2048,
-    "sensor_roi_y_size": 176,
-    "sensor_binning": null,
-    "pixel_size": 26.38,
+    "z_step": 5.0,
+    "scan_time": 992.728934,
+    "filters": ["Sapphire 1mm", "Mo 0.23mm", "Psho 10mm"],
+    "scintillator": "LuAG:Ce 250um",
+    "optic": "Zoom",
+    "optic_magnification": 2.101245043596107,
+    "distance_source_sample": 177450.0,
+    "distance_sample_detector": 2000.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 5056,
+    "sensor_roi_y_size": 2960,
+    "sensor_binning": [1, 1],
+    "pixel_size": 2.0,
     "xray_magnification": null,
     "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
     "experiment_type": "Tomography"
   },
   "proposal": {
-    "proposal_number": "md1252",
-    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposal_number": "md1389",
+    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
     "proposers": [
       "Peter Lee",
+      "Claire Walsh",
+      "Anastasia Yendiki",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Bernadette de Bakker",
       "Paul Tafforeau",
       "Danny Jonigk",
-      "Maximilian Ackermann",
-      "Mark P. Kuhnel",
-      "Elodie Boller",
-      "Willi Wagner"
+      "Stijn Verleden"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "A129_lung_VOI-02_2.0um_bm18",
+    "target_dataset": "A129_lung_complete-organ_20.01um_bm18",
+    "translation": [1509.2014617251673, 492.7553509572563, 2478.7641987064226],
+    "rotation": 0.10001492736704592,
+    "scale": 0.0999497605784577
+  },
   "citation": {
-    "title": "Overview at 26.38um of the lung of donor FO-20-124, scanned at ESRF on beamline BM05.",
+    "title": "Zoom (VOI-02) at 2.0um of the lung of donor A129, scanned at ESRF on beamline BM18.",
     "contributors": [
       {
         "first_name": "The",
         "last_name": "Human Organ Atlas Collaboration",
         "orcid": null,
         "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": "0000-0003-1386-3828",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Bernadette",
+        "last_name": "de Bakker",
+        "orcid": "0000-0003-0758-4064",
+        "roles": ["Funding acquisition"]
       },
       {
         "first_name": "Claire",
@@ -105,19 +127,13 @@
         "first_name": "Danny",
         "last_name": "Jonigk",
         "orcid": "0000-0002-5251-2281",
-        "roles": ["Funding acquisition", "Investigation"]
+        "roles": ["Funding acquisition"]
       },
       {
         "first_name": "David",
         "last_name": "Stansby",
         "orcid": "0000-0002-1365-1908",
         "roles": ["Data curation", "Software"]
-      },
-      {
-        "first_name": "Elodie",
-        "last_name": "Boller",
-        "orcid": null,
-        "roles": ["Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Guillaume",
@@ -144,64 +160,61 @@
         "roles": ["Data curation", "Investigation", "Software"]
       },
       {
-        "first_name": "Mark",
-        "last_name": "P. Kuhnel",
-        "orcid": null,
-        "roles": ["Funding acquisition"]
+        "first_name": "Joseph",
+        "last_name": "Jacob",
+        "orcid": "0000-0002-8054-2293",
+        "roles": ["Resources"]
       },
       {
         "first_name": "Maximilian",
         "last_name": "Ackermann",
         "orcid": "0000-0001-9996-2477",
-        "roles": ["Funding acquisition"]
+        "roles": ["Funding acquisition", "Resources"]
       },
       {
         "first_name": "Paul",
         "last_name": "Tafforeau",
         "orcid": "0000-0002-5962-1683",
-        "roles": [
-          "Conceptualization",
-          "Data curation",
-          "Funding acquisition",
-          "Investigation"
-        ]
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
       },
       {
         "first_name": "Peter",
         "last_name": "Lee",
         "orcid": "0000-0002-3898-8881",
-        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Stijn",
+        "last_name": "Verleden",
+        "orcid": "0000-0002-9656-5844",
+        "roles": ["Funding acquisition", "Resources"]
       },
       {
         "first_name": "Theresa",
         "last_name": "Urban",
         "orcid": "0000-0002-0352-8180",
         "roles": ["Data curation", "Investigation", "Software"]
-      },
-      {
-        "first_name": "Willi",
-        "last_name": "Wagner",
-        "orcid": null,
-        "roles": ["Funding acquisition", "Investigation"]
       }
     ],
-    "doi": "10.15151/ESRF-DC-2127908029",
+    "doi": null,
     "author_list": [
       "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Anastasia Yendiki",
+      "Bernadette de Bakker",
       "Claire Walsh",
       "Danny Jonigk",
       "David Stansby",
-      "Elodie Boller",
       "Guillaume Gaisne",
       "Hector Dejea I Velardo",
       "Joanna Purzycka",
       "Joseph Brunet",
-      "Mark P. Kuhnel",
+      "Joseph Jacob",
       "Maximilian Ackermann",
       "Paul Tafforeau",
       "Peter Lee",
-      "Theresa Urban",
-      "Willi Wagner"
+      "Stijn Verleden",
+      "Theresa Urban"
     ]
   },
   "metadata_version": "1.0"

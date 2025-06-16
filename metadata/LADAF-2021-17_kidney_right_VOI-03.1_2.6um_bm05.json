@@ -87,7 +87,13 @@
       "Rebecca Shipley"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "LADAF-2021-17_kidney_right_VOI-03.1_2.6um_bm05",
+    "target_dataset": "LADAF-2021-17_kidney_right_complete-organ_25.0um_bm05",
+    "translation": [211.76128024151447, 1075.0892836573355, 1138.3961849195089],
+    "rotation": 20.10006704756408,
+    "scale": 0.10400036137032793
+  },
   "citation": {
     "title": "Zoom (VOI-03.1) at 2.6um of the kidney of donor LADAF-2021-17, scanned at ESRF on beamline BM05.",
     "contributors": [
