@@ -44,7 +44,7 @@
     "n_dark": 0,
     "latency_time": 0.006,
     "exposure_time": 0.06,
-    "subframe_time": null,
+    "subframe_time": 0.06,
     "n_subframes": 1,
     "scan_type": "zseries",
     "scan_range": 360.0,

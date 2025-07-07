@@ -43,8 +43,8 @@
     "n_ref": 3,
     "n_dark": 100,
     "latency_time": 0.0015,
-    "exposure_time": 0.015,
-    "subframe_time": null,
+    "exposure_time": 0.045,
+    "subframe_time": 0.015,
     "n_subframes": 3,
     "scan_type": "zseries",
     "scan_range": 360.0,
@@ -195,7 +195,7 @@
       {
         "first_name": "Philippe",
         "last_name": "Chaffanjon",
-        "orcid": null,
+        "orcid": "0000-0002-7954-2798",
         "roles": ["Funding acquisition"]
       },
       {

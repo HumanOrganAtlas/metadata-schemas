@@ -51,7 +51,7 @@
     "n_scans": 38,
     "acquisition": "half",
     "z_step": 3.5,
-    "scan_time": 510.59999999999997,
+    "scan_time": 510.6,
     "filters": [
       "Al 3.5mm",
       "Glassy carbon 135mm rods 27x5mm",
