@@ -1,255 +1,205 @@
 {
-    "name": "S-20-29_heart_VOI-01_6.5um_bm05",
-    "dataset_type": "zoom",
-    "voi": "VOI-01",
-    "data": {
-        "shape": [
-            3859,
-            3859,
-            997
-        ],
-        "voxel_size_um": 6.5,
-        "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/6.5um_VOI-01_bm05/"
-    },
-    "sample": {
-        "organ": "heart",
-        "organ_context": null,
-        "post_mortem_interval_hours": null,
-        "fixation_method": null,
-        "fixation_medium": null,
-        "organ_infilled": null,
-        "stabilisation_medium": null,
-        "degassing_method": null,
-        "scan_solvent": null,
-        "scan_solvent_concentration": null,
-        "scan_temperature": "room temperature"
-    },
-    "donor": {
-        "id": "S-20-29",
-        "age": 80,
-        "sex": "M",
-        "weight": 170.0,
-        "height": 90.0,
-        "cause_of_death": "Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease",
-        "date_of_death": null,
-        "medical_history": "Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
-        "diabetes": "Type 2",
-        "hypertension": null,
-        "smoker": null
-    },
-    "scan": {
-        "date": "2021-01-28",
-        "beamline": "BM05",
-        "energy": 77.0,
-        "current_start": 197.648,
-        "filling_mode": null,
-        "n_frames": 6000,
-        "n_ref": 3,
-        "n_dark": 0,
-        "latency_time": 0.0015,
-        "exposure_time": 0.06,
-        "subframe_time": 0.015,
-        "n_subframes": 4,
-        "scan_type": "zseries",
-        "scan_range": 360.0,
-        "n_scans": 46,
-        "acquisition": "half",
-        "z_step": null,
-        "scan_time": 420.0,
-        "filters": [
-            "Mo 0.1mm",
-            "SiO2 40mm rods 10x4mm"
-        ],
-        "scintillator": "LuAG:Ce 1000um",
-        "optic": "DZoom",
-        "optic_magnification": 0.941,
-        "distance_source_sample": null,
-        "distance_sample_detector": 3500.0,
-        "sensor_name": "PCO edge 4.2 CLHS",
-        "sensor_mode": "rolling shutter",
-        "sensor_roi_x_size": 2048,
-        "sensor_roi_y_size": 304,
-        "sensor_binning": null,
-        "pixel_size": 6.5,
-        "xray_magnification": null,
-        "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
-        "experiment_type": "Tomography"
-    },
-    "proposal": {
-        "proposal_number": "md1252",
-        "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
-        "proposers": [
-            "Peter Lee",
-            "Paul Tafforeau",
-            "Danny Jonigk",
-            "Maximilian Ackermann",
-            "Mark P. Kuhnel",
-            "Elodie Boller",
-            "Willi Wagner"
-        ]
-    },
-    "registration": {
-        "source_dataset": "S-20-29_heart_VOI-01_6.5um_bm05",
-        "target_dataset": "S-20-29_heart_complete-organ_25.25um_bm05",
-        "translation": [
-            3430.0820816922305,
-            1818.8063122028339,
-            1506.8597665961822
-        ],
-        "rotation": 0.0002678466090915693,
-        "scale": 0.2574271213120059
-    },
-    "citation": {
-        "title": "Zoom (VOI-01) at 6.5um of the heart of donor S-20-29, scanned at ESRF on beamline BM05.",
-        "contributors": [
-            {
-                "first_name": "The",
-                "last_name": "Human Organ Atlas Collaboration",
-                "orcid": null,
-                "roles": []
-            },
-            {
-                "first_name": "Claire",
-                "last_name": "Walsh",
-                "orcid": "0000-0003-3769-3392",
-                "roles": [
-                    "Conceptualization",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Danny",
-                "last_name": "Jonigk",
-                "orcid": "0000-0002-5251-2281",
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "David",
-                "last_name": "Stansby",
-                "orcid": "0000-0002-1365-1908",
-                "roles": [
-                    "Data curation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Elodie",
-                "last_name": "Boller",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Guillaume",
-                "last_name": "Gaisne",
-                "orcid": "0000-0002-3401-7930",
-                "roles": [
-                    "Data curation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Hector",
-                "last_name": "Dejea I Velardo",
-                "orcid": "0000-0003-2584-9812",
-                "roles": [
-                    "Data curation",
-                    "Investigation"
-                ]
-            },
-            {
-                "first_name": "Joanna",
-                "last_name": "Purzycka",
-                "orcid": "0000-0001-8742-5279",
-                "roles": [
-                    "Data curation"
-                ]
-            },
-            {
-                "first_name": "Joseph",
-                "last_name": "Brunet",
-                "orcid": "0000-0002-8424-9510",
-                "roles": [
-                    "Data curation",
-                    "Investigation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Mark",
-                "last_name": "P. Kuhnel",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Maximilian",
-                "last_name": "Ackermann",
-                "orcid": "0000-0001-9996-2477",
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Paul",
-                "last_name": "Tafforeau",
-                "orcid": "0000-0002-5962-1683",
-                "roles": [
-                    "Conceptualization",
-                    "Data curation",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Peter",
-                "last_name": "Lee",
-                "orcid": "0000-0002-3898-8881",
-                "roles": [
-                    "Conceptualization",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Theresa",
-                "last_name": "Urban",
-                "orcid": "0000-0002-0352-8180",
-                "roles": [
-                    "Data curation",
-                    "Investigation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Willi",
-                "last_name": "Wagner",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            }
-        ],
-        "doi": null,
-        "author_list": [
-            "The Human Organ Atlas Collaboration",
-            "Claire Walsh",
-            "Danny Jonigk",
-            "David Stansby",
-            "Elodie Boller",
-            "Guillaume Gaisne",
-            "Hector Dejea I Velardo",
-            "Joanna Purzycka",
-            "Joseph Brunet",
-            "Mark P. Kuhnel",
-            "Maximilian Ackermann",
-            "Paul Tafforeau",
-            "Peter Lee",
-            "Theresa Urban",
-            "Willi Wagner"
-        ]
-    },
-    "metadata_version": "1.1"
+  "name": "S-20-29_heart_VOI-01_6.5um_bm05",
+  "dataset_type": "zoom",
+  "voi": "VOI-01",
+  "data": {
+    "shape": [3859, 3859, 997],
+    "voxel_size_um": 6.5,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/6.5um_VOI-01_bm05/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "S-20-29",
+    "age": 80,
+    "sex": "M",
+    "weight": 170.0,
+    "height": 90.0,
+    "cause_of_death": "Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease",
+    "date_of_death": null,
+    "medical_history": "Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
+    "diabetes": "Type 2",
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2021-01-28",
+    "beamline": "BM05",
+    "energy": 77.0,
+    "current_start": 197.648,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 3,
+    "n_dark": 0,
+    "latency_time": 0.0015,
+    "exposure_time": 0.06,
+    "subframe_time": 0.015,
+    "n_subframes": 4,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 46,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": 420.0,
+    "filters": ["Mo 0.1mm", "SiO2 40mm rods 10x4mm"],
+    "scintillator": "LuAG:Ce 1000um",
+    "optic": "DZoom",
+    "optic_magnification": 0.941,
+    "distance_source_sample": null,
+    "distance_sample_detector": 3500.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "rolling shutter",
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 304,
+    "sensor_binning": null,
+    "pixel_size": 6.5,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": {
+    "source_dataset": "S-20-29_heart_VOI-01_6.5um_bm05",
+    "target_dataset": "S-20-29_heart_complete-organ_25.25um_bm05",
+    "translation": [3430.0820816922305, 1818.8063122028339, 1506.8597665961822],
+    "rotation": 0.0002678466090915693,
+    "scale": 0.2574271213120059
+  },
+  "citation": {
+    "title": "Zoom (VOI-01) at 6.5um of the heart of donor S-20-29, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Mark",
+        "last_name": "P. Kuhnel",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Claire Walsh",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
 }

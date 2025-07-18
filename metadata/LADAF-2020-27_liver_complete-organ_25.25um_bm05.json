@@ -1,245 +1,199 @@
 {
-    "name": "LADAF-2020-27_liver_complete-organ_25.25um_bm05",
-    "dataset_type": "overview",
-    "voi": "complete-organ",
-    "data": {
-        "shape": [
-            5703,
-            5703,
-            6447
-        ],
-        "voxel_size_um": 25.25,
-        "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-27/liver/25.25um_complete-organ_bm05/"
-    },
-    "sample": {
-        "organ": "liver",
-        "organ_context": null,
-        "post_mortem_interval_hours": null,
-        "fixation_method": null,
-        "fixation_medium": null,
-        "organ_infilled": "n/a",
-        "stabilisation_medium": null,
-        "degassing_method": null,
-        "scan_solvent": null,
-        "scan_solvent_concentration": null,
-        "scan_temperature": "room temperature"
-    },
-    "donor": {
-        "id": "LADAF-2020-27",
-        "age": 94,
-        "sex": "F",
-        "weight": 45.0,
-        "height": 140.0,
-        "cause_of_death": null,
-        "date_of_death": "2020-06-11",
-        "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
-        "diabetes": null,
-        "hypertension": "Yes",
-        "smoker": null
-    },
-    "scan": {
-        "date": "2020-09-25",
-        "beamline": "BM05",
-        "energy": 90.0,
-        "current_start": null,
-        "filling_mode": null,
-        "n_frames": 9990,
-        "n_ref": 1,
-        "n_dark": 0,
-        "latency_time": 0.003,
-        "exposure_time": 0.004,
-        "subframe_time": null,
-        "n_subframes": 7,
-        "scan_type": "zseries",
-        "scan_range": 360.0,
-        "n_scans": null,
-        "acquisition": null,
-        "z_step": null,
-        "scan_time": null,
-        "filters": [
-            "Mo 0.1mm",
-            "SiO2 50mm rods 10x5mm"
-        ],
-        "scintillator": "LuAG:Ce 2000um",
-        "optic": "DZoom",
-        "optic_magnification": null,
-        "distance_source_sample": null,
-        "distance_sample_detector": 3650.0,
-        "sensor_name": "PCO edge 4.2 CLHS",
-        "sensor_mode": "FFM",
-        "sensor_roi_x_size": 3094,
-        "sensor_roi_y_size": 6447,
-        "sensor_binning": null,
-        "pixel_size": 25.25,
-        "xray_magnification": null,
-        "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
-        "experiment_type": "Tomography"
-    },
-    "proposal": {
-        "proposal_number": "md1252",
-        "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
-        "proposers": [
-            "Peter Lee",
-            "Paul Tafforeau",
-            "Danny Jonigk",
-            "Maximilian Ackermann",
-            "Mark P. Kuhnel",
-            "Elodie Boller",
-            "Willi Wagner"
-        ]
-    },
-    "registration": null,
-    "citation": {
-        "title": "Overview at 25.25um of the liver of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
-        "contributors": [
-            {
-                "first_name": "The",
-                "last_name": "Human Organ Atlas Collaboration",
-                "orcid": null,
-                "roles": []
-            },
-            {
-                "first_name": "Claire",
-                "last_name": "Walsh",
-                "orcid": "0000-0003-3769-3392",
-                "roles": [
-                    "Conceptualization",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Danny",
-                "last_name": "Jonigk",
-                "orcid": "0000-0002-5251-2281",
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "David",
-                "last_name": "Stansby",
-                "orcid": "0000-0002-1365-1908",
-                "roles": [
-                    "Data curation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Elodie",
-                "last_name": "Boller",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Guillaume",
-                "last_name": "Gaisne",
-                "orcid": "0000-0002-3401-7930",
-                "roles": [
-                    "Data curation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Hector",
-                "last_name": "Dejea I Velardo",
-                "orcid": "0000-0003-2584-9812",
-                "roles": [
-                    "Data curation",
-                    "Investigation"
-                ]
-            },
-            {
-                "first_name": "Joanna",
-                "last_name": "Purzycka",
-                "orcid": "0000-0001-8742-5279",
-                "roles": [
-                    "Data curation"
-                ]
-            },
-            {
-                "first_name": "Joseph",
-                "last_name": "Brunet",
-                "orcid": "0000-0002-8424-9510",
-                "roles": [
-                    "Data curation",
-                    "Investigation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Mark",
-                "last_name": "P. Kuhnel",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Maximilian",
-                "last_name": "Ackermann",
-                "orcid": "0000-0001-9996-2477",
-                "roles": [
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Paul",
-                "last_name": "Tafforeau",
-                "orcid": "0000-0002-5962-1683",
-                "roles": [
-                    "Conceptualization",
-                    "Data curation",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Peter",
-                "last_name": "Lee",
-                "orcid": "0000-0002-3898-8881",
-                "roles": [
-                    "Conceptualization",
-                    "Funding acquisition"
-                ]
-            },
-            {
-                "first_name": "Theresa",
-                "last_name": "Urban",
-                "orcid": "0000-0002-0352-8180",
-                "roles": [
-                    "Data curation",
-                    "Investigation",
-                    "Software"
-                ]
-            },
-            {
-                "first_name": "Willi",
-                "last_name": "Wagner",
-                "orcid": null,
-                "roles": [
-                    "Funding acquisition"
-                ]
-            }
-        ],
-        "doi": null,
-        "author_list": [
-            "The Human Organ Atlas Collaboration",
-            "Claire Walsh",
-            "Danny Jonigk",
-            "David Stansby",
-            "Elodie Boller",
-            "Guillaume Gaisne",
-            "Hector Dejea I Velardo",
-            "Joanna Purzycka",
-            "Joseph Brunet",
-            "Mark P. Kuhnel",
-            "Maximilian Ackermann",
-            "Paul Tafforeau",
-            "Peter Lee",
-            "Theresa Urban",
-            "Willi Wagner"
-        ]
-    },
-    "metadata_version": "1.1"
+  "name": "LADAF-2020-27_liver_complete-organ_25.25um_bm05",
+  "dataset_type": "overview",
+  "voi": "complete-organ",
+  "data": {
+    "shape": [5703, 5703, 6447],
+    "voxel_size_um": 25.25,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2020-27/liver/25.25um_complete-organ_bm05/"
+  },
+  "sample": {
+    "organ": "liver",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": "n/a",
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2020-27",
+    "age": 94,
+    "sex": "F",
+    "weight": 45.0,
+    "height": 140.0,
+    "cause_of_death": null,
+    "date_of_death": "2020-06-11",
+    "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
+    "diabetes": null,
+    "hypertension": "Yes",
+    "smoker": null
+  },
+  "scan": {
+    "date": "2020-09-25",
+    "beamline": "BM05",
+    "energy": 90.0,
+    "current_start": null,
+    "filling_mode": null,
+    "n_frames": 9990,
+    "n_ref": 1,
+    "n_dark": 0,
+    "latency_time": 0.003,
+    "exposure_time": 0.004,
+    "subframe_time": null,
+    "n_subframes": 7,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": null,
+    "acquisition": null,
+    "z_step": null,
+    "scan_time": null,
+    "filters": ["Mo 0.1mm", "SiO2 50mm rods 10x5mm"],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": null,
+    "distance_source_sample": null,
+    "distance_sample_detector": 3650.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": "FFM",
+    "sensor_roi_x_size": 3094,
+    "sensor_roi_y_size": 6447,
+    "sensor_binning": null,
+    "pixel_size": 25.25,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1252",
+    "title": "Multiscale Quantification of Covid-19's impact on lung vasculature from whole lobe to alveolar/microvascular scales",
+    "proposers": [
+      "Peter Lee",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Maximilian Ackermann",
+      "Mark P. Kuhnel",
+      "Elodie Boller",
+      "Willi Wagner"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 25.25um of the liver of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Mark",
+        "last_name": "P. Kuhnel",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Claire Walsh",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Mark P. Kuhnel",
+      "Maximilian Ackermann",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
 }
