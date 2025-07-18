@@ -81,7 +81,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
+    "target_dataset": "LADAF-2020-27_kidney_left_complete-organ_25.08um_bm05",
+    "translation": [1017.9719043176432, 1223.624254388026, 261.70355324749175],
+    "rotation": 0.39995641319505854,
+    "scale": 0.24122825247165197
+  },
   "citation": {
     "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
     "contributors": [

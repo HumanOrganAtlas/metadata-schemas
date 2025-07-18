@@ -1,0 +1,331 @@
+{
+  "name": "AUMC-005_uterus_complete-organ_20.026um_bm18",
+  "dataset_type": "overview",
+  "voi": "complete-organ",
+  "data": {
+    "shape": [4247, 3322, 4980],
+    "voxel_size_um": 20.026,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/AUMC-005/uterus/20.026um_complete-organ_bm18/"
+  },
+  "sample": {
+    "organ": "uterus",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "AUMC-005",
+    "age": null,
+    "sex": "F",
+    "weight": null,
+    "height": null,
+    "cause_of_death": "not applicable",
+    "date_of_death": null,
+    "medical_history": "Adenomyosis",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2024-04-05",
+    "beamline": "BM18",
+    "energy": 108.6,
+    "current_start": 194.168684,
+    "filling_mode": "7/8 multibunch",
+    "n_frames": 7000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.0012,
+    "exposure_time": 0.036,
+    "subframe_time": 0.012,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 16,
+    "acquisition": "half",
+    "z_step": 7.0,
+    "scan_time": 278.0539551,
+    "filters": [
+      "Sapphire 5mm",
+      "Sapphire 5mm",
+      "Silver 0.2mm",
+      "Glassy carbon 20mm",
+      "Glassy carbon 30mm"
+    ],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": 0.33694889147738527,
+    "distance_source_sample": 177000.0,
+    "distance_sample_detector": 20000.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2528,
+    "sensor_roi_y_size": 420,
+    "sensor_binning": [2, 2],
+    "pixel_size": 20.026,
+    "xray_magnification": 1.112994350282486,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1389",
+    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Anastasia Yendiki",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Bernadette de Bakker",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Stijn Verleden"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 20.026um of the uterus of donor AUMC-005, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alberto",
+        "last_name": "Mittone",
+        "orcid": "0000-0002-2018-5714",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": "0000-0003-1386-3828",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Angelos",
+        "last_name": "Evangelinos",
+        "orcid": "0000-0002-0226-1445",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Arantza",
+        "last_name": "Farina Sarasqueta",
+        "orcid": "0000-0002-4307-1568",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Bernadette",
+        "last_name": "de Bakker",
+        "orcid": "0000-0003-0758-4064",
+        "roles": ["Funding acquisition", "Resources"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Daniël",
+        "last_name": "Docter",
+        "orcid": "0009-0004-9650-877X",
+        "roles": ["Investigation", "Resources"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Gowsihan",
+        "last_name": "Poologasundarampillai",
+        "orcid": "0000-0002-8498-323X",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Jenna",
+        "last_name": "Schardt",
+        "orcid": "0009-0008-5983-484X",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Jermo",
+        "last_name": "Hanemaaijer-van der Veer",
+        "orcid": "0009-0006-1391-2668",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Ju",
+        "last_name": "Young Lee",
+        "orcid": "0000-0002-6096-099X",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Judith",
+        "last_name": "Huirne",
+        "orcid": "0000-0002-8248-2677",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Lynda",
+        "last_name": "Juffermans",
+        "orcid": "0000-0003-0673-4753",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Matthieu",
+        "last_name": "Chourrout",
+        "orcid": "0000-0002-2282-6976",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Naomi",
+        "last_name": "Donner",
+        "orcid": "0000-0002-0595-4060",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Nicole",
+        "last_name": "Burger",
+        "orcid": "0000-0002-6142-6684",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Richard",
+        "last_name": "Schoonhoven",
+        "orcid": "0000-0003-3659-929X",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Stijn",
+        "last_name": "Verleden",
+        "orcid": "0000-0002-9656-5844",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Veerle",
+        "last_name": "MW Michels",
+        "orcid": "0009-0006-1587-7691",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Yousif",
+        "last_name": "Dawood",
+        "orcid": "0000-0002-1218-3540",
+        "roles": ["Investigation", "Resources"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alberto Mittone",
+      "Alexandre Bellier",
+      "Anastasia Yendiki",
+      "Angelos Evangelinos",
+      "Arantza Farina Sarasqueta",
+      "Bernadette de Bakker",
+      "Claire Walsh",
+      "Daniël Docter",
+      "Danny Jonigk",
+      "David Stansby",
+      "Gowsihan Poologasundarampillai",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Jenna Schardt",
+      "Jermo Hanemaaijer-van der Veer",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Ju Young Lee",
+      "Judith Huirne",
+      "Lynda Juffermans",
+      "Matthieu Chourrout",
+      "Maximilian Ackermann",
+      "Naomi Donner",
+      "Nicole Burger",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Richard Schoonhoven",
+      "Stijn Verleden",
+      "Theresa Urban",
+      "Veerle MW Michels",
+      "Yousif Dawood"
+    ]
+  },
+  "metadata_version": "1.1"
+}

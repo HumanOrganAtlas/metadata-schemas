@@ -1,0 +1,266 @@
+{
+  "name": "LADAF-2021-17_prostate_complete-scan_23.42um_bm18",
+  "dataset_type": "overview",
+  "voi": "complete-scan",
+  "data": {
+    "shape": [2876, 1962, 2609],
+    "voxel_size_um": 23.42,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/LADAF-2021-17/prostate/23.42um_complete-scan_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "prostate",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "LADAF-2021-17",
+    "age": 63,
+    "sex": "M",
+    "weight": 60.0,
+    "height": 178.0,
+    "cause_of_death": "Pancreatic cancer",
+    "date_of_death": "2020-03-27",
+    "medical_history": "stomach hypertrophy noticed during autopsy, stomach liquid into the lungs",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2022-02-25",
+    "beamline": "BM18",
+    "energy": null,
+    "current_start": null,
+    "filling_mode": null,
+    "n_frames": null,
+    "n_ref": null,
+    "n_dark": null,
+    "latency_time": null,
+    "exposure_time": null,
+    "subframe_time": null,
+    "n_subframes": null,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": null,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": null,
+    "filters": null,
+    "scintillator": null,
+    "optic": null,
+    "optic_magnification": null,
+    "distance_source_sample": null,
+    "distance_sample_detector": null,
+    "sensor_name": null,
+    "sensor_mode": null,
+    "sensor_roi_x_size": null,
+    "sensor_roi_y_size": null,
+    "sensor_binning": null,
+    "pixel_size": 23.42,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 23.42um of the prostate of donor LADAF-2021-17, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Alissa",
+        "last_name": "Parmenter",
+        "orcid": "0000-0002-9836-8932",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Brian",
+        "last_name": "Bay",
+        "orcid": "0000-0002-6870-259X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Emer",
+        "last_name": "Burke O'Leary",
+        "orcid": "0000-0002-8831-8077",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Kathleen",
+        "last_name": "Dollman",
+        "orcid": "0000-0002-5468-4896",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Olivier",
+        "last_name": "Palombi",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Philippe",
+        "last_name": "Chaffanjon",
+        "orcid": "0000-0002-7954-2798",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Rebecca",
+        "last_name": "Shipley",
+        "orcid": "0000-0002-2818-6228",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Simon",
+        "last_name": "Walker-Samuel",
+        "orcid": "0000-0003-3530-9166",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Alissa Parmenter",
+      "Brian Bay",
+      "Claire Walsh",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Emer Burke O'Leary",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Kathleen Dollman",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
+}

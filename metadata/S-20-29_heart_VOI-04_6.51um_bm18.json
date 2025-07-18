@@ -1,0 +1,246 @@
+{
+  "name": "S-20-29_heart_VOI-04_6.51um_bm18",
+  "dataset_type": "zoom",
+  "voi": "VOI-04",
+  "data": {
+    "shape": [3843, 3843, 9062],
+    "voxel_size_um": 6.51,
+    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-20-29/heart/6.51um_VOI-04_bm18/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "S-20-29",
+    "age": 80,
+    "sex": "M",
+    "weight": 170.0,
+    "height": 90.0,
+    "cause_of_death": "Acute right heart failure with extensive Pulmonary artery thrombembolism, diffuse alveolar damage, shock kidneys bilateral with acute kidney failure, and acute liver failure COVID-19 disease",
+    "date_of_death": null,
+    "medical_history": "Kidney failure, arterial hypertension, Z.n. Spondylodesis LWK 2 and sacral vertebra 2, SARS-CoV2 infection, symptoms of memory loss and predementia, Dandy-Walker syndrome variant, post-mortem diagnostic.",
+    "diabetes": "Type 2",
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2022-03-04",
+    "beamline": "BM18",
+    "energy": 113.0,
+    "current_start": 195.867,
+    "filling_mode": null,
+    "n_frames": 6000,
+    "n_ref": 3,
+    "n_dark": 100,
+    "latency_time": 0.0005,
+    "exposure_time": 0.06,
+    "subframe_time": null,
+    "n_subframes": 4,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": null,
+    "acquisition": "half",
+    "z_step": null,
+    "scan_time": null,
+    "filters": null,
+    "scintillator": null,
+    "optic": null,
+    "optic_magnification": null,
+    "distance_source_sample": null,
+    "distance_sample_detector": 10000.0,
+    "sensor_name": null,
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2048,
+    "sensor_roi_y_size": 1392,
+    "sensor_binning": null,
+    "pixel_size": 6.51,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": {
+    "source_dataset": "S-20-29_heart_VOI-04_6.51um_bm18",
+    "target_dataset": "S-20-29_heart_complete-organ_19.89um_bm18",
+    "translation": [4512.553149311739, 4330.783375991604, 1926.9251589760709],
+    "rotation": -1.799770547556203,
+    "scale": 0.32730093202313426
+  },
+  "citation": {
+    "title": "Zoom (VOI-04) at 6.51um of the heart of donor S-20-29, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Brian",
+        "last_name": "Bay",
+        "orcid": "0000-0002-6870-259X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Olivier",
+        "last_name": "Palombi",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Philippe",
+        "last_name": "Chaffanjon",
+        "orcid": "0000-0002-7954-2798",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Rebecca",
+        "last_name": "Shipley",
+        "orcid": "0000-0002-2818-6228",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Simon",
+        "last_name": "Walker-Samuel",
+        "orcid": "0000-0003-3530-9166",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Brian Bay",
+      "Claire Walsh",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
+}
