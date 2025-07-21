@@ -69,18 +69,22 @@
     "experiment_type": "Tomography"
   },
   "proposal": {
-    "proposal_number": "md1389",
-    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
     "proposers": [
       "Peter Lee",
       "Claire Walsh",
-      "Anastasia Yendiki",
+      "Brian Bay",
+      "Elodie Boller",
       "Maximilian Ackermann",
       "Alexandre Bellier",
-      "Bernadette de Bakker",
+      "Olivier Palombi",
       "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
       "Danny Jonigk",
-      "Stijn Verleden"
+      "Willi Wagner",
+      "Rebecca Shipley"
     ]
   },
   "registration": {
@@ -106,22 +110,16 @@
         "roles": ["Funding acquisition"]
       },
       {
-        "first_name": "Anastasia",
-        "last_name": "Yendiki",
-        "orcid": "0000-0003-1386-3828",
-        "roles": ["Funding acquisition"]
-      },
-      {
-        "first_name": "Bernadette",
-        "last_name": "de Bakker",
-        "orcid": "0000-0003-0758-4064",
+        "first_name": "Brian",
+        "last_name": "Bay",
+        "orcid": "0000-0002-6870-259X",
         "roles": ["Funding acquisition"]
       },
       {
         "first_name": "Claire",
         "last_name": "Walsh",
         "orcid": "0000-0003-3769-3392",
-        "roles": ["Conceptualization", "Funding acquisition"]
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Danny",
@@ -136,6 +134,18 @@
         "roles": ["Data curation", "Software"]
       },
       {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Eunjue",
+        "last_name": "Yi",
+        "orcid": null,
+        "roles": ["Investigation"]
+      },
+      {
         "first_name": "Guillaume",
         "last_name": "Gaisne",
         "orcid": "0000-0002-3401-7930",
@@ -146,6 +156,12 @@
         "last_name": "Dejea I Velardo",
         "orcid": "0000-0003-2584-9812",
         "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Jishizhan",
+        "last_name": "Chen",
+        "orcid": "0000-0002-1784-319X",
+        "roles": ["Investigation"]
       },
       {
         "first_name": "Joanna",
@@ -172,49 +188,98 @@
         "roles": ["Funding acquisition", "Resources"]
       },
       {
+        "first_name": "Olivier",
+        "last_name": "Palombi",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
         "first_name": "Paul",
         "last_name": "Tafforeau",
         "orcid": "0000-0002-5962-1683",
-        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
       },
       {
         "first_name": "Peter",
         "last_name": "Lee",
         "orcid": "0000-0002-3898-8881",
-        "roles": ["Conceptualization", "Funding acquisition"]
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Philippe",
+        "last_name": "Chaffanjon",
+        "orcid": "0000-0002-7954-2798",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Rebecca",
+        "last_name": "Shipley",
+        "orcid": "0000-0002-2818-6228",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Ryoko",
+        "last_name": "Egashira",
+        "orcid": "0000-0001-7566-546X",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Simon",
+        "last_name": "Walker-Samuel",
+        "orcid": "0000-0003-3530-9166",
+        "roles": ["Funding acquisition"]
       },
       {
         "first_name": "Stijn",
         "last_name": "Verleden",
         "orcid": "0000-0002-9656-5844",
-        "roles": ["Funding acquisition", "Resources"]
+        "roles": ["Resources"]
       },
       {
         "first_name": "Theresa",
         "last_name": "Urban",
         "orcid": "0000-0002-0352-8180",
         "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
       }
     ],
     "doi": "10.15151/ESRF-DC-2184066672",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",
-      "Anastasia Yendiki",
-      "Bernadette de Bakker",
+      "Brian Bay",
       "Claire Walsh",
       "Danny Jonigk",
       "David Stansby",
+      "Elodie Boller",
+      "Eunjue Yi",
       "Guillaume Gaisne",
       "Hector Dejea I Velardo",
+      "Jishizhan Chen",
       "Joanna Purzycka",
       "Joseph Brunet",
       "Joseph Jacob",
       "Maximilian Ackermann",
+      "Olivier Palombi",
       "Paul Tafforeau",
       "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Ryoko Egashira",
+      "Simon Walker-Samuel",
       "Stijn Verleden",
-      "Theresa Urban"
+      "Theresa Urban",
+      "Willi Wagner"
     ]
   },
   "metadata_version": "1.1"
