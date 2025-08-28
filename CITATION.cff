@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+authors:
+- family-names: "David"
+  given-names: "Stansby"
+  orcid: "https://orcid.org/0000-0002-1365-1908"
+title: "Human Organ Atlas metadata schemas"
+doi: 10.5281/zenodo.16087607
+url: "https://github.com/HumanOrganAtlas/metadata-schemas"
