@@ -2,6 +2,8 @@
 
 Metadata schemas for Human Organ Atlas data.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16087607.svg)](https://doi.org/10.5281/zenodo.16087607)
+
 ## Schema docs
 
 A human readable version of the metadata schema can be viewed at https://humanorganatlas.github.io/metadata-schemas/.
