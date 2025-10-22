@@ -95,7 +95,7 @@
         "first_name": "Claire",
         "last_name": "Walsh",
         "orcid": "0000-0003-3769-3392",
-        "roles": ["Conceptualization", "Funding acquisition"]
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Danny",
@@ -155,13 +155,18 @@
         "first_name": "Paul",
         "last_name": "Tafforeau",
         "orcid": "0000-0002-5962-1683",
-        "roles": ["Conceptualization", "Data curation", "Funding acquisition"]
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
       },
       {
         "first_name": "Peter",
         "last_name": "Lee",
         "orcid": "0000-0002-3898-8881",
-        "roles": ["Conceptualization", "Funding acquisition"]
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
       },
       {
         "first_name": "Theresa",
