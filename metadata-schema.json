@@ -842,7 +842,8 @@
                 "Twinmic 5",
                 "Twinmic 10",
                 "Twinmic 20",
-                "Triplemic 10"
+                "Triplemic 10",
+                "Otus 1x"
               ],
               "type": "string"
             },
