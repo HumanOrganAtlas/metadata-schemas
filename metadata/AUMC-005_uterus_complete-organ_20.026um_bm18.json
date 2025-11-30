@@ -16,7 +16,7 @@
     "organ_infilled": null,
     "stabilisation_medium": null,
     "degassing_method": null,
-    "scan_solvent": null,
+    "scan_solvent": "ethanol",
     "scan_solvent_concentration": null,
     "scan_temperature": "room temperature"
   },
@@ -64,6 +64,7 @@
     "optic_magnification": 0.33694889147738527,
     "distance_source_sample": 177000.0,
     "distance_sample_detector": 20000.0,
+    "psho": -11.54,
     "sensor_name": "Iris15",
     "sensor_mode": null,
     "sensor_roi_x_size": 2528,
@@ -291,7 +292,7 @@
         "roles": ["Investigation", "Resources"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2212115072",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alberto Mittone",

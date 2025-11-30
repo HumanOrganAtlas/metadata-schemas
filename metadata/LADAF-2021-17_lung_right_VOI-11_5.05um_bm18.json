@@ -16,7 +16,7 @@
     "organ_infilled": null,
     "stabilisation_medium": null,
     "degassing_method": null,
-    "scan_solvent": null,
+    "scan_solvent": "ethanol",
     "scan_solvent_concentration": null,
     "scan_temperature": "room temperature"
   },
@@ -58,6 +58,7 @@
     "optic_magnification": 1.630515692373554,
     "distance_source_sample": 177000.0,
     "distance_sample_detector": 4770.0,
+    "psho": -9.94,
     "sensor_name": "Iris15",
     "sensor_mode": null,
     "sensor_roi_x_size": 2528,
@@ -218,7 +219,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2222697474",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",

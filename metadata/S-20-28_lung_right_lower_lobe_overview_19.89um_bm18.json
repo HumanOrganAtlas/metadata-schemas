@@ -58,6 +58,7 @@
     "optic_magnification": null,
     "distance_source_sample": null,
     "distance_sample_detector": null,
+    "psho": null,
     "sensor_name": null,
     "sensor_mode": null,
     "sensor_roi_x_size": null,
@@ -223,7 +224,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2222696462",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",

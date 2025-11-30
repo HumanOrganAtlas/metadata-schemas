@@ -438,7 +438,7 @@
         "fixation_medium": {
           "anyOf": [
             {
-              "const": "formalin",
+              "enum": ["formalin", "ethanol"],
               "type": "string"
             },
             {
@@ -468,7 +468,13 @@
         "stabilisation_medium": {
           "anyOf": [
             {
-              "enum": ["agar cubes", "crushed agar", "beads"],
+              "enum": [
+                "agar",
+                "agar spaghetti",
+                "agar cubes",
+                "crushed agar",
+                "beads"
+              ],
               "type": "string"
             },
             {
@@ -494,7 +500,7 @@
         "scan_solvent": {
           "anyOf": [
             {
-              "enum": ["formalin", "ethanol"],
+              "enum": ["formalin", "ethanol", "paraffin block"],
               "type": "string"
             },
             {
@@ -896,6 +902,19 @@
           "default": null,
           "description": "Distance between the sample and the detector, measured in millimeters.",
           "title": "Sample-detector distance"
+        },
+        "psho": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Primary slit horizontal offset, measured in millimeters",
+          "title": "Primary slit horizontal offset"
         },
         "sensor_name": {
           "anyOf": [

@@ -243,7 +243,7 @@
         "roles": ["Data curation", "Investigation", "Software"]
       }
     ],
-    "doi": "10.15151/ESRF-DC-1992760497",
+    "doi": null,
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",
