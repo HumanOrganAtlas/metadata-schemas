@@ -87,13 +87,7 @@
       "Rebecca Shipley"
     ]
   },
-  "registration": {
-    "source_dataset": "LADAF-2021-17_brain_VOI-03.2_2.256um_bm18",
-    "target_dataset": "LADAF-2021-17_brain_complete-organ_7.72um_bm18",
-    "translation": [4263.227265344232, 4331.55200984121, 61.06221773571507],
-    "rotation": -34.29786969900008,
-    "scale": 0.29222907370962964
-  },
+  "registration": null,
   "citation": {
     "title": "Zoom (VOI-03.2) at 2.256um of the brain of donor LADAF-2021-17, scanned at ESRF on beamline BM18.",
     "contributors": [

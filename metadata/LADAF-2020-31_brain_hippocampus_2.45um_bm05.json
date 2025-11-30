@@ -28,7 +28,7 @@
     "height": 145.0,
     "cause_of_death": null,
     "date_of_death": "2020-06-22",
-    "medical_history": "type 2 diabetes, pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+    "medical_history": "pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
     "diabetes": "Type 2",
     "hypertension": null,
     "smoker": null
@@ -81,7 +81,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "LADAF-2020-31_brain_hippocampus_2.45um_bm05",
+    "target_dataset": "LADAF-2020-31_brain_complete-organ_25.08um_bm05",
+    "translation": [3744.647212922214, 1801.1225090914268, 2711.0471941068986],
+    "rotation": 0.20008306913931156,
+    "scale": 0.09768735671581703
+  },
   "citation": {
     "title": "Zoom (hippocampus) at 2.45um of the brain of donor LADAF-2020-31, scanned at ESRF on beamline BM05.",
     "contributors": [

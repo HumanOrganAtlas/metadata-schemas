@@ -28,7 +28,7 @@
     "height": 145.0,
     "cause_of_death": null,
     "date_of_death": "2020-06-22",
-    "medical_history": "type 2 diabetes, pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
+    "medical_history": "pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
     "diabetes": "Type 2",
     "hypertension": null,
     "smoker": null
@@ -84,8 +84,8 @@
   "registration": {
     "source_dataset": "LADAF-2020-31_brain_hippocampus_6.05um_bm05",
     "target_dataset": "LADAF-2020-31_brain_complete-organ_25.08um_bm05",
-    "translation": [3396.564312333678, 1640.792699722187, 2462.2353270314256],
-    "rotation": 0.09981408007598347,
+    "translation": [3396.564312333679, 1640.792699722187, 2462.2353270314256],
+    "rotation": 0.09981408007598334,
     "scale": 0.2412287267394448
   },
   "citation": {

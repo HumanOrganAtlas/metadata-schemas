@@ -58,6 +58,7 @@
     "optic_magnification": null,
     "distance_source_sample": null,
     "distance_sample_detector": 3650.0,
+    "psho": null,
     "sensor_name": "PCO edge 4.2 CLHS",
     "sensor_mode": "FFM",
     "sensor_roi_x_size": 3094,
@@ -181,7 +182,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2217843064",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",

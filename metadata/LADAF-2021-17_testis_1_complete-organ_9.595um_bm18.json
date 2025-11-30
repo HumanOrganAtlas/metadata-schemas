@@ -58,6 +58,7 @@
     "optic_magnification": 0.37514694279598293,
     "distance_source_sample": 177450.0,
     "distance_sample_detector": 10000.0,
+    "psho": -13.999916666666667,
     "sensor_name": "Iris15",
     "sensor_mode": null,
     "sensor_roi_x_size": 5056,
@@ -201,7 +202,7 @@
         "roles": ["Data curation", "Investigation", "Software"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2222689456",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",
