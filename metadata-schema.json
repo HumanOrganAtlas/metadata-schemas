@@ -208,6 +208,10 @@
               "type": "string"
             },
             {
+              "const": "not applicable",
+              "type": "string"
+            },
+            {
               "type": "null"
             }
           ],
@@ -218,6 +222,10 @@
           "anyOf": [
             {
               "format": "date",
+              "type": "string"
+            },
+            {
+              "const": "not applicable",
               "type": "string"
             },
             {
@@ -287,7 +295,7 @@
       "properties": {
         "proposal_number": {
           "description": "Proposal number.",
-          "enum": ["md1252", "md1290", "md1389"],
+          "enum": ["md1252", "md1290", "md1389", "md1373"],
           "title": "Proposal Number",
           "type": "string"
         },
@@ -389,7 +397,8 @@
             "soleus",
             "achillesTendon",
             "knee",
-            "tibia"
+            "tibia",
+            "vagina"
           ],
           "title": "Organ",
           "type": "string"
@@ -473,7 +482,8 @@
                 "agar spaghetti",
                 "agar cubes",
                 "crushed agar",
-                "beads"
+                "acrylamic spheres",
+                "paraffin"
               ],
               "type": "string"
             },
@@ -487,7 +497,7 @@
         "degassing_method": {
           "anyOf": [
             {
-              "enum": ["inline", "vacuum", "vacuum+inline"],
+              "enum": ["inline", "vacuum", "vacuum+inline", "not degassed"],
               "type": "string"
             },
             {
@@ -535,7 +545,7 @@
             }
           ],
           "default": "room temperature",
-          "description": "Temperature during scan, in degees celsius (if a number).",
+          "description": "Temperature during scan, in degrees celsius (if a number).",
           "title": "Scan Temperature"
         }
       },
@@ -814,6 +824,7 @@
                 "GGG 8um",
                 "GGG 20um",
                 "GAGG 1000um, reflective",
+                "GAGG 250um, reflective",
                 "GAGG 100um, reflective",
                 "GAGG 50um, reflective",
                 "Dual LySO:Ce 5000um, reflective"
