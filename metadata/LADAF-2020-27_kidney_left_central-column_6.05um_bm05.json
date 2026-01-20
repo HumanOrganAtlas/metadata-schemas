@@ -12,12 +12,12 @@
     "organ_context": "left",
     "post_mortem_interval_hours": null,
     "fixation_method": null,
-    "fixation_medium": null,
+    "fixation_medium": "formalin",
     "organ_infilled": "n/a",
-    "stabilisation_medium": null,
-    "degassing_method": null,
-    "scan_solvent": null,
-    "scan_solvent_concentration": null,
+    "stabilisation_medium": "crushed agar",
+    "degassing_method": "vacuum",
+    "scan_solvent": "ethanol",
+    "scan_solvent_concentration": 70.0,
     "scan_temperature": "room temperature"
   },
   "donor": {
@@ -58,6 +58,7 @@
     "optic_magnification": 1.0,
     "distance_source_sample": null,
     "distance_sample_detector": 3475.0,
+    "psho": null,
     "sensor_name": "PCO edge 4.2 CLHS",
     "sensor_mode": "rolling shutter",
     "sensor_roi_x_size": 688,
@@ -81,7 +82,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "LADAF-2020-27_kidney_left_central-column_6.05um_bm05",
+    "target_dataset": "LADAF-2020-27_kidney_left_complete-organ_25.08um_bm05",
+    "translation": [1017.9719043176432, 1223.624254388026, 261.70355324749175],
+    "rotation": 0.39995641319505854,
+    "scale": 0.24122825247165197
+  },
   "citation": {
     "title": "Zoom (central-column) at 6.05um of the kidney of donor LADAF-2020-27, scanned at ESRF on beamline BM05.",
     "contributors": [

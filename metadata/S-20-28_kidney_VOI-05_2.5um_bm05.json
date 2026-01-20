@@ -24,8 +24,8 @@
     "id": "S-20-28",
     "age": 84,
     "sex": "M",
-    "weight": 179.0,
-    "height": 96.0,
+    "weight": 96.0,
+    "height": 179.0,
     "cause_of_death": "COVID-19",
     "date_of_death": null,
     "medical_history": null,
@@ -58,6 +58,7 @@
     "optic_magnification": 2.53,
     "distance_source_sample": null,
     "distance_sample_detector": 1440.0,
+    "psho": null,
     "sensor_name": "PCO edge 4.2 CLHS",
     "sensor_mode": "FFM",
     "sensor_roi_x_size": 2048,
@@ -199,7 +200,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2191818749",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",

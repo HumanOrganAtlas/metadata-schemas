@@ -58,6 +58,7 @@
     "optic_magnification": 0.941,
     "distance_source_sample": null,
     "distance_sample_detector": 899.997,
+    "psho": null,
     "sensor_name": null,
     "sensor_mode": null,
     "sensor_roi_x_size": null,
@@ -81,7 +82,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "FO-20-124_lung_upper_lobe_VOI-04_6.5um_bm05",
+    "target_dataset": "FO-20-124_lung_upper_lobe_complete-organ_26.38um_bm05",
+    "translation": [2845.6938900181462, 1405.2340570164602, 1779.6217646457305],
+    "rotation": -28.299999806524426,
+    "scale": 0.24639886961463314
+  },
   "citation": {
     "title": "Zoom (VOI-04) at 6.5um of the lung of donor FO-20-124, scanned at ESRF on beamline BM05.",
     "contributors": [
@@ -187,7 +194,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2188511045",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",

@@ -58,6 +58,7 @@
     "optic_magnification": 0.94,
     "distance_source_sample": null,
     "distance_sample_detector": 3500.0,
+    "psho": null,
     "sensor_name": "PCO edge 4.2 CLHS",
     "sensor_mode": "FFM",
     "sensor_roi_x_size": 2048,
