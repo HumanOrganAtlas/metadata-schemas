@@ -12,12 +12,12 @@
     "organ_context": "right",
     "post_mortem_interval_hours": null,
     "fixation_method": null,
-    "fixation_medium": null,
+    "fixation_medium": "formalin",
     "organ_infilled": null,
-    "stabilisation_medium": null,
-    "degassing_method": null,
-    "scan_solvent": null,
-    "scan_solvent_concentration": null,
+    "stabilisation_medium": "crushed agar",
+    "degassing_method": "vacuum",
+    "scan_solvent": "formalin",
+    "scan_solvent_concentration": 4.0,
     "scan_temperature": "room temperature"
   },
   "donor": {
@@ -58,6 +58,7 @@
     "optic_magnification": 1.0,
     "distance_source_sample": 178000.0,
     "distance_sample_detector": 4000.0,
+    "psho": 10.03,
     "sensor_name": "Iris15",
     "sensor_mode": null,
     "sensor_roi_x_size": 5056,
@@ -243,7 +244,7 @@
         "roles": ["Data curation", "Investigation", "Software"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-1992760497",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Alexandre Bellier",

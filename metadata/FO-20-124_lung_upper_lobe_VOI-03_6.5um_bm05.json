@@ -58,6 +58,7 @@
     "optic_magnification": 0.941,
     "distance_source_sample": null,
     "distance_sample_detector": 899.997,
+    "psho": null,
     "sensor_name": null,
     "sensor_mode": null,
     "sensor_roi_x_size": null,
@@ -193,7 +194,7 @@
         "roles": ["Funding acquisition"]
       }
     ],
-    "doi": null,
+    "doi": "10.15151/ESRF-DC-2189449153",
     "author_list": [
       "The Human Organ Atlas Collaboration",
       "Claire Walsh",
