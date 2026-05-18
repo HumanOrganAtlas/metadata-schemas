@@ -1,0 +1,293 @@
+{
+  "name": "I74_brain_internalCapsule_VOI-1_0.857um_bm05",
+  "dataset_type": "zoom",
+  "voi": "VOI-1",
+  "data": {
+    "shape": [4707, 4707, 8479],
+    "voxel_size_um": 0.857,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/I74/brain-internalCapsule/0.857um_VOI-1_bm05.ome.zarr/"
+  },
+  "sample": {
+    "organ": "brain",
+    "organ_context": "internalCapsule",
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": null,
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "I74",
+    "age": 63,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": null,
+    "medical_history": "7 hrs post mortem interval",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2025-05-02",
+    "beamline": "BM05",
+    "energy": 61.9,
+    "current_start": 188.850341,
+    "filling_mode": "28*12+1 bunch",
+    "n_frames": 7000,
+    "n_ref": 3,
+    "n_dark": 400,
+    "latency_time": 0.004,
+    "exposure_time": 0.12,
+    "subframe_time": 0.04,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 7,
+    "acquisition": "half",
+    "z_step": 1.0,
+    "scan_time": 924.274081,
+    "filters": ["Cu 0.23mm", "Carbon rod 64mm"],
+    "scintillator": "GGG 20um",
+    "optic": "Fixed x10",
+    "optic_magnification": 10.0,
+    "distance_source_sample": 52000.0,
+    "distance_sample_detector": 200.0,
+    "psho": 0.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2528,
+    "sensor_roi_y_size": 1480,
+    "sensor_binning": [2, 2],
+    "pixel_size": 0.857,
+    "xray_magnification": 1.003846,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": {
+    "source_dataset": "I74_brain_internalCapsule_VOI-1_0.857um_bm05",
+    "target_dataset": "I74_brain_internalCapsule_overview_10.072um_bm05",
+    "translation": [2505.9117382773193, 524.6448670623364, 53.24030986961202],
+    "rotation": 1.999801559509318,
+    "scale": 0.08508794544408613
+  },
+  "citation": {
+    "title": "Zoom (VOI-1) at 0.857um of the brain of donor I74, scanned at ESRF on beamline BM05.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": "0000-0003-1386-3828",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Andrew",
+        "last_name": "Keenlyside",
+        "orcid": "0000-0002-6059-2103",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Brian",
+        "last_name": "Bay",
+        "orcid": "0000-0002-6870-259X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Bruce",
+        "last_name": "Fischl",
+        "orcid": "0000-0002-2413-1115",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition"]
+      },
+      {
+        "first_name": "Dai",
+        "last_name": "Chen",
+        "orcid": "0009-0005-5019-4039",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Edoardo",
+        "last_name": "Occhipinti",
+        "orcid": "0000-0003-4691-9007",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Jeff",
+        "last_name": "Lichtman",
+        "orcid": null,
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Olivier",
+        "last_name": "Palombi",
+        "orcid": "0000-0003-0803-358X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Philippe",
+        "last_name": "Chaffanjon",
+        "orcid": "0000-0002-7954-2798",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Rebecca",
+        "last_name": "Shipley",
+        "orcid": "0000-0002-2818-6228",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Simon",
+        "last_name": "Walker-Samuel",
+        "orcid": "0000-0003-3530-9166",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-2423437070",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Anastasia Yendiki",
+      "Andrew Keenlyside",
+      "Brian Bay",
+      "Bruce Fischl",
+      "Claire Walsh",
+      "Dai Chen",
+      "Danny Jonigk",
+      "David Stansby",
+      "Edoardo Occhipinti",
+      "Elodie Boller",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Jeff Lichtman",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
+}

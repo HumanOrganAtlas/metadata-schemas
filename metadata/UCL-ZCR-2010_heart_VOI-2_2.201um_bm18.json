@@ -1,0 +1,300 @@
+{
+  "name": "UCL-ZCR-2010_heart_VOI-2_2.201um_bm18",
+  "dataset_type": "zoom",
+  "voi": "VOI-2",
+  "data": {
+    "shape": [9057, 9057, 16588],
+    "voxel_size_um": 2.201,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/UCL-ZCR-2010/heart/2.201um_VOI-2_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "heart",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": "formalin",
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "UCL-ZCR-2010",
+    "age": null,
+    "sex": null,
+    "weight": null,
+    "height": null,
+    "cause_of_death": null,
+    "medical_history": "Repaired Tetralogy of Fallot, 70-80s era, perimembranous ventricular septal defect, patch removed, Dacron RVOT patch",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2025-02-13",
+    "beamline": "BM18",
+    "energy": 90.1,
+    "current_start": 198.238388,
+    "filling_mode": "7/8 multibunch",
+    "n_frames": 15000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.005000000000000001,
+    "exposure_time": 0.05,
+    "subframe_time": 0.05,
+    "n_subframes": 1,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 7,
+    "acquisition": "half",
+    "z_step": 5.0,
+    "scan_time": 825.092769,
+    "filters": ["Sapphire 5mm", "Silver 0.1mm"],
+    "scintillator": "LuAG:Ce 50um, reflective",
+    "optic": "Fixed x2",
+    "optic_magnification": 2.0,
+    "distance_source_sample": 178000.0,
+    "distance_sample_detector": 2100.04,
+    "psho": 10.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 5056,
+    "sensor_roi_y_size": 2960,
+    "sensor_binning": [1, 1],
+    "pixel_size": 2.201,
+    "xray_magnification": 1.011798,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1290",
+    "title": "Bridging the gap between cellular and whole body imaging using Hierarchical Phase-Contrast Tomography: HiP-CT",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Brian Bay",
+      "Elodie Boller",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Simon Walker-Samuel",
+      "Philippe Chaffanjon",
+      "Danny Jonigk",
+      "Willi Wagner",
+      "Rebecca Shipley"
+    ]
+  },
+  "registration": {
+    "source_dataset": "UCL-ZCR-2010_heart_VOI-2_2.201um_bm18",
+    "target_dataset": "UCL-ZCR-2010_heart_complete-organ_19.19um_bm18",
+    "translation": [3528.9973635403044, 3231.2818166434186, 2795.5059469075336],
+    "rotation": 5.799990813067733,
+    "scale": 0.1146953748215875
+  },
+  "citation": {
+    "title": "Zoom (VOI-2) at 2.201um of the heart of donor UCL-ZCR-2010, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Ali",
+        "last_name": "Erturk",
+        "orcid": null,
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Andrew",
+        "last_name": "Cook",
+        "orcid": "0000-0001-5079-7546",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Brian",
+        "last_name": "Bay",
+        "orcid": "0000-0002-6870-259X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Elodie",
+        "last_name": "Boller",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Farida",
+        "last_name": "Hellal",
+        "orcid": "0000-0002-9344-1846",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Lukas",
+        "last_name": "Johanns",
+        "orcid": null,
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Marcus",
+        "last_name": "Elsner",
+        "orcid": "0000-0001-7227-5212",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Matthieu",
+        "last_name": "Chourrout",
+        "orcid": "0000-0002-2282-6976",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Olivier",
+        "last_name": "Palombi",
+        "orcid": "0000-0003-0803-358X",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Philippe",
+        "last_name": "Chaffanjon",
+        "orcid": "0000-0002-7954-2798",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Rebecca",
+        "last_name": "Shipley",
+        "orcid": "0000-0002-2818-6228",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Simon",
+        "last_name": "Walker-Samuel",
+        "orcid": "0000-0003-3530-9166",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Vaishnavi",
+        "last_name": "Sabarigirivasan",
+        "orcid": "0000-0003-2550-6262",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Willi",
+        "last_name": "Wagner",
+        "orcid": null,
+        "roles": ["Funding acquisition"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-2299337083",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Ali Erturk",
+      "Andrew Cook",
+      "Brian Bay",
+      "Claire Walsh",
+      "Danny Jonigk",
+      "David Stansby",
+      "Elodie Boller",
+      "Farida Hellal",
+      "Guillaume Gaisne",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Lukas Johanns",
+      "Marcus Elsner",
+      "Matthieu Chourrout",
+      "Maximilian Ackermann",
+      "Olivier Palombi",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Philippe Chaffanjon",
+      "Rebecca Shipley",
+      "Simon Walker-Samuel",
+      "Theresa Urban",
+      "Vaishnavi Sabarigirivasan",
+      "Willi Wagner"
+    ]
+  },
+  "metadata_version": "1.1"
+}

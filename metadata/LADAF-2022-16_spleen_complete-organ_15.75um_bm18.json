@@ -27,7 +27,6 @@
     "weight": 80.0,
     "height": 172.0,
     "cause_of_death": null,
-    "date_of_death": "2022-03-11",
     "medical_history": "Hypertension - Dyslipidemia - Polypectomies - Benign prostatic hyperplasia (surgical planing in 2016) - Non-oxygen dependent chronic obstructive pulmonary disease - Appendectomy - Tuberculosis - COVID positive 24 hours before death - Smoker",
     "diabetes": null,
     "hypertension": "Yes",
@@ -179,7 +178,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

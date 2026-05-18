@@ -1,0 +1,269 @@
+{
+  "name": "VL-341-23_achillesTendon_overview_10.088um_bm18",
+  "dataset_type": "overview",
+  "voi": "overview",
+  "data": {
+    "shape": [6624, 6904, 21340],
+    "voxel_size_um": 10.088,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/VL-341-23/achillesTendon/10.088um_overview_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "achillesTendon",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": null,
+    "fixation_medium": null,
+    "organ_infilled": null,
+    "stabilisation_medium": null,
+    "degassing_method": null,
+    "scan_solvent": "formalin",
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "VL-341-23",
+    "age": 59,
+    "sex": "M",
+    "weight": null,
+    "height": null,
+    "cause_of_death": null,
+    "medical_history": null,
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2025-02-06",
+    "beamline": "BM18",
+    "energy": 108.8,
+    "current_start": 198.394573,
+    "filling_mode": "uniform multibunch",
+    "n_frames": 12000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.0012,
+    "exposure_time": 0.012,
+    "subframe_time": 0.012,
+    "n_subframes": 1,
+    "scan_type": "helical",
+    "scan_range": 360.0,
+    "n_scans": 1,
+    "acquisition": "half",
+    "z_step": 5.0,
+    "scan_time": 158.679647,
+    "filters": ["Sapphire 5mm", "Sapphire 2mm", "Silver 0.1mm", "Silver 0.2mm"],
+    "scintillator": "GAGG 1000um, reflective",
+    "optic": "DZoom",
+    "optic_magnification": 0.3575,
+    "distance_source_sample": 178000.0,
+    "distance_sample_detector": 11000.0,
+    "psho": -14.0,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 5056,
+    "sensor_roi_y_size": 1024,
+    "sensor_binning": [1, 1],
+    "pixel_size": 10.088,
+    "xray_magnification": 1.061798,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1389",
+    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Anastasia Yendiki",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Bernadette de Bakker",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Stijn Verleden"
+    ]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 10.088um of the achillesTendon of donor VL-341-23, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Adam",
+        "last_name": "Szmul",
+        "orcid": "0000-0002-3068-1068",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": "0000-0003-1386-3828",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Bernadette",
+        "last_name": "de Bakker",
+        "orcid": "0000-0003-0758-4064",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Birger",
+        "last_name": "Tielemans",
+        "orcid": "0000-0002-1775-1797",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Chiara",
+        "last_name": "Garavelli",
+        "orcid": "0000-0002-6921-0730",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Daniël",
+        "last_name": "Docter",
+        "orcid": "0009-0004-9650-877X",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Giel",
+        "last_name": "Lemmens",
+        "orcid": "0009-0005-5095-8158",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Hanna",
+        "last_name": "Isaksson",
+        "orcid": "0000-0002-9690-8907",
+        "roles": ["Investigation", "Resources"]
+      },
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Maria",
+        "last_name": "Pierantoni",
+        "orcid": "0000-0001-8362-9418",
+        "roles": ["Investigation", "Resources"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Mei",
+        "last_name": "Yang",
+        "orcid": "0009-0005-4035-0966",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Stijn",
+        "last_name": "Verleden",
+        "orcid": "0000-0002-9656-5844",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      }
+    ],
+    "doi": null,
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Adam Szmul",
+      "Alexandre Bellier",
+      "Anastasia Yendiki",
+      "Bernadette de Bakker",
+      "Birger Tielemans",
+      "Chiara Garavelli",
+      "Claire Walsh",
+      "Daniël Docter",
+      "Danny Jonigk",
+      "David Stansby",
+      "Giel Lemmens",
+      "Guillaume Gaisne",
+      "Hanna Isaksson",
+      "Hector Dejea I Velardo",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Maria Pierantoni",
+      "Maximilian Ackermann",
+      "Mei Yang",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Stijn Verleden",
+      "Theresa Urban"
+    ]
+  },
+  "metadata_version": "1.1"
+}

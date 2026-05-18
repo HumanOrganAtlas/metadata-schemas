@@ -27,7 +27,6 @@
     "weight": null,
     "height": null,
     "cause_of_death": "not applicable - transplant organ",
-    "date_of_death": null,
     "medical_history": "transplant-yes, explant: PPFE",
     "diabetes": null,
     "hypertension": null,
@@ -191,7 +190,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

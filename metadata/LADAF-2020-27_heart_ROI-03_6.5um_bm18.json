@@ -27,7 +27,6 @@
     "weight": 45.0,
     "height": 140.0,
     "cause_of_death": null,
-    "date_of_death": "2020-06-11",
     "medical_history": "right sylvian and right cerebellar stroke, Cognitive disorders of vascular origin, Depressive syndrome, Rhythmic and hypertensive heart disease (AF), Micro-crystalline arthritis (gout), Right lung pneumopathy (3 years before death), Left cataract, Left temporal squamous cell carcinoma.",
     "diabetes": null,
     "hypertension": "Yes",
@@ -191,7 +190,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

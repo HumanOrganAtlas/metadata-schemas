@@ -1,0 +1,310 @@
+{
+  "name": "A304_lung_VOI-3_4.614um_bm18",
+  "dataset_type": "zoom",
+  "voi": "VOI-3",
+  "data": {
+    "shape": [5419, 5419, 3887],
+    "voxel_size_um": 4.614,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/A304/lung/4.614um_VOI-3_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "lung",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": "immersion",
+    "fixation_medium": "formalin",
+    "organ_infilled": true,
+    "stabilisation_medium": "agar",
+    "degassing_method": "vacuum+inline",
+    "scan_solvent": "formalin",
+    "scan_solvent_concentration": null,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "A304",
+    "age": null,
+    "sex": null,
+    "weight": null,
+    "height": null,
+    "cause_of_death": "not applicable - transplant organ",
+    "medical_history": "BOS",
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2026-02-01",
+    "beamline": "BM18",
+    "energy": 83.632352929853,
+    "current_start": 198.334698,
+    "filling_mode": "7/8 multibunch",
+    "n_frames": 9000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.0022,
+    "exposure_time": 0.022,
+    "subframe_time": 0.022,
+    "n_subframes": 1,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 2,
+    "acquisition": "half",
+    "z_step": 7.0,
+    "scan_time": 221.6849014,
+    "filters": ["Sapphire 5.0mm", "Sapphire 2.0mm", "Silver 0.10mm"],
+    "scintillator": "GAGG 100um, reflective",
+    "optic": "Fixed x1",
+    "optic_magnification": 1.0,
+    "distance_source_sample": 178000.0,
+    "distance_sample_detector": 4000.04,
+    "psho": -10.0,
+    "sensor_name": "PCO edge 4.2 CLHS",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 4416,
+    "sensor_roi_y_size": 2368,
+    "sensor_binning": [1, 1],
+    "pixel_size": 4.614,
+    "xray_magnification": 1.022472,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1389",
+    "title": "HUB Proposal: Human Organ Atlas Hub (HOAHub)",
+    "proposers": [
+      "Peter Lee",
+      "Claire Walsh",
+      "Anastasia Yendiki",
+      "Maximilian Ackermann",
+      "Alexandre Bellier",
+      "Bernadette de Bakker",
+      "Paul Tafforeau",
+      "Danny Jonigk",
+      "Stijn Verleden"
+    ]
+  },
+  "registration": {
+    "source_dataset": "A304_lung_VOI-3_4.614um_bm18",
+    "target_dataset": "A304_lung_overview_16.547um_bm18",
+    "translation": [2363.998667912744, 3190.116645263144, 3860.14337143981],
+    "rotation": -2.384671892016133,
+    "scale": 0.2780924077766628
+  },
+  "citation": {
+    "title": "Zoom (VOI-3) at 4.614um of the lung of donor A304, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "The",
+        "last_name": "Human Organ Atlas Collaboration",
+        "orcid": null,
+        "roles": []
+      },
+      {
+        "first_name": "Alexandre",
+        "last_name": "Bellier",
+        "orcid": "0000-0003-0907-0315",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Anastasia",
+        "last_name": "Yendiki",
+        "orcid": "0000-0003-1386-3828",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "Andrew",
+        "last_name": "Keenlyside",
+        "orcid": "0000-0002-6059-2103",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Bernadette",
+        "last_name": "de Bakker",
+        "orcid": "0000-0003-0758-4064",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Carola",
+        "last_name": "Fischer",
+        "orcid": "0000-0003-4496-8796",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Claire",
+        "last_name": "Walsh",
+        "orcid": "0000-0003-3769-3392",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Daniël",
+        "last_name": "Docter",
+        "orcid": "0009-0004-9650-877X",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Danny",
+        "last_name": "Jonigk",
+        "orcid": "0000-0002-5251-2281",
+        "roles": ["Funding acquisition"]
+      },
+      {
+        "first_name": "David",
+        "last_name": "Stansby",
+        "orcid": "0000-0002-1365-1908",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Edoardo",
+        "last_name": "Occhipinti",
+        "orcid": "0000-0003-4691-9007",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Eunjue",
+        "last_name": "Yi",
+        "orcid": null,
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Giel",
+        "last_name": "Lemmens",
+        "orcid": "0009-0005-5095-8158",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Guillaume",
+        "last_name": "Gaisne",
+        "orcid": "0000-0002-3401-7930",
+        "roles": ["Data curation", "Software"]
+      },
+      {
+        "first_name": "Jan-Theile",
+        "last_name": "Suhren",
+        "orcid": "0000-0003-2336-2445",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Joanna",
+        "last_name": "Purzycka",
+        "orcid": "0000-0001-8742-5279",
+        "roles": ["Data curation", "Investigation"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Brunet",
+        "orcid": "0000-0002-8424-9510",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Joseph",
+        "last_name": "Jacob",
+        "orcid": "0000-0002-8054-2293",
+        "roles": ["Resources"]
+      },
+      {
+        "first_name": "Lisa",
+        "last_name": "Chestnutt",
+        "orcid": "0009-0008-0783-7299",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Maximilian",
+        "last_name": "Ackermann",
+        "orcid": "0000-0001-9996-2477",
+        "roles": ["Funding acquisition", "Resources"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": [
+          "Conceptualization",
+          "Data curation",
+          "Funding acquisition",
+          "Investigation"
+        ]
+      },
+      {
+        "first_name": "Peter",
+        "last_name": "Lee",
+        "orcid": "0000-0002-3898-8881",
+        "roles": ["Conceptualization", "Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Ruikang",
+        "last_name": "Xue",
+        "orcid": "0000-0001-5095-9920",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Shishira",
+        "last_name": "Bhagavath",
+        "orcid": "0000-0001-9257-7103",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Stijn",
+        "last_name": "Verleden",
+        "orcid": "0000-0002-9656-5844",
+        "roles": ["Funding acquisition", "Resources"]
+      },
+      {
+        "first_name": "Theresa",
+        "last_name": "Urban",
+        "orcid": "0000-0002-0352-8180",
+        "roles": ["Data curation", "Investigation", "Software"]
+      },
+      {
+        "first_name": "Veerle",
+        "last_name": "Michels",
+        "orcid": "0009-0006-1587-7691",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Xinyi",
+        "last_name": "Hao",
+        "orcid": null,
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Yuhan",
+        "last_name": "Wang",
+        "orcid": null,
+        "roles": ["Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-2379011896",
+    "author_list": [
+      "The Human Organ Atlas Collaboration",
+      "Alexandre Bellier",
+      "Anastasia Yendiki",
+      "Andrew Keenlyside",
+      "Bernadette de Bakker",
+      "Carola Fischer",
+      "Claire Walsh",
+      "Daniël Docter",
+      "Danny Jonigk",
+      "David Stansby",
+      "Edoardo Occhipinti",
+      "Eunjue Yi",
+      "Giel Lemmens",
+      "Guillaume Gaisne",
+      "Jan-Theile Suhren",
+      "Joanna Purzycka",
+      "Joseph Brunet",
+      "Joseph Jacob",
+      "Lisa Chestnutt",
+      "Maximilian Ackermann",
+      "Paul Tafforeau",
+      "Peter Lee",
+      "Ruikang Xue",
+      "Shishira Bhagavath",
+      "Stijn Verleden",
+      "Theresa Urban",
+      "Veerle Michels",
+      "Xinyi Hao",
+      "Yuhan Wang"
+    ]
+  },
+  "metadata_version": "1.1"
+}

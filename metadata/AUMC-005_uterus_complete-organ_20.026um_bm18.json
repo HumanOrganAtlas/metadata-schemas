@@ -22,13 +22,12 @@
   },
   "donor": {
     "id": "AUMC-005",
-    "age": null,
+    "age": ">18",
     "sex": "F",
     "weight": null,
     "height": null,
     "cause_of_death": "not applicable",
-    "date_of_death": "not applicable",
-    "medical_history": "Adenomyosis",
+    "medical_history": "Adenomyosis |colon condition- TRO; surgery - Sigmoid",
     "diabetes": null,
     "hypertension": null,
     "smoker": null

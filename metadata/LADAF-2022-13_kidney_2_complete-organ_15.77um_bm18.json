@@ -27,7 +27,6 @@
     "weight": 85.0,
     "height": 176.0,
     "cause_of_death": null,
-    "date_of_death": "2022-02-19",
     "medical_history": "Left lower lobectomy in 2009 for pT1M1 squamous cell carcinoma with adjuvant radiotherapy - Right renal cell carcinoma treated by extended nephrectomy in 2009 - Pneumothorax in 2016 - Aorto-biliac stenting in 2015 - Stented coronary artery disease in 2008 - Sleep apnoea syndrome - Hypertension - Dyslipidaemia - Aortic stenosis in 2021 - Hematomegaly in 2021 - Non-oxygen dependent chronic obstructive pulmonary disease - Appendectomy - Smoker",
     "diabetes": null,
     "hypertension": "Yes",
@@ -179,7 +178,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

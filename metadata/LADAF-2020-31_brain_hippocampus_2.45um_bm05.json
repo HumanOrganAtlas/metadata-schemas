@@ -27,7 +27,6 @@
     "weight": 40.0,
     "height": 145.0,
     "cause_of_death": null,
-    "date_of_death": "2020-06-22",
     "medical_history": "type 2 diabetes, pelvic radiation to treat cancer of the uterus, right colectomy (benign lesion on histopathology), bilateral nephrostomy for acute obstructive renal failure, cystectomy, omentectomy and peritoneal carcinoma with occlusive syndrome",
     "diabetes": "Type 2",
     "hypertension": null,
@@ -82,7 +81,13 @@
       "Willi Wagner"
     ]
   },
-  "registration": null,
+  "registration": {
+    "source_dataset": "LADAF-2020-31_brain_hippocampus_2.45um_bm05",
+    "target_dataset": "LADAF-2020-31_brain_complete-organ_25.08um_bm05",
+    "translation": [3747.0402629071423, 1803.9515033892264, 2715.766733287495],
+    "rotation": 0.09994344649752229,
+    "scale": 0.09644036104821263
+  },
   "citation": {
     "title": "Zoom (hippocampus) at 2.45um of the brain of donor LADAF-2020-31, scanned at ESRF on beamline BM05.",
     "contributors": [
@@ -143,7 +148,7 @@
       {
         "first_name": "Mark",
         "last_name": "P. Kuhnel",
-        "orcid": null,
+        "orcid": "0000-0003-3558-2576",
         "roles": ["Funding acquisition"]
       },
       {

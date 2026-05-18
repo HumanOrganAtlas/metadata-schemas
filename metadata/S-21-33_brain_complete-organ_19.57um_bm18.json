@@ -5,7 +5,7 @@
   "data": {
     "shape": [7629, 7629, 9080],
     "voxel_size_um": 19.57,
-    "gcs_url": "n5://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-21-33/brain/19.57um_complete-organ_bm18/"
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/S-21-33/brain/19.57um_complete-organ_bm18.ome.zarr/"
   },
   "sample": {
     "organ": "brain",
@@ -27,7 +27,6 @@
     "weight": 63.0,
     "height": 170.0,
     "cause_of_death": "Septic-ischaemic cardiovascular failure",
-    "date_of_death": null,
     "medical_history": "transfemoral amputations presentation with right residual limb insufficiency. Antibiotics and stump revision for sepsis.Stabilisation in the ICU and transfer to the normal ward. Renewed septic collapse, died in septic shock with multiple organ failure. Generalised atherosclerosis Nicotine abuse Arterial hypertension, right thigh as infectious focus a septic event with bronchopneumonia, consumption coagulopathy with the development of leg vein thrombosis and consecutive sub-acute recurrent pulmonary artery embolisms. with infarction pneumonia and pronounced pleural effusions (each approx 1000ml). In addition, development of pseudomembranous and ischaemic colitis of the entire colitis of the entire colon and rectum.",
     "diabetes": null,
     "hypertension": "Yes",
@@ -167,7 +166,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

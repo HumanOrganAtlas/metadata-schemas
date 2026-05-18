@@ -27,7 +27,6 @@
     "weight": 60.0,
     "height": 178.0,
     "cause_of_death": "Pancreatic cancer",
-    "date_of_death": "2020-03-27",
     "medical_history": "stomach hypertrophy noticed during autopsy, stomach liquid into the lungs",
     "diabetes": null,
     "hypertension": null,
@@ -173,7 +172,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {

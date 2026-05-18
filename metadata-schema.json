@@ -218,23 +218,6 @@
           "default": null,
           "title": "Cause of death"
         },
-        "date_of_death": {
-          "anyOf": [
-            {
-              "format": "date",
-              "type": "string"
-            },
-            {
-              "const": "not applicable",
-              "type": "string"
-            },
-            {
-              "type": "null"
-            }
-          ],
-          "default": null,
-          "title": "Date of death"
-        },
         "medical_history": {
           "anyOf": [
             {
@@ -374,30 +357,32 @@
         "organ": {
           "description": "Organ name.",
           "enum": [
+            "achillesTendon",
+            "arm",
             "brain",
             "breast",
             "clitoris",
             "colon",
             "eye",
             "femaleGenitalia",
+            "heart",
             "kidney",
+            "knee",
+            "larynx",
             "liver",
             "lung",
-            "heart",
             "oesophagus",
-            "spinalCord",
-            "spine",
-            "spleen",
             "pancreas",
             "placenta",
             "prostate",
-            "testis",
-            "uterus",
-            "thoracicBlock",
             "soleus",
-            "achillesTendon",
-            "knee",
+            "spinalCord",
+            "spine",
+            "spleen",
+            "testis",
+            "thoracicBlock",
             "tibia",
+            "uterus",
             "vagina"
           ],
           "title": "Organ",
@@ -447,7 +432,7 @@
         "fixation_medium": {
           "anyOf": [
             {
-              "enum": ["formalin", "ethanol"],
+              "enum": ["formalin", "ethanol", "paraformaldehyde"],
               "type": "string"
             },
             {
@@ -483,7 +468,8 @@
                 "agar cubes",
                 "crushed agar",
                 "acrylamic spheres",
-                "paraffin"
+                "paraffin",
+                "liquid"
               ],
               "type": "string"
             },
@@ -819,6 +805,7 @@
                 "LySO:Ce 8.5um",
                 "LySO:Ce 23um",
                 "LySO:Ce 2000um, reflective",
+                "LySO:Ce 24um",
                 "Gadox 60um",
                 "CSI trixell structured 650um, 5um pitch",
                 "GGG 8um",

@@ -1,0 +1,125 @@
+{
+  "name": "MR-1_placenta_overview_19.19um_bm18",
+  "dataset_type": "overview",
+  "voi": "overview",
+  "data": {
+    "shape": [5481, 6372, 8031],
+    "voxel_size_um": 19.19,
+    "gcs_url": "zarr://gs://ucl-hip-ct-35a68e99feaae8932b1d44da0358940b/MR-1/placenta/19.19um_overview_bm18.ome.zarr/"
+  },
+  "sample": {
+    "organ": "placenta",
+    "organ_context": null,
+    "post_mortem_interval_hours": null,
+    "fixation_method": "immersion",
+    "fixation_medium": "formalin",
+    "organ_infilled": null,
+    "stabilisation_medium": "agar cubes",
+    "degassing_method": "vacuum",
+    "scan_solvent": "ethanol",
+    "scan_solvent_concentration": 70.0,
+    "scan_temperature": "room temperature"
+  },
+  "donor": {
+    "id": "MR-1",
+    "age": null,
+    "sex": null,
+    "weight": null,
+    "height": null,
+    "cause_of_death": null,
+    "medical_history": null,
+    "diabetes": null,
+    "hypertension": null,
+    "smoker": null
+  },
+  "scan": {
+    "date": "2023-09-15",
+    "beamline": "BM18",
+    "energy": 104.6,
+    "current_start": 192.8,
+    "filling_mode": null,
+    "n_frames": 12000,
+    "n_ref": 3,
+    "n_dark": 3,
+    "latency_time": 0.0013,
+    "exposure_time": 0.039,
+    "subframe_time": 0.012,
+    "n_subframes": 3,
+    "scan_type": "zseries",
+    "scan_range": 360.0,
+    "n_scans": 28,
+    "acquisition": "half",
+    "z_step": 7.0,
+    "scan_time": 540.0,
+    "filters": [
+      "Aluminium Oxide 7mm",
+      "Molybdenum 0.21mm",
+      "Glassy carbon 30mm"
+    ],
+    "scintillator": "LuAG:Ce 2000um",
+    "optic": "DZoom",
+    "optic_magnification": null,
+    "distance_source_sample": 177600.0,
+    "distance_sample_detector": 10000.0,
+    "psho": null,
+    "sensor_name": "Iris15",
+    "sensor_mode": null,
+    "sensor_roi_x_size": 2528,
+    "sensor_roi_y_size": 420,
+    "sensor_binning": [2, 2],
+    "pixel_size": 19.19,
+    "xray_magnification": null,
+    "technique": "Hierarchical Phase-Contrast Tomography (HiP-CT)",
+    "experiment_type": "Tomography"
+  },
+  "proposal": {
+    "proposal_number": "md1373",
+    "title": "3d Histopathology of the placenta in COVID-1",
+    "proposers": ["Jakob Reichmann", "Tim Salditt", "Jannis Justus Schaeper"]
+  },
+  "registration": null,
+  "citation": {
+    "title": "Overview at 19.19um of the placenta of donor MR-1, scanned at ESRF on beamline BM18.",
+    "contributors": [
+      {
+        "first_name": "Hector",
+        "last_name": "Dejea I Velardo",
+        "orcid": "0000-0003-2584-9812",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Jakob",
+        "last_name": "Reichmann",
+        "orcid": "0000-0002-6597-1831",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Jannis",
+        "last_name": "Justus Schaeper",
+        "orcid": "0000-0001-7477-7152",
+        "roles": ["Funding acquisition", "Investigation"]
+      },
+      {
+        "first_name": "Paul",
+        "last_name": "Tafforeau",
+        "orcid": "0000-0002-5962-1683",
+        "roles": ["Investigation"]
+      },
+      {
+        "first_name": "Tim",
+        "last_name": "Salditt",
+        "orcid": "0000-0003-4636-0813",
+        "roles": ["Funding acquisition", "Investigation"]
+      }
+    ],
+    "doi": "10.15151/ESRF-DC-2311938115",
+    "author_list": [
+      "Hector Dejea I Velardo",
+      "Jakob Reichmann",
+      "Jannis Justus Schaeper",
+      "Paul Tafforeau",
+      "Tim Salditt"
+    ]
+  },
+  "metadata_version": "1.1"
+}

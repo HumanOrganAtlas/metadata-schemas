@@ -27,7 +27,6 @@
     "weight": 89.0,
     "height": 177.0,
     "cause_of_death": null,
-    "date_of_death": null,
     "medical_history": "hemorrhagic shock, GI bleeding and aspiration, duodenal ulcers with bleeding Forrest Ib, ulcus excision, COVID19 Jan 2022, hypertension,Brain: transient ischemic attack of the left medial artery (ACM), arachnoidal cysts in the temporal lobe",
     "diabetes": "Type 2",
     "hypertension": "Yes",
@@ -179,7 +178,7 @@
       {
         "first_name": "Olivier",
         "last_name": "Palombi",
-        "orcid": null,
+        "orcid": "0000-0003-0803-358X",
         "roles": ["Funding acquisition"]
       },
       {
